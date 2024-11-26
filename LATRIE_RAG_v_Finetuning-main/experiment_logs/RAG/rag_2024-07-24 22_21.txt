@@ -1,0 +1,403 @@
+
+* Parameters for this experiment (24/7/2024):
+
+         - documents reader : HTML
+
+         - embedding model : BAAI/bge-small-en-v1.5
+
+         - LLM model : TheBloke/Mistral-7B-Instruct-v0.2-GPTQ
+
+         - splitting method : From scratch with Faiss vector store and SYNTACTIC splitter
+
+         - chunk size : 256
+
+         - chunk overlap : 25
+
+         - top_k value : 4
+
+         - assessment method : Only one Q/A task
+
+         - query : What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+
+         - reference response : A carbapenem (imipenem or meropenem) as targeted therapy
+
+         - reranking : Yes
+
+         - top_n : 2
+
+         - max new tokens : 190
+
+
+
+*--------------------------------------------------*
+
+
+
+* 4 chunks retrieved for the query : "What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?"
+
+- CHUNK 1 (similarity : 0.48088186979293823):
+The largest study included 365 patients for the empirical treatment and 601 patients for targeted treatment [22], but most included a few dozen patients (Table 3). None of the studies showed a significant difference between groups, except for a small study at high risk of bias showing higher unadjusted mortality with BLBI including all Enterobacterales [41]. None of the studies were at low risk of bias; 13 were classified at moderate risk, when using an adjusted analysis with a minimal sample size allowing some adjustment and seven at high risk, mostly reporting crude associations. Hence, there is a large bulk of observational, real-life, data showing no differences in mortality and other outcomes between BLBI and carbenemens for the treatment for 3GCphRE BSI. These data are highly limited by small samples sizes that do not allow for full adjustment for indication bias, severity of infection, different bacteria and ESBL types, sources of infection and the interaction between types of bacteria and source of infection. Different susceptibility testing methods and definitions of 3GCphRE were used in different studies.
+
+- CHUNK 2 (similarity : 0.4429439902305603):
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+- CHUNK 3 (similarity : 0.430439293384552):
+The quinolone group in all studies was very small (4-24 patients) and this analysis is a priori very difficult to analyse in an observational design, because quinolones, administered orally with good bioavailability, were given as stepdown therapy to stable patients. As a result, there is no direct evidence on targeted quinolone therapy for 3GcephRE BSI, but favourable effects were observed in studies assessing Gram-negative bacteriaemia in general, where a proportion of patients is expected to have had 3GcephRE BSI [68].
+Aminoglycosides were examined specifically in a single study [69] and as part of a general comparator group in two studies [42,70]. In the single study reporting an adjusted analysis (modernate risk of bias), aminoglycosides as targeted therapy for BSI of urinary tract source were not significantly different from carbapenems or piperacillin-tazobactam, but with large confidence intervals [69]. Given the paucity of data and observational design, there is very-low-certainty evidence for aminoglycoside treatment for bacteriaemic UTI.
+Complicated urinary tract infections with or without bacteriaemia.
+
+- CHUNK 4 (similarity : 0.34789347648620605):
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+* GLOBAL CONTEXT:
+
+Context:
+The largest study included 365 patients for the empirical treatment and 601 patients for targeted treatment [22], but most included a few dozen patients (Table 3). None of the studies showed a significant difference between groups, except for a small study at high risk of bias showing higher unadjusted mortality with BLBI including all Enterobacterales [41]. None of the studies were at low risk of bias; 13 were classified at moderate risk, when using an adjusted analysis with a minimal sample size allowing some adjustment and seven at high risk, mostly reporting crude associations. Hence, there is a large bulk of observational, real-life, data showing no differences in mortality and other outcomes between BLBI and carbenemens for the treatment for 3GCphRE BSI. These data are highly limited by small samples sizes that do not allow for full adjustment for indication bias, severity of infection, different bacteria and ESBL types, sources of infection and the interaction between types of bacteria and source of infection. Different susceptibility testing methods and definitions of 3GCphRE were used in different studies.
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+The quinolone group in all studies was very small (4-24 patients) and this analysis is a priori very difficult to analyse in an observational design, because quinolones, administered orally with good bioavailability, were given as stepdown therapy to stable patients. As a result, there is no direct evidence on targeted quinolone therapy for 3GcephRE BSI, but favourable effects were observed in studies assessing Gram-negative bacteriaemia in general, where a proportion of patients is expected to have had 3GcephRE BSI [68].
+Aminoglycosides were examined specifically in a single study [69] and as part of a general comparator group in two studies [42,70]. In the single study reporting an adjusted analysis (modernate risk of bias), aminoglycosides as targeted therapy for BSI of urinary tract source were not significantly different from carbapenems or piperacillin-tazobactam, but with large confidence intervals [69]. Given the paucity of data and observational design, there is very-low-certainty evidence for aminoglycoside treatment for bacteriaemic UTI.
+Complicated urinary tract infections with or without bacteriaemia.
+
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+
+
+* REFERENCE CONTEXT:
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence). For patients with BSI due to 3GCephRE without septic shock, ertapenem instead of imipenem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence). For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement). For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous fosfomycin (strong recommendation for use, high certainty of evidence) Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BLBLI), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement). We do not recommend tigecycline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence). Among all patients with 3GCephRE infections, the new BLBLI are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement). We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence). For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillinclavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+* SIMILARITY:
+
+----> The predicted context doesn't contain the reference context.
+
+METEOR score : 0.6029964572780195
+
+BERTScore:
+Precision : 0.224
+Recall : 0.345
+F1 : 0.285
+
+* AFTER RERANKING
+
+- CHUNK 1 (score: 9.17011833190918) :
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+- CHUNK 2 (score: 6.327512741088867) :
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+* GLOBAL CONTEXT:
+
+Context:
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+
+
+* REFERENCE CONTEXT:
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence). For patients with BSI due to 3GCephRE without septic shock, ertapenem instead of imipenem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence). For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement). For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous fosfomycin (strong recommendation for use, high certainty of evidence) Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BLBLI), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement). We do not recommend tigecycline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence). Among all patients with 3GCephRE infections, the new BLBLI are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement). We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence). For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillinclavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+* SIMILARITY:
+
+----> The predicted context doesn't contain the reference context.
+
+METEOR score : 0.7908381689861539
+
+BERTScore:
+Precision : 0.639
+Recall : 0.610
+F1 : 0.625
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use without additional prompt and context is :
+
+[INST] What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE? [/INST]
+
+* The answer obtained without additional prompt and context is :
+
+For patients with bacteremia (BSI, or bloodstream infection) and severe infection caused by extended-spectrum β-lactamases producing Klebsiella pneumoniae or other Enterobacterales (3GCephalosporin-resistant, 3GCephalosporin-resistant Enterobacterales, or 3GCephrE), the recommended targeted therapy depends on the susceptibility profile of the isolate and local guidelines.
+
+Here are some common options:
+
+1. Carbapenems: Carbapenems, such as meropenem, imipenem, or doripenem, are often used as first-line agents for treating infections caused by 3GCephrE due to their broad-spectrum activity against Gram-negative bacteria, including those producing extended-spectrum β-lactamases
+
+* REFERENCE ANSWER :
+A carbapenem (imipenem or meropenem) as targeted therapy
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use with additional prompt but without context is :
+
+[INST] You are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+        You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+        Preferably give clear answers without too many details.
+
+        Please respond to the following question.
+         
+What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE? 
+[/INST]
+
+* The answer obtained with additional prompt but without context is :
+
+For patients with bloodstream infections (BSIs) and severe infections caused by extended-spectrum β-lactamase producing Klebsiella pneumoniae or other 3rd generation cephalosporin-resistant Enterobacteriaceae (3GCephRE), the recommended targeted therapy is usually a carbapenem antibiotic, such as meropenem, imipenem, or doripenem. These antibiotics are effective against most 3GCephRE strains and have good penetration into the bacterial cell wall. However, it's important to note that resistance to carbapenems is increasing in some regions, so local guidelines and susceptibility testing results should be considered before making a definitive treatment decision. Additionally, combination therapy with an aminoglycoside or a beta-lactam/beta-lactamase inhib
+
+* REFERENCE ANSWER :
+A carbapenem (imipenem or meropenem) as targeted therapy
+
+
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context but without additional prompt is :
+
+[INST]
+    Context:
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+    [/INST]
+    
+
+* The answer obtained with context but without additional prompt is :
+
+Based on the context provided, the recommended targeted therapy for patients with BSI (Blood Stream Infection) and severe infection due to 3GCephRE (third-generation cephalosporin-resistant Enterobacteriaceae) is a carbapenem, such as imipenem or meropenem (strong recommendation for use, moderate certainty of evidence).
+
+* REFERENCE ANSWER :
+A carbapenem (imipenem or meropenem) as targeted therapy
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context and additional prompt is :
+
+[INST]You are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+    You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+    Preferably give clear answers without too many details.
+
+    Context:
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+    [/INST]
+    
+
+* The answer obtained with context and additional prompt is :
+
+Based on the context provided, the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE is a carbapenem, such as imipenem or meropenem (strong recommendation for use, moderate certainty of evidence).
+
+* REFERENCE ANSWER :
+A carbapenem (imipenem or meropenem) as targeted therapy
+
+
+
+*--------------------------------------------------*
+
+
+
+** RESULTS FOR EACH CASE WITH DIFFERENT METRICS **
+
+* NO ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.03513909224011713
+Individual 2-gram : 0.04105571847507332
+Individual 3-gram : 0.0367107195301028
+Individual 4-gram : 0.03235294117647059
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.08045977011494253, recall=0.875, fmeasure=0.14736842105263157)
+ROUGE_L : Score(precision=0.04597701149425287, recall=0.5, fmeasure=0.08421052631578949)
+
+         - METEOR : 
+
+METEOR score : 0.24473684210526317
+
+         - BERTScore : 
+
+Precision : 0.779
+Recall : 0.900
+F1 : 0.835
+
+Precision : -0.312
+Recall : 0.408
+F1 : 0.024
+
+
+* ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.03280839895013123
+Individual 2-gram : 0.03679369250985546
+Individual 3-gram : 0.03421052631578947
+Individual 4-gram : 0.030303030303030304
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.07920792079207921, recall=1.0, fmeasure=0.14678899082568805)
+ROUGE_L : Score(precision=0.04950495049504951, recall=0.625, fmeasure=0.09174311926605504)
+
+         - METEOR : 
+
+METEOR score : 0.17964071856287428
+
+         - BERTScore : 
+
+Precision : 0.784
+Recall : 0.892
+F1 : 0.834
+
+Precision : -0.283
+Recall : 0.357
+F1 : 0.018
+
+
+* NO ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.0747663551401869
+Individual 2-gram : 0.08750000000000001
+Individual 3-gram : 0.08150470219435735
+Individual 4-gram : 0.07232704402515723
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.18604651162790697, recall=1.0, fmeasure=0.3137254901960785)
+ROUGE_L : Score(precision=0.11627906976744186, recall=0.625, fmeasure=0.19607843137254904)
+
+         - METEOR : 
+
+METEOR score : 0.3292035398230089
+
+         - BERTScore : 
+
+Precision : 0.804
+Recall : 0.919
+F1 : 0.858
+
+Precision : -0.163
+Recall : 0.522
+F1 : 0.158
+
+
+* ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.10256410256410255
+Individual 2-gram : 0.12017167381974247
+Individual 3-gram : 0.1120689655172414
+Individual 4-gram : 0.09956709956709955
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.22857142857142856, recall=1.0, fmeasure=0.3720930232558139)
+ROUGE_L : Score(precision=0.14285714285714285, recall=0.625, fmeasure=0.23255813953488372)
+
+         - METEOR : 
+
+METEOR score : 0.34766355140186916
+
+         - BERTScore : 
+
+Precision : 0.841
+Recall : 0.923
+F1 : 0.880
+
+Precision : 0.058
+Recall : 0.541
+F1 : 0.290
+
+

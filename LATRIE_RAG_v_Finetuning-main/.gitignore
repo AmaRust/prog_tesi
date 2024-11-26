@@ -1,0 +1,15 @@
+myenv
+LLM_finetuned/processed_dataset
+LLM_finetuned/my_awesome_eli5_clm-model
+RAG/vector_store/
+.DS_Store
+LLM_finetuned/.ipynb_checkpoints/
+RAG/.ipynb_checkpoints/
+LLM_finetuned/Finetuned_Med_GPT/
+RAG/__pycache__/
+__pycache__/
+RAG/slurm-*.out
+LLM_finetuned/slurm-*.out
+RAG/embeddings/
+RAG/output.log
+LLM_finetuned/output.log

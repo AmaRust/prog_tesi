@@ -1,0 +1,2 @@
+For the overlap, whether with or without an additional prompt, it is necessary to have a non-zero value but not too high to observe the best results.
+For example, for a chunk size of 256, an overlap of 25 is correct, whereas an overlap of 50 gives the same results as 0.

@@ -1,0 +1,396 @@
+
+* Parameters for this experiment (27/6/2024):
+
+         - embedding model : BAAI/bge-small-en-v1.5
+
+         - LLM model : TheBloke/Mistral-7B-Instruct-v0.2-GPTQ
+
+         - splitting method : From scratch with Faiss vector store and SEMANTIC splitter
+
+         - top_k value : 4
+
+         - assessment method : Only one Q/A task
+
+         - query : What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+
+         - reference response : For patients with BSI and severe infection due to 3GCephRE, a carbapenem (imipenem or meropenem) is recommended as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+
+         - reranking : No
+
+         - max new tokens : 190
+
+
+
+*--------------------------------------------------*
+
+
+
+* 4 chunks retrieved for the query : "What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?"
+
+- CHUNK 1 (similarity : 0.5392202734947205):
+x Mical Paul and Elena Carrara made equal contributions to these guidelines; Evelina Tacconelli and Jesús Rodríguez-Baño made equal contributions to these guidelines.
+According to estimates from the European Center of Disease and Control (ECDC), antibiotic-resistant bacteria caused 600 000 infections and 27 000 attributable deaths in 2015 in Europe
+In parallel with huge efforts by pharmaceutical companies, and profit and non-profit organizations to promote research and development of new antibiotics, the scientific community and public health agencies are strongly calling for an increasingly parsimonious use of available antibiotics in order to prevent further development of resistance. In this paradoxical scenario prescribing antibiotics for MDR-GNB infections has become a significant challenge for clinicians worldwide, stretched between the well-known limitations of the old drugs, fear of promoting resistance by using the new antibiotics, the paucity of data on the effects of newly developed antibiotics against MDR-GNB and the costs of the new antibiotics
+
+head : Questions addressed by the guideline
+Target MDR-GNB and the questions addressed were selected by consensus in the first panel meeting. The guidelines address the targeted treatment of infections caused by third-generation cephalosporin-resistant Enterobacterales (3GCephRE), CR Enterobacterales (CRE), CR P. aeruginosa (CRPA) and CR A. baumannii (CRAB). The following questions were addressed. (a) What is the antibiotic of choice for patients infected with the target MDR-GNB? (b) Should combination antibiotic therapy be used for patients infected with the target CR-GNB?
+The recommendations are summarized in Table
+
+head : Conditional Moderate
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones. It may be good practice to consider cotrimoxazole for non-severe cUTI.
+
+head : Methods
+First, a systematic review was performed to support the recommendations. 
+
+- CHUNK 2 (similarity : 0.5385534763336182):
+We recommend referring to EUCAST's recommended dosing (https://www.eucast.org/clinical_breakpoints/). Source control should always be a priority, to optimize outcomes and shorten antibiotic treatment durations. The guidelines do not address allergies to the recommended antibiotics that should be considered before antibiotic prescription. Nebulized antibiotics were not considered in the current guideline but were addressed by an ESCMID position statement
+Throughout the current guideline, antibiotic stewardship considerations have been introduced. The most important concern the use of carbapenems for infections caused by 3GcephRE. In different epidemiological settings of cephalosporin resistance in Enterobacterales and prevalence of CR-GNB, the implications of adopting a sweeping practice of carbapenems for all 3GcephRE are variable. We addressed this recommendation by sepsis severity and source of infection, allowing the option of carbapenem-sparing therapy for non-severe infections and low-risk sources of infection, and addressing stepdown therapy. We support antibiotic stewardship considerations when using colistin (a last resort antibiotic for CRAB and MBL-producing Enterobacterales) and the new BLBLI. Many good practice statements are provided in the guidelines, when no evidence is available and clinical practice mandates decisionmaking. 
+
+- CHUNK 3 (similarity : 0.526742696762085):
+The current guidelines address antibiotic treatment targeted to specific pathogens. Empirically, before pathogen identification, these pathogens should be targeted among patients considered at high risk for CR-GNB infections. A difficult antibiotic stewardship balance exists between achieving appropriate empirical antibiotic therapy for patients with infections due to CR-GNB and the need to conserve last resort therapies for these bacteria. The empirical treatment phase is relevant to a much larger population than targeted treatment. Local guidelines, guided by the local epidemiology, should address the empirical treatment phase.
+The Infectious Diseases Society of America recently published guidance documents on the treatment of 3GcephRE, CRE, DTR P. aeruginosa and CRAB
+
+head : Considering costs and equity
+Antibiotics, both old and new, are not equally available worldwide. In low-resource settings, costs of the new antibiotics might prohibit their use; and even in other settings costs of the new antibiotics enter the consideration for use. Antibiotics critical to management of the priority pathogens should be defined and more efforts should be implemented to ensure the universal availability of these antibiotics. Differential costs of the new antibiotics for different socio-economic settings will allow better equity of patient management.
+
+head : Research needs
+Recommendations for further research were not developed formally and were not graded. 
+
+- CHUNK 4 (similarity : 0.3401277959346771):
+When possible, recommendations tried to address severe infections versus others, at-risk infection sources versus others and different mechanisms of resistance. Available evidence for each treatment comparison was classified by the panel following the GRADE system
+
+head : Third-generation cephalosporin-resistant Enterobacterales
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+
+head : Recommendations
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence). For patients with BSI due to 3GCephRE without septic shock, ertapenem instead of imipenem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence). For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement). For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous fosfomycin (strong recommendation for use, high certainty of evidence) Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BLBLI), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement). We do not recommend tigecycline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence). Among all patients with 3GCephRE infections, the new BLBLI are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement). We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence). For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillinclavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+head : Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. 
+
+* GLOBAL CONTEXT:
+
+Context:
+x Mical Paul and Elena Carrara made equal contributions to these guidelines; Evelina Tacconelli and Jesús Rodríguez-Baño made equal contributions to these guidelines.
+According to estimates from the European Center of Disease and Control (ECDC), antibiotic-resistant bacteria caused 600 000 infections and 27 000 attributable deaths in 2015 in Europe
+In parallel with huge efforts by pharmaceutical companies, and profit and non-profit organizations to promote research and development of new antibiotics, the scientific community and public health agencies are strongly calling for an increasingly parsimonious use of available antibiotics in order to prevent further development of resistance. In this paradoxical scenario prescribing antibiotics for MDR-GNB infections has become a significant challenge for clinicians worldwide, stretched between the well-known limitations of the old drugs, fear of promoting resistance by using the new antibiotics, the paucity of data on the effects of newly developed antibiotics against MDR-GNB and the costs of the new antibiotics
+
+head : Questions addressed by the guideline
+Target MDR-GNB and the questions addressed were selected by consensus in the first panel meeting. The guidelines address the targeted treatment of infections caused by third-generation cephalosporin-resistant Enterobacterales (3GCephRE), CR Enterobacterales (CRE), CR P. aeruginosa (CRPA) and CR A. baumannii (CRAB). The following questions were addressed. (a) What is the antibiotic of choice for patients infected with the target MDR-GNB? (b) Should combination antibiotic therapy be used for patients infected with the target CR-GNB?
+The recommendations are summarized in Table
+
+head : Conditional Moderate
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones. It may be good practice to consider cotrimoxazole for non-severe cUTI.
+
+head : Methods
+First, a systematic review was performed to support the recommendations. 
+
+We recommend referring to EUCAST's recommended dosing (https://www.eucast.org/clinical_breakpoints/). Source control should always be a priority, to optimize outcomes and shorten antibiotic treatment durations. The guidelines do not address allergies to the recommended antibiotics that should be considered before antibiotic prescription. Nebulized antibiotics were not considered in the current guideline but were addressed by an ESCMID position statement
+Throughout the current guideline, antibiotic stewardship considerations have been introduced. The most important concern the use of carbapenems for infections caused by 3GcephRE. In different epidemiological settings of cephalosporin resistance in Enterobacterales and prevalence of CR-GNB, the implications of adopting a sweeping practice of carbapenems for all 3GcephRE are variable. We addressed this recommendation by sepsis severity and source of infection, allowing the option of carbapenem-sparing therapy for non-severe infections and low-risk sources of infection, and addressing stepdown therapy. We support antibiotic stewardship considerations when using colistin (a last resort antibiotic for CRAB and MBL-producing Enterobacterales) and the new BLBLI. Many good practice statements are provided in the guidelines, when no evidence is available and clinical practice mandates decisionmaking. 
+
+The current guidelines address antibiotic treatment targeted to specific pathogens. Empirically, before pathogen identification, these pathogens should be targeted among patients considered at high risk for CR-GNB infections. A difficult antibiotic stewardship balance exists between achieving appropriate empirical antibiotic therapy for patients with infections due to CR-GNB and the need to conserve last resort therapies for these bacteria. The empirical treatment phase is relevant to a much larger population than targeted treatment. Local guidelines, guided by the local epidemiology, should address the empirical treatment phase.
+The Infectious Diseases Society of America recently published guidance documents on the treatment of 3GcephRE, CRE, DTR P. aeruginosa and CRAB
+
+head : Considering costs and equity
+Antibiotics, both old and new, are not equally available worldwide. In low-resource settings, costs of the new antibiotics might prohibit their use; and even in other settings costs of the new antibiotics enter the consideration for use. Antibiotics critical to management of the priority pathogens should be defined and more efforts should be implemented to ensure the universal availability of these antibiotics. Differential costs of the new antibiotics for different socio-economic settings will allow better equity of patient management.
+
+head : Research needs
+Recommendations for further research were not developed formally and were not graded. 
+
+When possible, recommendations tried to address severe infections versus others, at-risk infection sources versus others and different mechanisms of resistance. Available evidence for each treatment comparison was classified by the panel following the GRADE system
+
+head : Third-generation cephalosporin-resistant Enterobacterales
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+
+head : Recommendations
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence). For patients with BSI due to 3GCephRE without septic shock, ertapenem instead of imipenem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence). For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement). For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous fosfomycin (strong recommendation for use, high certainty of evidence) Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BLBLI), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement). We do not recommend tigecycline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence). Among all patients with 3GCephRE infections, the new BLBLI are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement). We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence). For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillinclavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+head : Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. 
+
+
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use without additional prompt and context is :
+
+[INST] What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE? [/INST]
+
+* The answer obtained without additional prompt and context is :
+
+For patients with bacteremia (BSI, or bloodstream infection) and severe infection caused by extended-spectrum β-lactamases producing Klebsiella pneumoniae or other Enterobacterales (3GCephalosporin-resistant, 3GCephalosporin-resistant Enterobacterales, or 3GCephrE), the recommended targeted therapy depends on the susceptibility profile of the isolate and local guidelines.
+
+Here are some common options:
+
+1. Carbapenems: Carbapenems, such as meropenem, imipenem, or doripenem, are often used as first-line agents for treating infections caused by 3GCephrE due to their broad-spectrum activity against Gram-negative bacteria, including those producing extended-spectrum β-lactamases
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use with additional prompt but without context is :
+
+[INST] Imagine you are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+        You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+        Preferably give clear answers without too many details.
+
+        Please respond to the following question.
+         
+What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE? 
+[/INST]
+
+* The answer obtained with additional prompt but without context is :
+
+For patients with bloodstream infections (BSIs) and severe infections caused by extended-spectrum β-lactamase producing Klebsiella pneumoniae (3GCephrasporin-resistant, or 3GCephrE), the recommended targeted therapy is usually a carbapenem antibiotic. Examples include meropenem, imipenem, or doripenem. These antibiotics can effectively cover against 3GCephrE producing bacteria and have good penetration into the bacterial cell wall. However, it's essential to consider local resistance patterns and individual patient factors before making a definitive treatment decision. Always consult with an infectious disease specialist for the most accurate information.
+
+
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context but without additional prompt is :
+
+[INST]
+    Context:
+x Mical Paul and Elena Carrara made equal contributions to these guidelines; Evelina Tacconelli and Jesús Rodríguez-Baño made equal contributions to these guidelines.
+According to estimates from the European Center of Disease and Control (ECDC), antibiotic-resistant bacteria caused 600 000 infections and 27 000 attributable deaths in 2015 in Europe
+In parallel with huge efforts by pharmaceutical companies, and profit and non-profit organizations to promote research and development of new antibiotics, the scientific community and public health agencies are strongly calling for an increasingly parsimonious use of available antibiotics in order to prevent further development of resistance. In this paradoxical scenario prescribing antibiotics for MDR-GNB infections has become a significant challenge for clinicians worldwide, stretched between the well-known limitations of the old drugs, fear of promoting resistance by using the new antibiotics, the paucity of data on the effects of newly developed antibiotics against MDR-GNB and the costs of the new antibiotics
+
+head : Questions addressed by the guideline
+Target MDR-GNB and the questions addressed were selected by consensus in the first panel meeting. The guidelines address the targeted treatment of infections caused by third-generation cephalosporin-resistant Enterobacterales (3GCephRE), CR Enterobacterales (CRE), CR P. aeruginosa (CRPA) and CR A. baumannii (CRAB). The following questions were addressed. (a) What is the antibiotic of choice for patients infected with the target MDR-GNB? (b) Should combination antibiotic therapy be used for patients infected with the target CR-GNB?
+The recommendations are summarized in Table
+
+head : Conditional Moderate
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones. It may be good practice to consider cotrimoxazole for non-severe cUTI.
+
+head : Methods
+First, a systematic review was performed to support the recommendations. 
+
+We recommend referring to EUCAST's recommended dosing (https://www.eucast.org/clinical_breakpoints/). Source control should always be a priority, to optimize outcomes and shorten antibiotic treatment durations. The guidelines do not address allergies to the recommended antibiotics that should be considered before antibiotic prescription. Nebulized antibiotics were not considered in the current guideline but were addressed by an ESCMID position statement
+Throughout the current guideline, antibiotic stewardship considerations have been introduced. The most important concern the use of carbapenems for infections caused by 3GcephRE. In different epidemiological settings of cephalosporin resistance in Enterobacterales and prevalence of CR-GNB, the implications of adopting a sweeping practice of carbapenems for all 3GcephRE are variable. We addressed this recommendation by sepsis severity and source of infection, allowing the option of carbapenem-sparing therapy for non-severe infections and low-risk sources of infection, and addressing stepdown therapy. We support antibiotic stewardship considerations when using colistin (a last resort antibiotic for CRAB and MBL-producing Enterobacterales) and the new BLBLI. Many good practice statements are provided in the guidelines, when no evidence is available and clinical practice mandates decisionmaking. 
+
+The current guidelines address antibiotic treatment targeted to specific pathogens. Empirically, before pathogen identification, these pathogens should be targeted among patients considered at high risk for CR-GNB infections. A difficult antibiotic stewardship balance exists between achieving appropriate empirical antibiotic therapy for patients with infections due to CR-GNB and the need to conserve last resort therapies for these bacteria. The empirical treatment phase is relevant to a much larger population than targeted treatment. Local guidelines, guided by the local epidemiology, should address the empirical treatment phase.
+The Infectious Diseases Society of America recently published guidance documents on the treatment of 3GcephRE, CRE, DTR P. aeruginosa and CRAB
+
+head : Considering costs and equity
+Antibiotics, both old and new, are not equally available worldwide. In low-resource settings, costs of the new antibiotics might prohibit their use; and even in other settings costs of the new antibiotics enter the consideration for use. Antibiotics critical to management of the priority pathogens should be defined and more efforts should be implemented to ensure the universal availability of these antibiotics. Differential costs of the new antibiotics for different socio-economic settings will allow better equity of patient management.
+
+head : Research needs
+Recommendations for further research were not developed formally and were not graded. 
+
+When possible, recommendations tried to address severe infections versus others, at-risk infection sources versus others and different mechanisms of resistance. Available evidence for each treatment comparison was classified by the panel following the GRADE system
+
+head : Third-generation cephalosporin-resistant Enterobacterales
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+
+head : Recommendations
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence). For patients with BSI due to 3GCephRE without septic shock, ertapenem instead of imipenem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence). For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement). For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous fosfomycin (strong recommendation for use, high certainty of evidence) Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BLBLI), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement). We do not recommend tigecycline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence). Among all patients with 3GCephRE infections, the new BLBLI are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement). We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence). For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillinclavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+head : Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. 
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+    [/INST]
+    
+
+* The answer obtained with context but without additional prompt is :
+
+Based on the context provided, the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE is a carbapenem (imipenem or meropenem) (strong recommendation for use, moderate certainty of evidence).
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context and additional prompt is :
+
+[INST]Imagine you are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+    You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+    Preferably give clear answers without too many details.
+
+    Context:
+x Mical Paul and Elena Carrara made equal contributions to these guidelines; Evelina Tacconelli and Jesús Rodríguez-Baño made equal contributions to these guidelines.
+According to estimates from the European Center of Disease and Control (ECDC), antibiotic-resistant bacteria caused 600 000 infections and 27 000 attributable deaths in 2015 in Europe
+In parallel with huge efforts by pharmaceutical companies, and profit and non-profit organizations to promote research and development of new antibiotics, the scientific community and public health agencies are strongly calling for an increasingly parsimonious use of available antibiotics in order to prevent further development of resistance. In this paradoxical scenario prescribing antibiotics for MDR-GNB infections has become a significant challenge for clinicians worldwide, stretched between the well-known limitations of the old drugs, fear of promoting resistance by using the new antibiotics, the paucity of data on the effects of newly developed antibiotics against MDR-GNB and the costs of the new antibiotics
+
+head : Questions addressed by the guideline
+Target MDR-GNB and the questions addressed were selected by consensus in the first panel meeting. The guidelines address the targeted treatment of infections caused by third-generation cephalosporin-resistant Enterobacterales (3GCephRE), CR Enterobacterales (CRE), CR P. aeruginosa (CRPA) and CR A. baumannii (CRAB). The following questions were addressed. (a) What is the antibiotic of choice for patients infected with the target MDR-GNB? (b) Should combination antibiotic therapy be used for patients infected with the target CR-GNB?
+The recommendations are summarized in Table
+
+head : Conditional Moderate
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones. It may be good practice to consider cotrimoxazole for non-severe cUTI.
+
+head : Methods
+First, a systematic review was performed to support the recommendations. 
+
+We recommend referring to EUCAST's recommended dosing (https://www.eucast.org/clinical_breakpoints/). Source control should always be a priority, to optimize outcomes and shorten antibiotic treatment durations. The guidelines do not address allergies to the recommended antibiotics that should be considered before antibiotic prescription. Nebulized antibiotics were not considered in the current guideline but were addressed by an ESCMID position statement
+Throughout the current guideline, antibiotic stewardship considerations have been introduced. The most important concern the use of carbapenems for infections caused by 3GcephRE. In different epidemiological settings of cephalosporin resistance in Enterobacterales and prevalence of CR-GNB, the implications of adopting a sweeping practice of carbapenems for all 3GcephRE are variable. We addressed this recommendation by sepsis severity and source of infection, allowing the option of carbapenem-sparing therapy for non-severe infections and low-risk sources of infection, and addressing stepdown therapy. We support antibiotic stewardship considerations when using colistin (a last resort antibiotic for CRAB and MBL-producing Enterobacterales) and the new BLBLI. Many good practice statements are provided in the guidelines, when no evidence is available and clinical practice mandates decisionmaking. 
+
+The current guidelines address antibiotic treatment targeted to specific pathogens. Empirically, before pathogen identification, these pathogens should be targeted among patients considered at high risk for CR-GNB infections. A difficult antibiotic stewardship balance exists between achieving appropriate empirical antibiotic therapy for patients with infections due to CR-GNB and the need to conserve last resort therapies for these bacteria. The empirical treatment phase is relevant to a much larger population than targeted treatment. Local guidelines, guided by the local epidemiology, should address the empirical treatment phase.
+The Infectious Diseases Society of America recently published guidance documents on the treatment of 3GcephRE, CRE, DTR P. aeruginosa and CRAB
+
+head : Considering costs and equity
+Antibiotics, both old and new, are not equally available worldwide. In low-resource settings, costs of the new antibiotics might prohibit their use; and even in other settings costs of the new antibiotics enter the consideration for use. Antibiotics critical to management of the priority pathogens should be defined and more efforts should be implemented to ensure the universal availability of these antibiotics. Differential costs of the new antibiotics for different socio-economic settings will allow better equity of patient management.
+
+head : Research needs
+Recommendations for further research were not developed formally and were not graded. 
+
+When possible, recommendations tried to address severe infections versus others, at-risk infection sources versus others and different mechanisms of resistance. Available evidence for each treatment comparison was classified by the panel following the GRADE system
+
+head : Third-generation cephalosporin-resistant Enterobacterales
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+
+head : Recommendations
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence). For patients with BSI due to 3GCephRE without septic shock, ertapenem instead of imipenem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence). For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement). For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous fosfomycin (strong recommendation for use, high certainty of evidence) Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BLBLI), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement). We do not recommend tigecycline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence). Among all patients with 3GCephRE infections, the new BLBLI are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement). We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence). For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillinclavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+head : Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. 
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+    [/INST]
+    
+
+* The answer obtained with context and additional prompt is :
+
+Based on the context provided, the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE is a carbapenem (imipenem or meropenem) (strong recommendation for use, moderate certainty of evidence).
+
+
+
+*--------------------------------------------------*
+
+
+
+** RESULTS FOR EACH CASE WITH DIFFERENT METRICS **
+
+* NO ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.06002928257686677
+Individual 2-gram : 0.11583577712609967
+Individual 3-gram : 0.09838472834067548
+Individual 4-gram : 0.07058823529411766
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.2413793103448276, recall=0.75, fmeasure=0.3652173913043478)
+ROUGE_L : Score(precision=0.14942528735632185, recall=0.4642857142857143, fmeasure=0.22608695652173916)
+
+         - METEOR : 
+
+METEOR score : 0.4036262236445783
+
+         - BERTScore : 
+
+Precision : 0.808
+Recall : 0.884
+F1 : 0.844
+
+Precision : -0.141
+Recall : 0.310
+F1 : 0.076
+
+
+* ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.061840120663650085
+Individual 2-gram : 0.11480362537764349
+Individual 3-gram : 0.10892586989409984
+Individual 4-gram : 0.07727272727272728
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.2235294117647059, recall=0.6785714285714286, fmeasure=0.336283185840708)
+ROUGE_L : Score(precision=0.15294117647058825, recall=0.4642857142857143, fmeasure=0.23008849557522126)
+
+         - METEOR : 
+
+METEOR score : 0.3341317365269461
+
+         - BERTScore : 
+
+Precision : 0.832
+Recall : 0.891
+F1 : 0.861
+
+Precision : 0.003
+Recall : 0.354
+F1 : 0.174
+
+
+* NO ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.18061674008810572
+Individual 2-gram : 0.3893805309734513
+Individual 3-gram : 0.4222222222222222
+Individual 4-gram : 0.3571428571428572
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.8181818181818182, recall=0.9642857142857143, fmeasure=0.8852459016393442)
+ROUGE_L : Score(precision=0.696969696969697, recall=0.8214285714285714, fmeasure=0.7540983606557378)
+
+         - METEOR : 
+
+METEOR score : 0.9066749714522994
+
+         - BERTScore : 
+
+Precision : 0.966
+Recall : 0.981
+F1 : 0.973
+
+Precision : 0.797
+Recall : 0.885
+F1 : 0.841
+
+
+* ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.18061674008810572
+Individual 2-gram : 0.3893805309734513
+Individual 3-gram : 0.4222222222222222
+Individual 4-gram : 0.3571428571428572
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.8181818181818182, recall=0.9642857142857143, fmeasure=0.8852459016393442)
+ROUGE_L : Score(precision=0.696969696969697, recall=0.8214285714285714, fmeasure=0.7540983606557378)
+
+         - METEOR : 
+
+METEOR score : 0.9066749714522994
+
+         - BERTScore : 
+
+Precision : 0.966
+Recall : 0.981
+F1 : 0.973
+
+Precision : 0.797
+Recall : 0.885
+F1 : 0.841
+
+

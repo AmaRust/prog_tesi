@@ -1,0 +1,358 @@
+[
+    {
+        "parameters": {
+            "llm": "TheBloke/Mistral-7B-Instruct-v0.2-GPTQ",
+            "rank": 8,
+            "lora_alpha": 32,
+            "target modules": [
+                "q_proj"
+            ],
+            "lora_dropout": 0.05,
+            "quantization": false,
+            "learning_rate": 0.0002,
+            "batch_size": 10,
+            "num_epochs": 50
+        },
+        "training time": 54.659000873565674,
+        "queries": [
+            "What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?",
+            "How is the evidence on treatment of infections caused by 3GCephRE organized?",
+            "What is the recommendation for combination therapy in patients with CRE infections susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol?",
+            "What is the current evidence on the clinical efficacy of eravacycline against CRAB infections?",
+            "What is the association between ESCR-E carrier status and postoperative infections in patients undergoing surgery, including liver transplant recipients?",
+            "What is a suggested area of future research in the context of preoperative screening for MDR-GNB?",
+            "What should be considered when designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP)?"
+        ],
+        "reference answers": [
+            "A carbapenem (imipenem or meropenem) as targeted therapy",
+            "The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).",
+            "We do not recommend combination therapy for patients with CRE infections susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol (strong recommendation against use, low certainty of evidence).",
+            "There are no available data on the clinical efficacy of eravacycline against CRAB infections, despite its potential in vitro activity against these organisms.",
+            "ESCR-E carrier status is an independent predictor of postoperative infections, including surgical site infections (SSIs) and bloodstream infections, with higher odds of SSIs caused by ESCR-E, and is associated with increased risk of postoperative infections in liver transplant recipients.",
+            "Studies analyzing the optimal timing for preoperative screening and evaluating the benefits of additional screening before surgery in case of recent antibiotic treatment.",
+            "Clinical trials of targeted PAP should be designed considering rectal culture results."
+        ],
+        "predicted answers": {
+            "no additional prompt / no finetuning": [
+                "For patients with bacteremia (BSI, or bloodstream infection) and severe infection caused by extended-spectrum \u03b2-lactamases producing Klebsiella pneumoniae or other Enterobacterales (3GCephalosporin-resistant, 3GCephalosporin-res",
+                "The evidence on the treatment of infections caused by third-generation cephalosporins (3GCs) is organized through various sources, including peer-reviewed scientific journals, clinical guidelines, and meta-analyses. Here are some ways the evidence is typically organized:\n\n1. Peer-reviewed scientific journals: Research studies on the treatment of infections caused by 3GCs are published in scientific journals. These studies can be categorized based on their study",
+                "In patients with complicated infections caused by Carbapenem-resistant Enterobacterales (CRE) that are susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol, the Infectious Diseases Society of America (IDSA) and the European Society of Clinical Microbiology and Infectious Diseases (ESCMID) recommend the use of these agents as monotherapy based on their in vitro",
+                "Eravacycline is a new, fluorinated, narrow-spectrum tetracycline antibiotic that has shown activity against a broad range of Gram-negative bacteria, including those that are resistant to other tetracyclines and fluoroquinolones. It has been studied for the treatment of complex infections caused by multidrug-resistant (MDR) and extensively",
+                "ESCR-E (Epstein-Barr virus-encoded small RNAs-EBV-encoded small RNAs) is a biomarker associated with EBV infection, which is a common virus that can cause various diseases, including post-transplant lymphoproliferative disorder (PTLD). PTLD is a type of cancer that can develop in people who have undergone organ transplantation.\n\nThe association between ESCR-E carrier status and postoperative infections in patients undergoing surgery,",
+                "Preoperative screening for multidrug-resistant Gram-negative bacteria (MDR-GNB) is an important area of research to reduce the risk of post-surgical infections and improve patient outcomes. Here are some suggested areas of future research in this context:\n\n1. Development of rapid and accurate diagnostic methods: Current methods for detecting MDR-GNB,",
+                "Designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP) involves careful consideration of several key factors to ensure valid and reliable results. Here are some important aspects to consider:\n\n1. Patient Population: Defining the patient population is crucial. This includes considering the type of"
+            ],
+            "additional prompt / no finetuning": [
+                "Carbapenems and polymyxins are the recommended targeted therapies for patients with bloodstream infections (BSI) and severe infection due to 3rd generation cephalosporin-resistant Enterobacterales (3GCephRE).",
+                "The evidence on treatment of infections caused by 3GCephalosporin-resistant Enterobacterales (3GCephRE) is organized into evidence-based guidelines, which provide recommendations based on a systematic review of available scientific evidence. These guidelines aim to help healthcare professionals make informed decisions about the most effective and safe treatment options for patients with 3GCephRE infections.",
+                "The recommendation for combination therapy in patients with CRE infections susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol is not universally agreed upon and depends on individual patient factors. Consult current guidelines or a medical expert for specific recommendations.",
+                "The current evidence shows that eravacycline is effective against CRAB (carbapenem-resistant Acinetobacter baumannii) infections.",
+                "ESCR-E carrier status is associated with an increased risk of postoperative infections, including in patients undergoing surgery and liver transplant recipients.",
+                "Developing more accurate and cost-effective methods for preoperative screening for MDR-GNB.",
+                "When designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP), the following should be considered:\n\n1. Patient population: Selection of appropriate patient population based on type of surgery, risk factors, and microbial spectrum.\n2. Antibiotic selection: Choice of"
+            ],
+            "no additional prompt / finetuning": [
+                "For patients with bloodstream infections (BSI) and severe infections caused by extended-spectrum \u03b2-lactamases producing Klebsiella pneumoniae or other Enterobacteriaceae (3GCephalosporin-resistant Enterobacteriaceae, or 3GCephRE),",
+                "The evidence on the treatment of infections caused by third-generation cephalosporins (3GCephRs) is organized and presented in various ways, depending on the source of the information. Here are some common ways:\n\n1. Systematic Reviews and Meta-analyses: These are comprehensive analyses of all available evidence on a particular topic. Systematic reviews often include meta-analyses, which use statistical methods to combine the results of multiple studies. The Cochrane",
+                "In patients with complicated infections caused by Carbapenem-resistant Enterobacterales (CRE) that are susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol, combination therapy is recommended to improve outcomes and reduce the risk of treatment failure.\n\nThe choice of combination therapy depends on the specific organism and local susceptibility patterns. Here are some recommended combinations:\n\n1. Ceftazidime",
+                "Eravacycline is a new, fully synthetic, fluorocycline antibiotic with a broad spectrum of activity against Gram-negative and some Gram-positive bacteria. It is structurally related to tetracyclines but has distinct differences in its chemical structure and antibacterial properties.\n\nThere is limited clinical evidence specifically on the use of eravacycline for CRAB (",
+                "ESCR-E (Epstein-Barr virus-encoded small RNAs-Epstein-Barr virus-latent membrane protein-1-encoding RNAs) is a group of non-coding RNAs that play a role in the regulation of Epstein-Barr virus (EBV) gene expression. EBV is a human herpesvirus that can cause various diseases, including infectious mononucleosis and malignancies such as Burkitt lymphoma and nasopharyngeal car",
+                "Preoperative screening for multidrug-resistant Gram-negative bacteria (MDR-GNB) is an important area of research to reduce the risk of post-surgical infections and improve patient outcomes. Here are some suggested areas of future research in this context:\n\n1. Development of rapid and accurate diagnostic methods: Current methods for preoperative screening for MDR-",
+                "Designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP) involves careful consideration of several factors to ensure the study is effective, ethical, and efficient. Here are some key aspects to consider:\n\n1. Patient Population: Define the patient population for the study, including the"
+            ],
+            "additional prompt / finetuning": [
+                "Carbapenems and polymyxins are commonly recommended for patients with bloodstream infections (BSI) and severe infection caused by 3GCephalosporin-resistant Enterobacteriaceae (3GCephRE).",
+                "The evidence on treatment of infections caused by 3GCephalosporin-resistant Enterobacterales (3GCephRE) is organized based on the quality of the studies and the level of evidence available. This typically includes randomized controlled trials, observational studies, and meta-analyses. Guidelines often use a grading system to rate the strength of the evidence and make recommendations accordingly.",
+                "The recommendation for combination therapy in patients with CRE infections susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol is not universally agreed upon and depends on individual patient factors. Consult current guidelines or a medical expert for specific recommendations.",
+                "The current evidence shows that eravacycline is effective against CRAB (carbapenem-resistant Acinetobacter baumannii) infections.",
+                "ESCR-E carrier status is associated with an increased risk of postoperative infections, including in patients undergoing surgery and liver transplant recipients.",
+                "Developing more accurate and cost-effective methods for preoperative screening for MDR-GNB.",
+                "Patient risk factors, type and duration of surgery, specific pathogens, antibiotic selection, and dosing and administration timing should be considered when designing clinical trials of targeted perioperative antibiotic prophylaxis."
+            ]
+        },
+        "metrics": {
+            "no additional prompt / no finetuning": {
+                "BLEU": {
+                    "1_gram": 0.09872057369288065,
+                    "2_gram": 0.1497020060704794,
+                    "3_gram": 0.11507925097628226,
+                    "4_gram": 0.08705521638739029
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.18929977255448954,
+                        "recall": 0.428360722160904,
+                        "fmeasure": 0.25851908102258
+                    },
+                    "rouge_L": {
+                        "precision": 0.14602598659202431,
+                        "recall": 0.3336099669041648,
+                        "fmeasure": 0.20016017937784594
+                    }
+                },
+                "METEOR": 0.24009821826233188,
+                "BERTScore": {
+                    "Precision": -0.022,
+                    "Recall": 0.219,
+                    "F1_measure": 0.097
+                }
+            },
+            "additional prompt / no finetuning": {
+                "BLEU": {
+                    "1_gram": 0.18816024536375914,
+                    "2_gram": 0.2669254558197965,
+                    "3_gram": 0.22676809981951693,
+                    "4_gram": 0.18213831212464093
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.36690365576164974,
+                        "recall": 0.44438162327497277,
+                        "fmeasure": 0.35668787167534033
+                    },
+                    "rouge_L": {
+                        "precision": 0.3253487194698713,
+                        "recall": 0.4052307089915028,
+                        "fmeasure": 0.3207736271896673
+                    }
+                },
+                "METEOR": 0.29836528723470174,
+                "BERTScore": {
+                    "Precision": 0.233,
+                    "Recall": 0.388,
+                    "F1_measure": 0.308
+                }
+            },
+            "no additional prompt / finetuning": {
+                "BLEU": {
+                    "1_gram": 0.09950386241493804,
+                    "2_gram": 0.14494047497491033,
+                    "3_gram": 0.09864168124351193,
+                    "4_gram": 0.07110237454600986
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.17947234069796544,
+                        "recall": 0.42001522536668734,
+                        "fmeasure": 0.24825037939422429
+                    },
+                    "rouge_L": {
+                        "precision": 0.13267902535777737,
+                        "recall": 0.3182176782578237,
+                        "fmeasure": 0.18484594121124817
+                    }
+                },
+                "METEOR": 0.23502419396432603,
+                "BERTScore": {
+                    "Precision": -0.027,
+                    "Recall": 0.183,
+                    "F1_measure": 0.077
+                }
+            },
+            "additional prompt / finetuning": {
+                "BLEU": {
+                    "1_gram": 0.19147880736350747,
+                    "2_gram": 0.27365792045094406,
+                    "3_gram": 0.2291135291474955,
+                    "4_gram": 0.18279851236939962
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.3608636027355239,
+                        "recall": 0.3967625756559251,
+                        "fmeasure": 0.3437816710452585
+                    },
+                    "rouge_L": {
+                        "precision": 0.30336363144244916,
+                        "recall": 0.32189737565816945,
+                        "fmeasure": 0.28570714781394085
+                    }
+                },
+                "METEOR": 0.2955986005689,
+                "BERTScore": {
+                    "Precision": 0.234,
+                    "Recall": 0.378,
+                    "F1_measure": 0.304
+                }
+            }
+        }
+    },
+    {
+        "parameters": {
+            "llm": "TheBloke/Mistral-7B-Instruct-v0.2-GPTQ",
+            "rank": 8,
+            "lora_alpha": 32,
+            "target modules": [
+                "q_proj"
+            ],
+            "lora_dropout": 0.05,
+            "quantization": false,
+            "learning_rate": 0.0002,
+            "batch_size": 10,
+            "num_epochs": 50
+        },
+        "training time": 54.68471646308899,
+        "queries": [
+            "What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?",
+            "How is the evidence on treatment of infections caused by 3GCephRE organized?",
+            "What is the recommendation for combination therapy in patients with CRE infections susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol?",
+            "What is the current evidence on the clinical efficacy of eravacycline against CRAB infections?",
+            "What is the association between ESCR-E carrier status and postoperative infections in patients undergoing surgery, including liver transplant recipients?",
+            "What is a suggested area of future research in the context of preoperative screening for MDR-GNB?",
+            "What should be considered when designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP)?"
+        ],
+        "reference answers": [
+            "A carbapenem (imipenem or meropenem) as targeted therapy",
+            "The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).",
+            "We do not recommend combination therapy for patients with CRE infections susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol (strong recommendation against use, low certainty of evidence).",
+            "There are no available data on the clinical efficacy of eravacycline against CRAB infections, despite its potential in vitro activity against these organisms.",
+            "ESCR-E carrier status is an independent predictor of postoperative infections, including surgical site infections (SSIs) and bloodstream infections, with higher odds of SSIs caused by ESCR-E, and is associated with increased risk of postoperative infections in liver transplant recipients.",
+            "Studies analyzing the optimal timing for preoperative screening and evaluating the benefits of additional screening before surgery in case of recent antibiotic treatment.",
+            "Clinical trials of targeted PAP should be designed considering rectal culture results."
+        ],
+        "predicted answers": {
+            "no additional prompt / no finetuning": [
+                "For patients with bacteremia (BSI, or bloodstream infection) and severe infection caused by extended-spectrum \u03b2-lactamases producing Klebsiella pneumoniae or other Enterobacterales (3GCephalosporin-resistant, 3GCephalosporin-res",
+                "The evidence on the treatment of infections caused by third-generation cephalosporins (3GCs) is organized through various sources, including peer-reviewed scientific journals, clinical guidelines, and meta-analyses. Here are some ways the evidence is typically organized:\n\n1. Peer-reviewed scientific journals: Research studies on the treatment of infections caused by 3GCs are published in scientific journals. These studies can be categorized based on their study",
+                "In patients with complicated infections caused by Carbapenem-resistant Enterobacterales (CRE) that are susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol, the Infectious Diseases Society of America (IDSA) and the European Society of Clinical Microbiology and Infectious Diseases (ESCMID) recommend the use of these agents as monotherapy based on their in vitro",
+                "Eravacycline is a new, fluorinated, narrow-spectrum tetracycline antibiotic that has shown activity against a broad range of Gram-negative bacteria, including those that are resistant to other tetracyclines and fluoroquinolones. It has been studied for the treatment of complex infections caused by multidrug-resistant (MDR) and extensively",
+                "ESCR-E (Epstein-Barr virus-encoded small RNAs-EBV-encoded small RNAs) is a biomarker associated with EBV infection, which is a common virus that can cause various diseases, including post-transplant lymphoproliferative disorder (PTLD). PTLD is a type of cancer that can develop in people who have undergone organ transplantation.\n\nThe association between ESCR-E carrier status and postoperative infections in patients undergoing surgery,",
+                "Preoperative screening for multidrug-resistant Gram-negative bacteria (MDR-GNB) is an important area of research to reduce the risk of post-surgical infections and improve patient outcomes. Here are some suggested areas of future research in this context:\n\n1. Development of rapid and accurate diagnostic methods: Current methods for detecting MDR-GNB,",
+                "Designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP) involves careful consideration of several key factors to ensure valid and reliable results. Here are some important aspects to consider:\n\n1. Patient Population: Defining the patient population is crucial. This includes considering the type of"
+            ],
+            "additional prompt / no finetuning": [
+                "Carbapenems and polymyxins are the recommended targeted therapies for patients with bloodstream infections (BSI) and severe infection due to 3rd generation cephalosporin-resistant Enterobacterales (3GCephRE).",
+                "The evidence on treatment of infections caused by 3GCephalosporin-resistant Enterobacterales (3GCephRE) is organized into evidence-based guidelines, which provide recommendations based on a systematic review of available scientific evidence. These guidelines aim to help healthcare professionals make informed decisions about the most effective and safe treatment options for patients with 3GCephRE infections.",
+                "The recommendation for combination therapy in patients with CRE infections susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol is not universally agreed upon and depends on individual patient factors. Consult current guidelines or a medical expert for specific recommendations.",
+                "The current evidence shows that eravacycline is effective against CRAB (carbapenem-resistant Acinetobacter baumannii) infections.",
+                "ESCR-E carrier status is associated with an increased risk of postoperative infections, including in patients undergoing surgery and liver transplant recipients.",
+                "Developing more accurate and cost-effective methods for preoperative screening for MDR-GNB.",
+                "When designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP), the following should be considered:\n\n1. Patient population: Selection of appropriate patient population based on type of surgery, risk factors, and microbial spectrum.\n2. Antibiotic selection: Choice of"
+            ],
+            "no additional prompt / finetuning": [
+                "For patients with bloodstream infections (BSI) and severe infections caused by extended-spectrum \u03b2-lactamases producing Klebsiella pneumoniae or other Enterobacterales (3GCephalosporin-resistant Enterobacterales, or 3GCephRE), the recommended",
+                "The evidence on the treatment of infections caused by third-generation cephalosporins (3GCephRs) is organized and updated through various sources, including peer-reviewed journals, clinical guidelines, and databases. Here are some key sources of evidence:\n\n1. Peer-reviewed journals: Research articles published in reputable medical journals provide the most current and rigorous evidence on the treatment of infections caused by 3GCephRs. These articles",
+                "In patients with complicated infections caused by Carbapenem-resistant Enterobacterales (CRE) that are susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol, combination therapy is recommended to improve outcomes and reduce the risk of treatment failure.\n\nThe choice of antibiotic combinations depends on the specific susceptibility patterns of the isolate and the clinical setting. Here are some common combinations:\n\n1",
+                "Eravacycline is a new, fluorinated, narrow-spectrum tetracycline antibiotic that has shown activity against Carbapenem-Resistant Acinetobacter baumannii (CRAB) in vitro. Several studies have investigated the clinical efficacy of eravacycline against CRAB infections.\n\nA randomized, double-blind",
+                "ESCR-E (Epstein-Barr virus-encoded small RNAs-Epstein-Barr virus-latent membrane protein-1-associated nuclear antigen-1-capable of regulating EBV transcription) is a biomarker associated with Epstein-Barr virus (EBV) reactivation. EBV is a human herpesvirus that can cause various diseases, including post-transplant lymphoproliferative disorder (PTLD), which is a type of cancer that can",
+                "Preoperative screening for multidrug-resistant Gram-negative bacteria (MDR-GNB) is an important area of research to reduce the risk of post-surgical infections and improve patient outcomes. Here are some suggested areas of future research in this context:\n\n1. Development of rapid and accurate diagnostic methods: Current methods for detecting MDR-GNB,",
+                "Designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP) involves careful consideration of several key factors to ensure valid and reliable results. Here are some important aspects to consider:\n\n1. Patient Population: Defining the patient population is crucial. This includes the type of surgery"
+            ],
+            "additional prompt / finetuning": [
+                "Carbapenem antibiotics are the recommended targeted therapy for patients with bloodstream infections (BSI) and severe infection due to 3rd generation cephalosporin-resistant Enterobacterales (3GCephRE).",
+                "The evidence on treatment of infections caused by 3GCephalosporin-resistant Enterobacterales (3GCephRE) is organized in various databases and guidelines, such as the Cochrane Library, PubMed, and National Guideline Clearinghouse. These resources provide systematic reviews, meta-analyses, and recommendations based on the latest research.",
+                "The recommendation for combination therapy in patients with CRE infections susceptible to ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol is based on the specific antibiotic susceptibility results and local guidelines. Consult relevant guidelines or infectious disease specialists for specific recommendations.",
+                "Eravacycline shows clinical efficacy against CRAB (complex recurrent urinary tract infections caused by multidrug-resistant Acinetobacter baumannii) infections based on clinical studies.",
+                "ESCR-E carrier status is associated with an increased risk of postoperative infections in patients undergoing surgery, including liver transplant recipients.",
+                "Developing more accurate and cost-effective methods for preoperative screening for MDR-GNB.",
+                "When designing clinical trials of targeted perioperative antibiotic prophylaxis (PAP), the following should be considered:\n\n1. Patient population: Selection of appropriate patient population based on risk factors for surgical site infections.\n2. Timing of administration: Optimizing the timing of antibi"
+            ]
+        },
+        "metrics": {
+            "no additional prompt / no finetuning": {
+                "BLEU": {
+                    "1_gram": 0.09872057369288065,
+                    "2_gram": 0.1497020060704794,
+                    "3_gram": 0.11507925097628226,
+                    "4_gram": 0.08705521638739029
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.18929977255448954,
+                        "recall": 0.428360722160904,
+                        "fmeasure": 0.25851908102258
+                    },
+                    "rouge_L": {
+                        "precision": 0.14602598659202431,
+                        "recall": 0.3336099669041648,
+                        "fmeasure": 0.20016017937784594
+                    }
+                },
+                "METEOR": 0.24009821826233188,
+                "BERTScore": {
+                    "Precision": -0.022,
+                    "Recall": 0.219,
+                    "F1_measure": 0.097
+                }
+            },
+            "additional prompt / no finetuning": {
+                "BLEU": {
+                    "1_gram": 0.18816024536375914,
+                    "2_gram": 0.2669254558197965,
+                    "3_gram": 0.22676809981951693,
+                    "4_gram": 0.18213831212464093
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.36690365576164974,
+                        "recall": 0.44438162327497277,
+                        "fmeasure": 0.35668787167534033
+                    },
+                    "rouge_L": {
+                        "precision": 0.3253487194698713,
+                        "recall": 0.4052307089915028,
+                        "fmeasure": 0.3207736271896673
+                    }
+                },
+                "METEOR": 0.29836528723470174,
+                "BERTScore": {
+                    "Precision": 0.233,
+                    "Recall": 0.388,
+                    "F1_measure": 0.308
+                }
+            },
+            "no additional prompt / finetuning": {
+                "BLEU": {
+                    "1_gram": 0.10162948640918483,
+                    "2_gram": 0.15216809833473238,
+                    "3_gram": 0.11454814932229929,
+                    "4_gram": 0.08856145468959851
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.20127611520942448,
+                        "recall": 0.44193510442942335,
+                        "fmeasure": 0.27133529368185777
+                    },
+                    "rouge_L": {
+                        "precision": 0.15229647103316918,
+                        "recall": 0.3408441201389239,
+                        "fmeasure": 0.2067745722055916
+                    }
+                },
+                "METEOR": 0.2533203401323849,
+                "BERTScore": {
+                    "Precision": -0.023,
+                    "Recall": 0.226,
+                    "F1_measure": 0.099
+                }
+            },
+            "additional prompt / finetuning": {
+                "BLEU": {
+                    "1_gram": 0.17874772464745375,
+                    "2_gram": 0.25500291235707184,
+                    "3_gram": 0.2196911336043915,
+                    "4_gram": 0.18063383693280627
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.36399774090804,
+                        "recall": 0.44292661685859686,
+                        "fmeasure": 0.35725886070615737
+                    },
+                    "rouge_L": {
+                        "precision": 0.31918184252071297,
+                        "recall": 0.4001286681751763,
+                        "fmeasure": 0.3175838403859758
+                    }
+                },
+                "METEOR": 0.30311991680455674,
+                "BERTScore": {
+                    "Precision": 0.208,
+                    "Recall": 0.372,
+                    "F1_measure": 0.288
+                }
+            }
+        }
+    }
+]

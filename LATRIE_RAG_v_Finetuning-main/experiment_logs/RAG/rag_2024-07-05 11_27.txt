@@ -1,0 +1,448 @@
+
+* Parameters for this experiment (5/7/2024):
+
+         - documents reader : HTML
+
+         - embedding model : NeuML/pubmedbert-base-embeddings
+
+         - LLM model : TheBloke/Mistral-7B-Instruct-v0.2-GPTQ
+
+         - splitting method : From scratch with Faiss vector store and SYNTACTIC splitter
+
+         - chunk size : 256
+
+         - chunk overlap : 25
+
+         - top_k value : 8
+
+         - assessment method : Only one Q/A task
+
+         - query : How is the evidence on treatment of infections caused by 3GCephRE organized?
+
+         - reference response : The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+         - reranking : No
+
+         - max new tokens : 190
+
+
+
+*--------------------------------------------------*
+
+
+
+* 8 chunks retrieved for the query : "How is the evidence on treatment of infections caused by 3GCephRE organized?"
+
+- CHUNK 1 (similarity : 1.0611658096313477):
+For patients with severe infections caused by CRE susceptible in vitro only to polymyxin, aminoglycosides, tigecyline or fostomycin, or in the case of non-availability of new BLBLI, we suggest treatment with more than one drug active in vitro (conditional recommendation for use, moderate certainty of evidence). No recommendation for or against specific combinations can be provided.
+We suggest that clinicians avoid carbapenem-based combination therapy for CRE infections (conditional recommendation against use, low certainty of evidence), unless the meropenem MIC is <= 8 mg/L, where high-dose extended-infusion meropenem may be used as part of combination therapy if the new BLBLI are not used (conditional recommendation for use, low certainty of evidence).
+In patients with non-severe infections or among patients with low-risk infections, under the consideration of antibiotic stewardship, we consider the use of monotherapy chosen from among the in vitro active old drugs, on an individual basis and according to the source of infection as good clinical practice (good practice statement).
+
+- CHUNK 2 (similarity : 1.032285451889038):
+The guidance format, intended to address rapidly evolving topics, does not include a systematic review of the literature and does not use the formal GRADE process to appraise the evidence. Recommendations were developed by six infectious diseases specialists and were made also where evidence was lacking, thus addressing more specific scenarios. The paucity of the evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, as well as antibiotic stewardship considerations (including also settings in which the new BIBLI are not available) underly the main differences between our guidelines and the Infectious Diseases Society of America guidance. Our guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and hence the urgency of sepsis control: piperacillin-tazolbactam or amoxicillin-clavulanate are considered in the treatment of 3GcephRE in our guidelines; aminoglycosides are considered for cUTI; and the scenarios in which sparing of the new BIBLI is possible are presented. Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+
+- CHUNK 3 (similarity : 0.9563318490982056):
+Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+Considering costs and equity
+Antibiotics, both old and new, are not equally available worldwide. In low-resource settings, costs of the new antibiotics might prohibit their use; and even in other settings costs of the new antibiotics enter the consideration for use. Antibiotics critical to management of the priority pathogens should be defined and more efforts should be implemented to ensure the universal availability of these antibiotics. Differential costs of the new antibiotics for different socio-economic settings will allow better equity of patient management.
+Research needs
+Recommendations for further research were not developed formally and were not graded. Most recommendations in the guideline are based on very-low-certainty evidence or no evidence. Only RCT provided high-certainty evidence. RCT are needed that assess patients with infections due to 3GCephRE and CR-GNB; most antibiotic approval trials of the new antibiotics were syndrome-based and included only a few patients with the MDR bacteria for which these antibiotics were developed.
+
+- CHUNK 4 (similarity : 0.898097038269043):
+The main comparison is between the older BLBII (amoxicillin- clavulanate and piperacillin-tazobactam) and carbapemens and discusses the conflict between the MERINO RCT [16] and the observational data [17,18]. An underlying stewardship consideration for this comparison was the association between carbapenem use and CRE [19]. Data on new antibiotics are sparse because most new antibiotic approval RCT were syndrome-based and the subgroups of patients with 3GCephRE infections were small. For 3GCephRE, only PICO 1 on the choice of antibiotic treatment was addressed.
+The evidence on treatment of infections caused by 3GCephRE is provided by clinical syndrome: BSI, UTI, pneumonia and intra-abdominal infection (IAI). All studies referred to in the text are described in Table 3.
+Bloodstream infections
+BLBLI versus carbapenems. The MERINO trial compared piperacillin-tazobactam with meropenem among patients with BSI caused by third-generation cephalosporin-resistant Escherichia coli and K. pneumoniae[16].
+
+- CHUNK 5 (similarity : 0.8904626965522766):
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+- CHUNK 6 (similarity : 0.8484184145927429):
+Although we intended by protocol to obtain data by source of infection, this was possible only for 3GCephRE and as a result infection source-specific guidance is mostly lacking. Investigator-initiated RCT are needed addressing these gaps. Concomitantly, observational studies can include a broader and larger patient population and with improved methods to reduce bias can portray the real life and support decision-making. Antibiotic treatments addressed as the exposures in existing studies were frequently combined with other antibiotics, switched and crossed; study designs allowing a cleaner assessment of individual antibiotics or specific combinations are needed. Studies addressing targeted treatment should address the empirical antibiotic treatment and report the phenotypic and genetic characterization of the isolated bacteria to direct more individualized treatment. The ecological impact of different treatment strategies should be evaluated.
+Evidence is lacking on the efficacy and safety of oral antibiotics (e.g. pivmecilliam, fosfomycin, amoxicillin/clavulanic acid), for initial treatment of clinically stable patients with UTI or as oral follow up, compared with continued definitive intravenous therapy.
+
+- CHUNK 7 (similarity : 0.7945983409881592):
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+- CHUNK 8 (similarity : 0.7733344435691833):
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. In many studies there was a lack of information on the bacterial species and mechanisms of resistance. Extended-spectrum b-lactamase (ESBL) production was the most commonly reported resistance mechanism, mostly without specifying the type of b-lactamases conferring the ESBL phenotype.
+
+* GLOBAL CONTEXT:
+
+Context:
+For patients with severe infections caused by CRE susceptible in vitro only to polymyxin, aminoglycosides, tigecyline or fostomycin, or in the case of non-availability of new BLBLI, we suggest treatment with more than one drug active in vitro (conditional recommendation for use, moderate certainty of evidence). No recommendation for or against specific combinations can be provided.
+We suggest that clinicians avoid carbapenem-based combination therapy for CRE infections (conditional recommendation against use, low certainty of evidence), unless the meropenem MIC is <= 8 mg/L, where high-dose extended-infusion meropenem may be used as part of combination therapy if the new BLBLI are not used (conditional recommendation for use, low certainty of evidence).
+In patients with non-severe infections or among patients with low-risk infections, under the consideration of antibiotic stewardship, we consider the use of monotherapy chosen from among the in vitro active old drugs, on an individual basis and according to the source of infection as good clinical practice (good practice statement).
+
+The guidance format, intended to address rapidly evolving topics, does not include a systematic review of the literature and does not use the formal GRADE process to appraise the evidence. Recommendations were developed by six infectious diseases specialists and were made also where evidence was lacking, thus addressing more specific scenarios. The paucity of the evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, as well as antibiotic stewardship considerations (including also settings in which the new BIBLI are not available) underly the main differences between our guidelines and the Infectious Diseases Society of America guidance. Our guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and hence the urgency of sepsis control: piperacillin-tazolbactam or amoxicillin-clavulanate are considered in the treatment of 3GcephRE in our guidelines; aminoglycosides are considered for cUTI; and the scenarios in which sparing of the new BIBLI is possible are presented. Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+
+Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+Considering costs and equity
+Antibiotics, both old and new, are not equally available worldwide. In low-resource settings, costs of the new antibiotics might prohibit their use; and even in other settings costs of the new antibiotics enter the consideration for use. Antibiotics critical to management of the priority pathogens should be defined and more efforts should be implemented to ensure the universal availability of these antibiotics. Differential costs of the new antibiotics for different socio-economic settings will allow better equity of patient management.
+Research needs
+Recommendations for further research were not developed formally and were not graded. Most recommendations in the guideline are based on very-low-certainty evidence or no evidence. Only RCT provided high-certainty evidence. RCT are needed that assess patients with infections due to 3GCephRE and CR-GNB; most antibiotic approval trials of the new antibiotics were syndrome-based and included only a few patients with the MDR bacteria for which these antibiotics were developed.
+
+The main comparison is between the older BLBII (amoxicillin- clavulanate and piperacillin-tazobactam) and carbapemens and discusses the conflict between the MERINO RCT [16] and the observational data [17,18]. An underlying stewardship consideration for this comparison was the association between carbapenem use and CRE [19]. Data on new antibiotics are sparse because most new antibiotic approval RCT were syndrome-based and the subgroups of patients with 3GCephRE infections were small. For 3GCephRE, only PICO 1 on the choice of antibiotic treatment was addressed.
+The evidence on treatment of infections caused by 3GCephRE is provided by clinical syndrome: BSI, UTI, pneumonia and intra-abdominal infection (IAI). All studies referred to in the text are described in Table 3.
+Bloodstream infections
+BLBLI versus carbapenems. The MERINO trial compared piperacillin-tazobactam with meropenem among patients with BSI caused by third-generation cephalosporin-resistant Escherichia coli and K. pneumoniae[16].
+
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+Although we intended by protocol to obtain data by source of infection, this was possible only for 3GCephRE and as a result infection source-specific guidance is mostly lacking. Investigator-initiated RCT are needed addressing these gaps. Concomitantly, observational studies can include a broader and larger patient population and with improved methods to reduce bias can portray the real life and support decision-making. Antibiotic treatments addressed as the exposures in existing studies were frequently combined with other antibiotics, switched and crossed; study designs allowing a cleaner assessment of individual antibiotics or specific combinations are needed. Studies addressing targeted treatment should address the empirical antibiotic treatment and report the phenotypic and genetic characterization of the isolated bacteria to direct more individualized treatment. The ecological impact of different treatment strategies should be evaluated.
+Evidence is lacking on the efficacy and safety of oral antibiotics (e.g. pivmecilliam, fosfomycin, amoxicillin/clavulanic acid), for initial treatment of clinically stable patients with UTI or as oral follow up, compared with continued definitive intravenous therapy.
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. In many studies there was a lack of information on the bacterial species and mechanisms of resistance. Extended-spectrum b-lactamase (ESBL) production was the most commonly reported resistance mechanism, mostly without specifying the type of b-lactamases conferring the ESBL phenotype.
+
+
+
+* REFERENCE CONTEXT:
+
+The evidence on treatment of infections caused by 3GCephRE is provided by clinical syndrome: BSI, UTI, pneumonia and intraabdominal infection (IAI). All studies referred to in the text are described in Table 3.
+
+* SIMILARITY:
+
+----> The predicted context contains the reference context.
+
+METEOR score : 0.14168608521970708
+
+BERTScore:
+Precision : -0.344
+Recall : 0.043
+F1 : -0.157
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use without additional prompt and context is :
+
+[INST] How is the evidence on treatment of infections caused by 3GCephRE organized? [/INST]
+
+* The answer obtained without additional prompt and context is :
+
+The evidence on the treatment of infections caused by third-generation cephalosporins (3GCs) is organized through various sources, including peer-reviewed scientific journals, clinical guidelines, and meta-analyses. Here are some ways the evidence is typically organized:
+
+1. Peer-reviewed scientific journals: Research studies on the treatment of infections caused by 3GCs are published in scientific journals. These studies can be categorized based on their study design, such as randomized controlled trials (RCTs), observational studies, or systematic reviews. RCTs are considered the gold standard for evaluating the efficacy and safety of new treatments, while observational studies can provide valuable real-world data on how a treatment is used in clinical practice.
+2. Clinical guidelines: Clinical guidelines provide evidence-based recommendations for the diagnosis, prevention, and treatment
+
+* REFERENCE ANSWER :
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use with additional prompt but without context is :
+
+[INST] You are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+        You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+        Preferably give clear answers without too many details.
+
+        Please respond to the following question.
+         
+How is the evidence on treatment of infections caused by 3GCephRE organized? 
+[/INST]
+
+* The answer obtained with additional prompt but without context is :
+
+The evidence on the treatment of infections caused by third-generation cephalosporin-resistant bacteria (3GCRE) is organized through numerous studies, meta-analyses, and guidelines. These sources provide evidence on the effectiveness and safety of various antibiotics, including carbapenems, monobactams, polymyxins, and aminoglycosides, for treating 3GCRE infections. The Infectious Diseases Society of America (IDSA) and European Society of Clinical Microbiology and Infectious Diseases (ESCMID) publish guidelines on the diagnosis and treatment of infections caused by specific 3GCRE bacteria, such as Extended-Spectrum Beta-Lactamase (ESBL)-producing Enterobacterales and Carbapenem-resistant Enterobacterales (CRE). These guidelines are updated
+
+* REFERENCE ANSWER :
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context but without additional prompt is :
+
+[INST]
+    Context:
+For patients with severe infections caused by CRE susceptible in vitro only to polymyxin, aminoglycosides, tigecyline or fostomycin, or in the case of non-availability of new BLBLI, we suggest treatment with more than one drug active in vitro (conditional recommendation for use, moderate certainty of evidence). No recommendation for or against specific combinations can be provided.
+We suggest that clinicians avoid carbapenem-based combination therapy for CRE infections (conditional recommendation against use, low certainty of evidence), unless the meropenem MIC is <= 8 mg/L, where high-dose extended-infusion meropenem may be used as part of combination therapy if the new BLBLI are not used (conditional recommendation for use, low certainty of evidence).
+In patients with non-severe infections or among patients with low-risk infections, under the consideration of antibiotic stewardship, we consider the use of monotherapy chosen from among the in vitro active old drugs, on an individual basis and according to the source of infection as good clinical practice (good practice statement).
+
+The guidance format, intended to address rapidly evolving topics, does not include a systematic review of the literature and does not use the formal GRADE process to appraise the evidence. Recommendations were developed by six infectious diseases specialists and were made also where evidence was lacking, thus addressing more specific scenarios. The paucity of the evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, as well as antibiotic stewardship considerations (including also settings in which the new BIBLI are not available) underly the main differences between our guidelines and the Infectious Diseases Society of America guidance. Our guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and hence the urgency of sepsis control: piperacillin-tazolbactam or amoxicillin-clavulanate are considered in the treatment of 3GcephRE in our guidelines; aminoglycosides are considered for cUTI; and the scenarios in which sparing of the new BIBLI is possible are presented. Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+
+Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+Considering costs and equity
+Antibiotics, both old and new, are not equally available worldwide. In low-resource settings, costs of the new antibiotics might prohibit their use; and even in other settings costs of the new antibiotics enter the consideration for use. Antibiotics critical to management of the priority pathogens should be defined and more efforts should be implemented to ensure the universal availability of these antibiotics. Differential costs of the new antibiotics for different socio-economic settings will allow better equity of patient management.
+Research needs
+Recommendations for further research were not developed formally and were not graded. Most recommendations in the guideline are based on very-low-certainty evidence or no evidence. Only RCT provided high-certainty evidence. RCT are needed that assess patients with infections due to 3GCephRE and CR-GNB; most antibiotic approval trials of the new antibiotics were syndrome-based and included only a few patients with the MDR bacteria for which these antibiotics were developed.
+
+The main comparison is between the older BLBII (amoxicillin- clavulanate and piperacillin-tazobactam) and carbapemens and discusses the conflict between the MERINO RCT [16] and the observational data [17,18]. An underlying stewardship consideration for this comparison was the association between carbapenem use and CRE [19]. Data on new antibiotics are sparse because most new antibiotic approval RCT were syndrome-based and the subgroups of patients with 3GCephRE infections were small. For 3GCephRE, only PICO 1 on the choice of antibiotic treatment was addressed.
+The evidence on treatment of infections caused by 3GCephRE is provided by clinical syndrome: BSI, UTI, pneumonia and intra-abdominal infection (IAI). All studies referred to in the text are described in Table 3.
+Bloodstream infections
+BLBLI versus carbapenems. The MERINO trial compared piperacillin-tazobactam with meropenem among patients with BSI caused by third-generation cephalosporin-resistant Escherichia coli and K. pneumoniae[16].
+
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+Although we intended by protocol to obtain data by source of infection, this was possible only for 3GCephRE and as a result infection source-specific guidance is mostly lacking. Investigator-initiated RCT are needed addressing these gaps. Concomitantly, observational studies can include a broader and larger patient population and with improved methods to reduce bias can portray the real life and support decision-making. Antibiotic treatments addressed as the exposures in existing studies were frequently combined with other antibiotics, switched and crossed; study designs allowing a cleaner assessment of individual antibiotics or specific combinations are needed. Studies addressing targeted treatment should address the empirical antibiotic treatment and report the phenotypic and genetic characterization of the isolated bacteria to direct more individualized treatment. The ecological impact of different treatment strategies should be evaluated.
+Evidence is lacking on the efficacy and safety of oral antibiotics (e.g. pivmecilliam, fosfomycin, amoxicillin/clavulanic acid), for initial treatment of clinically stable patients with UTI or as oral follow up, compared with continued definitive intravenous therapy.
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. In many studies there was a lack of information on the bacterial species and mechanisms of resistance. Extended-spectrum b-lactamase (ESBL) production was the most commonly reported resistance mechanism, mostly without specifying the type of b-lactamases conferring the ESBL phenotype.
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    How is the evidence on treatment of infections caused by 3GCephRE organized?
+    [/INST]
+    
+
+* The answer obtained with context but without additional prompt is :
+
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including Bloodstream infections (BSI), Urinary Tract Infections (UTI), pneumonia, and intra-abdominal infections (IAI). The studies referred to in the text are described in Table 3.
+
+For BSI, the MERINO trial compared piperacillin-tazobactam with meropenem among patients with BSI caused by third-generation cephalosporin-resistant Escherichia coli and K. pneumoniae.
+
+For UTI, there is a lack of evidence on the efficacy and safety of oral antibiotics such as pivmecilliam, fosfomycin, amoxicillin/clavulanic acid, for initial treatment of clinically
+
+* REFERENCE ANSWER :
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context and additional prompt is :
+
+[INST]You are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+    You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+    Preferably give clear answers without too many details.
+
+    Context:
+For patients with severe infections caused by CRE susceptible in vitro only to polymyxin, aminoglycosides, tigecyline or fostomycin, or in the case of non-availability of new BLBLI, we suggest treatment with more than one drug active in vitro (conditional recommendation for use, moderate certainty of evidence). No recommendation for or against specific combinations can be provided.
+We suggest that clinicians avoid carbapenem-based combination therapy for CRE infections (conditional recommendation against use, low certainty of evidence), unless the meropenem MIC is <= 8 mg/L, where high-dose extended-infusion meropenem may be used as part of combination therapy if the new BLBLI are not used (conditional recommendation for use, low certainty of evidence).
+In patients with non-severe infections or among patients with low-risk infections, under the consideration of antibiotic stewardship, we consider the use of monotherapy chosen from among the in vitro active old drugs, on an individual basis and according to the source of infection as good clinical practice (good practice statement).
+
+The guidance format, intended to address rapidly evolving topics, does not include a systematic review of the literature and does not use the formal GRADE process to appraise the evidence. Recommendations were developed by six infectious diseases specialists and were made also where evidence was lacking, thus addressing more specific scenarios. The paucity of the evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, as well as antibiotic stewardship considerations (including also settings in which the new BIBLI are not available) underly the main differences between our guidelines and the Infectious Diseases Society of America guidance. Our guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and hence the urgency of sepsis control: piperacillin-tazolbactam or amoxicillin-clavulanate are considered in the treatment of 3GcephRE in our guidelines; aminoglycosides are considered for cUTI; and the scenarios in which sparing of the new BIBLI is possible are presented. Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+
+Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+Considering costs and equity
+Antibiotics, both old and new, are not equally available worldwide. In low-resource settings, costs of the new antibiotics might prohibit their use; and even in other settings costs of the new antibiotics enter the consideration for use. Antibiotics critical to management of the priority pathogens should be defined and more efforts should be implemented to ensure the universal availability of these antibiotics. Differential costs of the new antibiotics for different socio-economic settings will allow better equity of patient management.
+Research needs
+Recommendations for further research were not developed formally and were not graded. Most recommendations in the guideline are based on very-low-certainty evidence or no evidence. Only RCT provided high-certainty evidence. RCT are needed that assess patients with infections due to 3GCephRE and CR-GNB; most antibiotic approval trials of the new antibiotics were syndrome-based and included only a few patients with the MDR bacteria for which these antibiotics were developed.
+
+The main comparison is between the older BLBII (amoxicillin- clavulanate and piperacillin-tazobactam) and carbapemens and discusses the conflict between the MERINO RCT [16] and the observational data [17,18]. An underlying stewardship consideration for this comparison was the association between carbapenem use and CRE [19]. Data on new antibiotics are sparse because most new antibiotic approval RCT were syndrome-based and the subgroups of patients with 3GCephRE infections were small. For 3GCephRE, only PICO 1 on the choice of antibiotic treatment was addressed.
+The evidence on treatment of infections caused by 3GCephRE is provided by clinical syndrome: BSI, UTI, pneumonia and intra-abdominal infection (IAI). All studies referred to in the text are described in Table 3.
+Bloodstream infections
+BLBLI versus carbapenems. The MERINO trial compared piperacillin-tazobactam with meropenem among patients with BSI caused by third-generation cephalosporin-resistant Escherichia coli and K. pneumoniae[16].
+
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+Although we intended by protocol to obtain data by source of infection, this was possible only for 3GCephRE and as a result infection source-specific guidance is mostly lacking. Investigator-initiated RCT are needed addressing these gaps. Concomitantly, observational studies can include a broader and larger patient population and with improved methods to reduce bias can portray the real life and support decision-making. Antibiotic treatments addressed as the exposures in existing studies were frequently combined with other antibiotics, switched and crossed; study designs allowing a cleaner assessment of individual antibiotics or specific combinations are needed. Studies addressing targeted treatment should address the empirical antibiotic treatment and report the phenotypic and genetic characterization of the isolated bacteria to direct more individualized treatment. The ecological impact of different treatment strategies should be evaluated.
+Evidence is lacking on the efficacy and safety of oral antibiotics (e.g. pivmecilliam, fosfomycin, amoxicillin/clavulanic acid), for initial treatment of clinically stable patients with UTI or as oral follow up, compared with continued definitive intravenous therapy.
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. In many studies there was a lack of information on the bacterial species and mechanisms of resistance. Extended-spectrum b-lactamase (ESBL) production was the most commonly reported resistance mechanism, mostly without specifying the type of b-lactamases conferring the ESBL phenotype.
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    How is the evidence on treatment of infections caused by 3GCephRE organized?
+    [/INST]
+    
+
+* The answer obtained with context and additional prompt is :
+
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including Bloodstream infections (BSI), Urinary Tract Infections (UTI), pneumonia, and intra-abdominal infections (IAI). The studies referred to in the text are described in Table 3. For BSI, the MERINO trial compared piperacillin-tazobactam with meropenem among patients with BSI caused by third-generation cephalosporin-resistant E. coli and K. pneumoniae. For UTI, there is a lack of evidence on the efficacy and safety of oral antibiotics such as pivmecillinam, fosfomycin, and amoxicillin/clavulanic acid, compared with continued definitive intravenous therapy. For
+
+* REFERENCE ANSWER :
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+
+
+*--------------------------------------------------*
+
+
+
+** RESULTS FOR EACH CASE WITH DIFFERENT METRICS **
+
+* NO ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.04767184035476719
+Individual 2-gram : 0.0821309655937847
+Individual 3-gram : 0.06444444444444444
+Individual 4-gram : 0.04449388209121247
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.11904761904761904, recall=0.5357142857142857, fmeasure=0.19480519480519481)
+ROUGE_L : Score(precision=0.10317460317460317, recall=0.4642857142857143, fmeasure=0.16883116883116883)
+
+         - METEOR : 
+
+METEOR score : 0.20661157024793392
+
+         - BERTScore : 
+
+Precision : 0.825
+Recall : 0.857
+F1 : 0.841
+
+Precision : -0.041
+Recall : 0.152
+F1 : 0.055
+
+
+* ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.06542056074766356
+Individual 2-gram : 0.10294117647058823
+Individual 3-gram : 0.07362784471218208
+Individual 4-gram : 0.04959785522788203
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.16842105263157894, recall=0.5714285714285714, fmeasure=0.2601626016260163)
+ROUGE_L : Score(precision=0.14736842105263157, recall=0.5, fmeasure=0.2276422764227642)
+
+         - METEOR : 
+
+METEOR score : 0.3056730446458543
+
+         - BERTScore : 
+
+Precision : 0.801
+Recall : 0.862
+F1 : 0.831
+
+Precision : -0.178
+Recall : 0.180
+F1 : -0.004
+
+
+* NO ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.07739938080495355
+Individual 2-gram : 0.15658914728682172
+Individual 3-gram : 0.15993788819875776
+Individual 4-gram : 0.13530326594090206
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.3010752688172043, recall=1.0, fmeasure=0.4628099173553719)
+ROUGE_L : Score(precision=0.3010752688172043, recall=1.0, fmeasure=0.4628099173553719)
+
+         - METEOR : 
+
+METEOR score : 0.6735833965329322
+
+         - BERTScore : 
+
+Precision : 0.824
+Recall : 0.956
+F1 : 0.885
+
+Precision : -0.043
+Recall : 0.737
+F1 : 0.319
+
+
+* ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.07530120481927713
+Individual 2-gram : 0.15233785822021115
+Individual 3-gram : 0.1555891238670695
+Individual 4-gram : 0.13161875945537066
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.2916666666666667, recall=1.0, fmeasure=0.45161290322580644)
+ROUGE_L : Score(precision=0.2916666666666667, recall=1.0, fmeasure=0.45161290322580644)
+
+         - METEOR : 
+
+METEOR score : 0.6441027410200176
+
+         - BERTScore : 
+
+Precision : 0.831
+Recall : 0.954
+F1 : 0.888
+
+Precision : -0.005
+Recall : 0.730
+F1 : 0.338
+
+

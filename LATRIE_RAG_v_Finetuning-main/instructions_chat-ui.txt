@@ -1,0 +1,27 @@
+- The chat history is stored in a MongoDB instance, and having a DB instance available is needed for Chat UI to work.
+You can use a local MongoDB instance. You can spin one up using docker:
+
+----->  docker run -d -p 27017:27017 --name mongo-chatui mongo:latest
+
+
+- Run a python code necessary to have the context to generate the answer (if Use Rag is activated):
+
+----->  cd chat-ui/src/lib/server/my_rag   (if you are at LATRIE_RAG_v_Finetuning)
+
+        python flask_api.py
+
+
+- Use a command to create an http server and have the possibility to see the clinical guidelines
+
+----->  cd web_page   (if you are at LATRIE_RAG_v_Finetuning)
+
+        python -m http.server 8000 
+
+
+- Run Chat UI locally :
+
+----->  cd chat-ui  (if you are at LATRIE_RAG_v_Finetuning)
+
+        npm install
+
+        npm run dev

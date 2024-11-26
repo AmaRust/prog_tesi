@@ -1,0 +1,5 @@
+Comparison of two llms:
+- TheBloke/Mistral-7B-Instruct-v0.2-GPTQ
+- microsoft/Phi-3-mini-128k-instruct
+
+Without an additional prompt, either with or without context, the two models are equivalent, but when you add an instruction to the model, the second is much more efficient.

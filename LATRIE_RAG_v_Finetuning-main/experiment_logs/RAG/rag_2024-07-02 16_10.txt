@@ -1,0 +1,761 @@
+
+* Parameters for this experiment (2/7/2024):
+
+         - documents reader : HTML
+
+         - embedding model : BAAI/bge-small-en-v1.5
+
+         - LLM model : TheBloke/Mistral-7B-Instruct-v0.2-GPTQ
+
+         - splitting method : From scratch with Faiss vector store and SEMANTIC splitter
+
+         - top_k value : 3
+
+         - assessment method : Only one Q/A task
+
+         - query : What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+
+         - reference response : For patients with BSI and severe infection due to 3GCephRE, a carbapenem (imipenem or meropenem) is recommended as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+
+         - reranking : No
+
+         - max new tokens : 190
+
+
+
+*--------------------------------------------------*
+
+
+
+* 3 chunks retrieved for the query : "What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?"
+
+- CHUNK 1 (similarity : 0.5353822112083435):
+Many of them place a high value on antibiotic stewardship considerations and can be tailored locally.
+The current guidelines address antibiotic treatment targeted to specific pathogens. Empirically, before pathogen identification, these pathogens should be targeted among patients considered at high risk for CR-GNB infections. A difficult antibiotic stewardship balance exists between achieving appropriate empirical antibiotic therapy for patients with infections due to CR-GNB and the need to conserve last resort therapies for these bacteria. The empirical treatment phase is relevant to a much larger population than targeted treatment. Local guidelines, guided by the local epidemiology, should address the empirical treatment phase.
+The Infectious Diseases Society of America recently published guidance documents on the treatment of 3GcephRE, CRE, DTR
+P. aeruginosa
+and CRAB [252,253]. The guidance format, intended to address rapidly evolving topics, does not include a systematic review of the literature and does not use the formal GRADE process to appraise the evidence. Recommendations were developed by six infectious diseases specialists and were made also where evidence was lacking, thus addressing more specific scenarios. The paucity of the evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, as well as antibiotic stewardship considerations (including also settings in which the new BIBLI are not available) underly the main differences between our guidelines and the Infectious Diseases Society of America guidance. Our guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and hence the urgency of sepsis control: piperacillin-tazolbactam or amoxicillin-clavulanate are considered in the treatment of 3GcephRE in our guidelines; aminoglycosides are considered for cUTI; and the scenarios in which sparing of the new BIBLI is possible are presented. Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+
+
+- CHUNK 2 (similarity : 0.50281822681427):
+Quinolones were examined individually [42,66,67] or as part of a general comparator group [45] in five retrospective cohort studies. In a single study reporting an adjusted analysis for mortality with targeted quinolone treatment (24 patients) compared with carbapenems, quinolone treatment was associated with lower mortality [67]. The quinolone group in all studies was very small (4-24 patients) and this analysis is a priori very difficult to analyse in an observational design, because quinolones, administered orally with good bioavailability, were given as stepdown therapy to stable patients. As a result, there is no direct evidence on targeted quinolone therapy for 3GcephRE BSI, but favourable effects were observed in studies assessing Gram-negative bacteriaemia in general, where a proportion of patients is expected to have had 3GcephRE BSI [68].
+Aminoglycosides were examined specifically in a single study [69] and as part of a general comparator group in two studies [42,70]. In the single study reporting an adjusted analysis (modernate risk of bias), aminoglycosides as targeted therapy for BSI of urinary tract source were not significantly different from carbapenems or piperacillin-tazobactam, but with large confidence intervals [69]. Given the paucity of data and observational design, there is very-low-certainty evidence for aminoglycoside treatment for bacteriaemic UTI.
+Complicated urinary tract infections with or without bacteriaemia.
+Intravenous fosfomycin was compared with piperacillin-tazo-lactam (ZEUS [71]) or meropenem (FOREST [72]) in two RCT. The ZEUS trial included patients with cUTI or acute pyelonephritis, including few patients with BSI, and the FOREST trial included patients with bacteraemia cUTI caused by
+E. coli
+. Both trials showed no significant differences in clinical or microbiological cure between intravenous fosfomycin and comparators in the subgroup of patients with cephalosporin-resistant or ESBL-producing Enterobacterales. In the FOREST trial, 6/70 (8.6%) patients in the intravenous fosfomycin arm developed heart failure (compared with 1/73 with meropenem). The trials were not powered to show non-inferiority in this subgroup, but together provide high-certainty evidence for treatment of cUTI with intravenous fosfomycin, in patients without septic shock, with or without bacteraemia. Safety should be considered among patients at risk for heart failure. Oral fosfomycin was compared with etrapenem for oral stepdown or outpatient therapy in an observational study in patients with mostly complicated non-bacteraemic UTI caused by ESBL-producing Enterobacterales [73]. The study was at high risk of bias due to the large baseline differences between groups and did not reveal a significant difference between 89 patients treated with fosfomycin and 89 treated with etrapenem (very low certainty of evidence).
+Plazomicin was not significantly different from meropenem in a subgroup analysis of an RCT including cUTI caused by 3GCephRE Enterobacterales and reporting on microbiological cure, but with broad confidence intervals (risk difference 7.4, 95% CI -9.6 to 23.1, low risk of bias) [74]. Together with the retrospective cohort study finding no significant advantage in mortality or relapse for carbapenem or piperacillin-tazobactam over aminoglycosides given as targeted treatment for bacteraemia UTI (moderate risk of bias) [69], there was moderate-certainty evidence for aminoglycoside treatment of cUTI. The risk for nephrotoxicity increases after 7 days of aminoglycoside therapy [75], so shorter durations are recommended.
+Other carbapenem-sparing treatments were evaluated in several studies. Carbapenems versus BLBLI were evaluated in one RCT [32] at high risk of bias due to small sample size and baseline differences between groups and several observational studies (moderate to high risk of bias) [28,33,35]. All studies evaluated the targeted treatment of pyelonephritis and assessed variable clinical and microbiological cure and mortality; one study assessed relapse and resistance selection [35]. None of the studies found statistically significant differences between BLBLI and carbapenems, supporting moderate-certainty evidence for BLBLI in the treatment of pyelonephritis caused by 3GCephRE.
+Cephamycins and cefepime were compared with carbapenems in several retrospective cohort studies [76, 77, 78, 79]. None found statistically significant differences between groups, in very small sample sizes (the cephalosporin group ranging from 10 to 23 patients). All studies were at high risk of bias, together providing low-certainty evidence for cepamymcins and cefepime for the treatment of pyelonephritis caused by 3GCephRE.
+Temocillin provided for more than 50% of the time of effective antibiotic therapy duration was compared with carbapenems in a matched case--control study (144 patients) [80]. The study showed no significant difference between treatment groups in clinical cure, relapse and mortality, but despite matching there were significant differences between groups that were not adjusted for, and the confidence intervals were large, providing very low-certainty evidence for temocillin in cUTI.
+Finally, two retrospective studies did not reveal significant differences in clinical cure and microbiological outcomes between carbapenems and any non-carbapenem antibiotic, with high risk of
+[MISSING_PAGE_FAIL:13]
+therapy occurred in up to 3.7%-8.1% of ceftazidime-avibactam-treated patients [101,108]. More recently in Greece, a novel plasmid-borne Vietnamese extended-spectrum b-lactamase (VEB)-25 has been described in ceftazidime-avibactam-resistant CR-
+K. pneumoniae
+strains, independent of ceftazidime-avibactam exposure [109]. VEB-25 seemed to decrease avibatarm's ability to reduce ceftazidime's MIC. In an outbreak including eight patients with ceftazidime-avibactam-resistant KPC-2-producing
+K. pneumoniae
+ST-147 in two Greek intensive care units (ICU), horizontal transmission was suspected [110].
+Given the observational study designs, the focus on
+K. pneumoniae
+and the combination treatments used, there is low-certainty evidence of an advantage of ceftazidime-avibactam over polymyxins for CRE susceptible to ceftazidime-avibactam.
+Meropenem-vaborbactam.
+Vaborbactam is a novel cyclic boronic acid inhibitor that restores meropenem activity against producers of numerous class A and C b-lactamases, but it is inactive against MBL and OXA-48 producers [111]. Clinical efficacy of meropenem-vaborbactam in patients with infections due to CRE was tested in an RCT (Tango-II) in comparison with best available treatment (BAT) monotherapy or combinations of polymyxins, carbapenems, aminoglycosides or tigecycline; or monotherapy with ceftazidime-avibactam. Forty-seven patients (randomized 2:1) were included in the final analysis and significantly improved cure rates at the end of treatment were found in the meropenem-vaborbactam group (65.6% versus 33.3%, p 0.03) with non-significantly lower 28-day mortality (15.6% (5/32) versus 33.3% (5/15), p 0.2) and lower rates of renal-related adverse events [112]. Based on this small study, there is moderate-certainty evidence for an advantage of meropenem-vaborbactam for susceptible CRE compared with the old antibiotics.
+Imipenem-relebactam.
+Relebactam produces a dose-dependent synergy with imipenem against CRE producing KPC or combining AmpC or EBL with reduced permeability, but it is poorly active against OXA-48 producers [113]. Efficacy and safety of imipenem-relebactam have been proven to be comparable to those of impenem or piperacillin-tazoobactam in RCT enrolling patients with cUTI, cIAI and HAP/VAP; few patients with CR-GNB infections were included in these studies but comparative clinical outcome data for CRE are not available and the numbers are too small for a meaningful analysis [114, 115, 116, 117]. A small RCT including 31 patients with CR-GNB infections (RESTORE-IMI 1) compared the efficacy of imipenemenem-relebactam with the combination of imipenem and colistijn; however, only seven patients with CRE infections were included [118]. Given the paucity of data available for imipenem-relebactam against CRE, we cannot make recommendations on imipenem-relebactam for CRE at this time.
+Cefderocol.
+Although non-inferior to carbapenems for UTI and HAP/VAP caused by carbapenem-susceptible GNB [119,120], conflicting results were observed in an open-label RCT designed to assess the efficacy of cefiderocol for CR-GNB (CREDIBLE-CR). A total of 150 patients with proven/suspected CR-GNB infections were randomized 2:1 to receive cefiderocol versus BAT (mostly polymyxin-based combination). The trial included mainly patients with HAP/VAP and BSI and was not powered to conduct specific hypothesis testing. Mortality was higher in the cefiderocol arm at 28 days (25/101, 24.8% with cefiderocol versus 9/49, 18.4% with BAT) and at end of follow up (34/101, 33.7% versus 9/49, 18.4%, respectively). Clinical and microbiological efficacies of cefiderocol versus BAT were similar. A subgroup analysis of patients with MBL-producing CR-GNB infections showed statistically non-significant higher cure and microbiological eradication rates for cefiderocol (16 patients) versus BAT (seven patients), but mortality was not shown, and the analysis did not separate CRE from other CR-GNB. A post-hoc analysis by baseline pathogen revealed that the mortality difference was observed among patients with CRAB infections, but among patients with CR-
+K. pneumoniae
+, mortality at end of follow up was 6/28 (21.4%) with ceidferocol versus 4/15 (26.7%) for BAT (and 1/6 versus 0/3 for CR-
+E. coli
+, respectively) [121]. Based on these small subgroup analyses, we conclude on low-certainty evidence for non-inferiority of ceidferocol compared with other antibiotics for MBL-producing CRE.
+Axtreonam.
+There is no clinical experience evaluating the use of aztreonam monotherapy in the treatment of CRE infections. Aztreonam is uniquely active against MBL-producing CRE [122], but as monotherapy it does not cover other broad-spectrum b-lactamases or carbapenemases, frequently co-produced by such strains. Aztreonam-avibactam is being tested in phase 3 trials and is not currently considered in our guideline because it has not been FDA/EMA approved.
+Polymyxin.
+Comparative data on efficacy of polymyxins versus other antibiotics for the treatment of CRE are difficult to evaluate because of the lack of active comparators, concomitant use of other active agents and the frequently suboptimal dosing strategy adopted in the existing studies. Higher mortality among patients with CRE infections was observed with colisti compared with ceftazidime-avibactam in a small retrospective study using inverse probability of treatment weighting adjustment [96]. Conversely, lower 30-day mortality was shown in critically ill patients with KPC-producing
+K. pneumoniae
+infections and septic shock treated with a colisti-containing regimen, compared with colisti-free schemes (hazard ratio (0.21) 95% CI 0.05-0.72) [123]. However, colisti was administered as part of combination therapy regimens in both studies. Hence, there is no evidence on the comparative efficacy of colisti versus other antibiotics for CRE.
+Aminoglycosides.
+Two studies from the prospective CRaCKle cohort suggest better clinical outcomes with aminoglycoside-containing regimens compared with tigecycline-containing regimens [124,125]. Van Duin et al. analysed the results from 157 CR-
+K. pneumoniae
+infections with a urinary source (20% severe infections) and recorded better clinical cure when compared with tigecycline-based regimens (adjusted HR 5.19, 95% CI 2.03-14.13), whereas no benefit was observed when compared with colisitonating regimens (adjusted HR 1.92, 95% CI 0.63-5.76) [125]. Similarly, Messina et al. observed a higher rate of hospital readmission at 90 days in patients treated with tigecycline-based combinations when compared with aminoglycoside-containing combinations (adjusted HR 4.33, 95% CI 1.67-11.6), in a study where cUTI was the most common source (67% of patients) and 8% of patients were bacteraemic [124]. Microbiological cure was better with aminoglycosides compared with tigecyline for cUTI in the USA [126]. Another cohort from Spain describes 50 patients with sepsis due to carbapenem and colistin-resistant
+K. pneumoniae
+with a prevalent respiratory source where the use of gentamicin in fully susceptible isolates (MIC <=4 mg/L) alone or with tigecycline was associated with significantly higher survival at 30 days (adjusted HR 0.30, 95% CI 0.11-0.84) compared with non-aminoglycoside regimens [127]. Moreover, in a retrospective cohort of kidney transplant patients, amikican-containing schemes were associated with clinical success for treatment of mixed infections caused by carbapenem- and polymyxin-resistant Enterobacterales (adjusted OR 0.12, 95% CI 0.02-0.64) [128]. The certainty of the evidence for an advantage of aminoglycosides over tigecycline for cUTI was judged as moderate, with insufficient evidence for other comparisons and other sources of infection.
+Tigecyline. Three studies showed that tigecyline was inferior to aminoglycosides for cUTI caused by CRE (moderate certainty of the evidence) [124-126]. Two small studies at high risk of bias showed an advantage to polymyxin-based regimens compared with tigecyline-based regimens for CRE BSI [129,130]. Finally, out of three additional studies assessing tigecyline or eravacyline for CRE infections of any source [131-133], a single study showed survival advantage to tigecyline compared with colistin-based therapy for CRE and/or CRAB, explained by the higher severity of patients receiving colistin [132]. Among critically ill patients with MDR-GNB infections treated with different dosages of tigecyline, the only independent predictor of clinical cure was the use of high tigecyline dose in the subgroup of patients with VAP [134]. However, more than 80% of patients in this study received concomitant active antibiotics. A higher dosage of tigecyline (200 mg loading dose followed by 100 mg twice a day) in combination with other drugs was associated with non-significantly higher survival rates also in a cohort of 40 KPC-BSI compared with the standard dosage (100 mg loading dose following by 50 mg twice a day) [135]. Overall, there was low-certainty evidence for the inferiority of tigecyline compared with other antibiotics for cUTI and BSI caused by CRE. There are no studies comparing tigecyline with other antibiotics for HAP/VAP and IAI caused by CRE. If used, high-dosing regimens should be used for HAP/VAP.
+Fostomycin. Potential efficacy of intravenous fostomycin for CRE has been described in
+in vitro
+studies and small case series with variable clinical response [136-138]. In a study from China the use of fostomycin in combination with other antibiotics for treating CRE-BSI was associated with non-significantly higher survival compared with non-fostomycin-based schemes in an adjusted analysis [139]. There is no evidence for fostomycin monotherapy for CRE.
+Trimethoprim-sulfamethoxazole. Within the already mentioned CRACKle prospective cohort, a small subgroup of patients with trimethoprim-sulfamethoxazole-susceptible CRE infections received trimethoprim-sulfamethoxazole-based schemes with mortality rates comparable to other treatments. However, in three out of four available follow-up cultures, subsequent isolates were found to be resistant to trimethoprim-sulfamethoxazole [140] trimethoprim-sulfamethoxazole (no evidence for trimethoprim-sulfamethoxazole).
+Eravacyline. Eravacyline has an observed two-fold
+in vitro
+higher activity compared with tigecyline against Gram-negative bacteria; however no patients with CRE were included in the trials that brought to its approval [95,141] (no evidence for eravacyline).
+Plazomicin. Efficacy of plazomicin for the treatment of CRE infections was planned to be tested in the CARE-RCT in comparison with colistin (in combination with meropenem or tigecycline, NCT01970371). The sponsor decided to suspend the study after 2 years because of enrolment difficulties. Available results showed that all-cause mortality at 28 days was 8/20 with colisitin combination therapy (6/15 with BSI) versus 2/17 with plazomicin combination therapy (1/14 with BSI) [142]. Currently, there is insufficient evidence on plazomicin compared to colistin for CRE.
+Question 2.2: Should combination therapy be used for the treatment of CRE?
+Recommendations
+For patients with CRE infections susceptible to and treated with ceftazidime-aubactam, meropenem-vaborbactam or cefederocol, we do not recommend combination therapy (
+strong recommendation against use, low certainty of evidence
+)
+For patients with severe infections caused by CRE carrying MBL and/or resistant to new antibiotic monotherapies, we suggest aztream and ceftazidime-aubactam combination therapy (
+conditional recommendation for use, moderate certainty of evidence
+).
+For patients with severe infections caused by CRE susceptible
+in vitro
+only to polymyxin, aminoglycosides, tigecyline or fostomycin, or in the case of non-availability of new BLBLI, we suggest treatment with more than one drug active
+in vitro
+(
+conditional recommendation for use, moderate certainty of evidence
+). No recommendation for or against specific combinations can be provided.
+We suggest that clinicians avoid carbapenem-based combination therapy for CRE infections (
+conditional recommendation against use, low certainty of evidence
+), unless the meropenem MIC is <= 8 mg/L, where high-dose extended-infusion meropenem may be used as part of combination therapy if the new BLBLI are not used (
+conditional recommendation for use, low certainty of evidence
+).
+In patients with non-severe infections or among patients with low-risk infections, under the consideration of antibiotic stewardship, we consider the use of monotherapy chosen from among the
+in vitro
+active old drugs, on an individual basis and according to the source of infection as good clinical practice (
+good practice statement
+).
+Review of the evidence
+Thirty-five studies assessed mortality (all-cause at any time-point) in patients with CRE infections receiving antibiotic combination versus monotherapy and the results are conflicting [97,123,128,130,139,140,143-171]. Certainty of the evidence was very low because of the observational nature of most of the studies (34 out of 35 studies) and the considerable risk of bias (high in 12 studies; moderate in 14; and low in 9). Most importantly, the study definitions of 'combination therapy' were highly variable, including poorly specified treatment schemes, comprising from two up to five antibiotics with variable
+in vitro
+activity and different dosages and durations. Adjustment for relevant confounders was seldom available, mostly because of the very small sample sizes.
+
+
+- CHUNK 3 (similarity : 0.3416306674480438):
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (
+strong recommendation for use, moderate certainty of evidence
+).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (
+conditional recommendation for use, moderate certainty of evidence
+).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (
+conditional recommendation for use, moderate certainty of evidence
+/
+good practice statement
+). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (
+good practice statement
+).
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active
+in vitro
+, for short durations of therapy (
+conditional recommendation for use, moderate certainty of evidence
+), or intravenous foafymycin (
+strong recommendation for use, high certainty of evidence
+).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (
+good practice statement
+).
+We do not recommend tigecyline for infections caused by 3GCephRE (
+strong recommendation against use, very low certainty of evidence
+).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (
+good practice statement
+).
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (
+conditional recommendation against use, very low certainty of evidence
+).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. 
+
+* GLOBAL CONTEXT:
+
+Context:
+Many of them place a high value on antibiotic stewardship considerations and can be tailored locally.
+The current guidelines address antibiotic treatment targeted to specific pathogens. Empirically, before pathogen identification, these pathogens should be targeted among patients considered at high risk for CR-GNB infections. A difficult antibiotic stewardship balance exists between achieving appropriate empirical antibiotic therapy for patients with infections due to CR-GNB and the need to conserve last resort therapies for these bacteria. The empirical treatment phase is relevant to a much larger population than targeted treatment. Local guidelines, guided by the local epidemiology, should address the empirical treatment phase.
+The Infectious Diseases Society of America recently published guidance documents on the treatment of 3GcephRE, CRE, DTR
+P. aeruginosa
+and CRAB [252,253]. The guidance format, intended to address rapidly evolving topics, does not include a systematic review of the literature and does not use the formal GRADE process to appraise the evidence. Recommendations were developed by six infectious diseases specialists and were made also where evidence was lacking, thus addressing more specific scenarios. The paucity of the evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, as well as antibiotic stewardship considerations (including also settings in which the new BIBLI are not available) underly the main differences between our guidelines and the Infectious Diseases Society of America guidance. Our guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and hence the urgency of sepsis control: piperacillin-tazolbactam or amoxicillin-clavulanate are considered in the treatment of 3GcephRE in our guidelines; aminoglycosides are considered for cUTI; and the scenarios in which sparing of the new BIBLI is possible are presented. Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+
+
+Quinolones were examined individually [42,66,67] or as part of a general comparator group [45] in five retrospective cohort studies. In a single study reporting an adjusted analysis for mortality with targeted quinolone treatment (24 patients) compared with carbapenems, quinolone treatment was associated with lower mortality [67]. The quinolone group in all studies was very small (4-24 patients) and this analysis is a priori very difficult to analyse in an observational design, because quinolones, administered orally with good bioavailability, were given as stepdown therapy to stable patients. As a result, there is no direct evidence on targeted quinolone therapy for 3GcephRE BSI, but favourable effects were observed in studies assessing Gram-negative bacteriaemia in general, where a proportion of patients is expected to have had 3GcephRE BSI [68].
+Aminoglycosides were examined specifically in a single study [69] and as part of a general comparator group in two studies [42,70]. In the single study reporting an adjusted analysis (modernate risk of bias), aminoglycosides as targeted therapy for BSI of urinary tract source were not significantly different from carbapenems or piperacillin-tazobactam, but with large confidence intervals [69]. Given the paucity of data and observational design, there is very-low-certainty evidence for aminoglycoside treatment for bacteriaemic UTI.
+Complicated urinary tract infections with or without bacteriaemia.
+Intravenous fosfomycin was compared with piperacillin-tazo-lactam (ZEUS [71]) or meropenem (FOREST [72]) in two RCT. The ZEUS trial included patients with cUTI or acute pyelonephritis, including few patients with BSI, and the FOREST trial included patients with bacteraemia cUTI caused by
+E. coli
+. Both trials showed no significant differences in clinical or microbiological cure between intravenous fosfomycin and comparators in the subgroup of patients with cephalosporin-resistant or ESBL-producing Enterobacterales. In the FOREST trial, 6/70 (8.6%) patients in the intravenous fosfomycin arm developed heart failure (compared with 1/73 with meropenem). The trials were not powered to show non-inferiority in this subgroup, but together provide high-certainty evidence for treatment of cUTI with intravenous fosfomycin, in patients without septic shock, with or without bacteraemia. Safety should be considered among patients at risk for heart failure. Oral fosfomycin was compared with etrapenem for oral stepdown or outpatient therapy in an observational study in patients with mostly complicated non-bacteraemic UTI caused by ESBL-producing Enterobacterales [73]. The study was at high risk of bias due to the large baseline differences between groups and did not reveal a significant difference between 89 patients treated with fosfomycin and 89 treated with etrapenem (very low certainty of evidence).
+Plazomicin was not significantly different from meropenem in a subgroup analysis of an RCT including cUTI caused by 3GCephRE Enterobacterales and reporting on microbiological cure, but with broad confidence intervals (risk difference 7.4, 95% CI -9.6 to 23.1, low risk of bias) [74]. Together with the retrospective cohort study finding no significant advantage in mortality or relapse for carbapenem or piperacillin-tazobactam over aminoglycosides given as targeted treatment for bacteraemia UTI (moderate risk of bias) [69], there was moderate-certainty evidence for aminoglycoside treatment of cUTI. The risk for nephrotoxicity increases after 7 days of aminoglycoside therapy [75], so shorter durations are recommended.
+Other carbapenem-sparing treatments were evaluated in several studies. Carbapenems versus BLBLI were evaluated in one RCT [32] at high risk of bias due to small sample size and baseline differences between groups and several observational studies (moderate to high risk of bias) [28,33,35]. All studies evaluated the targeted treatment of pyelonephritis and assessed variable clinical and microbiological cure and mortality; one study assessed relapse and resistance selection [35]. None of the studies found statistically significant differences between BLBLI and carbapenems, supporting moderate-certainty evidence for BLBLI in the treatment of pyelonephritis caused by 3GCephRE.
+Cephamycins and cefepime were compared with carbapenems in several retrospective cohort studies [76, 77, 78, 79]. None found statistically significant differences between groups, in very small sample sizes (the cephalosporin group ranging from 10 to 23 patients). All studies were at high risk of bias, together providing low-certainty evidence for cepamymcins and cefepime for the treatment of pyelonephritis caused by 3GCephRE.
+Temocillin provided for more than 50% of the time of effective antibiotic therapy duration was compared with carbapenems in a matched case--control study (144 patients) [80]. The study showed no significant difference between treatment groups in clinical cure, relapse and mortality, but despite matching there were significant differences between groups that were not adjusted for, and the confidence intervals were large, providing very low-certainty evidence for temocillin in cUTI.
+Finally, two retrospective studies did not reveal significant differences in clinical cure and microbiological outcomes between carbapenems and any non-carbapenem antibiotic, with high risk of
+[MISSING_PAGE_FAIL:13]
+therapy occurred in up to 3.7%-8.1% of ceftazidime-avibactam-treated patients [101,108]. More recently in Greece, a novel plasmid-borne Vietnamese extended-spectrum b-lactamase (VEB)-25 has been described in ceftazidime-avibactam-resistant CR-
+K. pneumoniae
+strains, independent of ceftazidime-avibactam exposure [109]. VEB-25 seemed to decrease avibatarm's ability to reduce ceftazidime's MIC. In an outbreak including eight patients with ceftazidime-avibactam-resistant KPC-2-producing
+K. pneumoniae
+ST-147 in two Greek intensive care units (ICU), horizontal transmission was suspected [110].
+Given the observational study designs, the focus on
+K. pneumoniae
+and the combination treatments used, there is low-certainty evidence of an advantage of ceftazidime-avibactam over polymyxins for CRE susceptible to ceftazidime-avibactam.
+Meropenem-vaborbactam.
+Vaborbactam is a novel cyclic boronic acid inhibitor that restores meropenem activity against producers of numerous class A and C b-lactamases, but it is inactive against MBL and OXA-48 producers [111]. Clinical efficacy of meropenem-vaborbactam in patients with infections due to CRE was tested in an RCT (Tango-II) in comparison with best available treatment (BAT) monotherapy or combinations of polymyxins, carbapenems, aminoglycosides or tigecycline; or monotherapy with ceftazidime-avibactam. Forty-seven patients (randomized 2:1) were included in the final analysis and significantly improved cure rates at the end of treatment were found in the meropenem-vaborbactam group (65.6% versus 33.3%, p 0.03) with non-significantly lower 28-day mortality (15.6% (5/32) versus 33.3% (5/15), p 0.2) and lower rates of renal-related adverse events [112]. Based on this small study, there is moderate-certainty evidence for an advantage of meropenem-vaborbactam for susceptible CRE compared with the old antibiotics.
+Imipenem-relebactam.
+Relebactam produces a dose-dependent synergy with imipenem against CRE producing KPC or combining AmpC or EBL with reduced permeability, but it is poorly active against OXA-48 producers [113]. Efficacy and safety of imipenem-relebactam have been proven to be comparable to those of impenem or piperacillin-tazoobactam in RCT enrolling patients with cUTI, cIAI and HAP/VAP; few patients with CR-GNB infections were included in these studies but comparative clinical outcome data for CRE are not available and the numbers are too small for a meaningful analysis [114, 115, 116, 117]. A small RCT including 31 patients with CR-GNB infections (RESTORE-IMI 1) compared the efficacy of imipenemenem-relebactam with the combination of imipenem and colistijn; however, only seven patients with CRE infections were included [118]. Given the paucity of data available for imipenem-relebactam against CRE, we cannot make recommendations on imipenem-relebactam for CRE at this time.
+Cefderocol.
+Although non-inferior to carbapenems for UTI and HAP/VAP caused by carbapenem-susceptible GNB [119,120], conflicting results were observed in an open-label RCT designed to assess the efficacy of cefiderocol for CR-GNB (CREDIBLE-CR). A total of 150 patients with proven/suspected CR-GNB infections were randomized 2:1 to receive cefiderocol versus BAT (mostly polymyxin-based combination). The trial included mainly patients with HAP/VAP and BSI and was not powered to conduct specific hypothesis testing. Mortality was higher in the cefiderocol arm at 28 days (25/101, 24.8% with cefiderocol versus 9/49, 18.4% with BAT) and at end of follow up (34/101, 33.7% versus 9/49, 18.4%, respectively). Clinical and microbiological efficacies of cefiderocol versus BAT were similar. A subgroup analysis of patients with MBL-producing CR-GNB infections showed statistically non-significant higher cure and microbiological eradication rates for cefiderocol (16 patients) versus BAT (seven patients), but mortality was not shown, and the analysis did not separate CRE from other CR-GNB. A post-hoc analysis by baseline pathogen revealed that the mortality difference was observed among patients with CRAB infections, but among patients with CR-
+K. pneumoniae
+, mortality at end of follow up was 6/28 (21.4%) with ceidferocol versus 4/15 (26.7%) for BAT (and 1/6 versus 0/3 for CR-
+E. coli
+, respectively) [121]. Based on these small subgroup analyses, we conclude on low-certainty evidence for non-inferiority of ceidferocol compared with other antibiotics for MBL-producing CRE.
+Axtreonam.
+There is no clinical experience evaluating the use of aztreonam monotherapy in the treatment of CRE infections. Aztreonam is uniquely active against MBL-producing CRE [122], but as monotherapy it does not cover other broad-spectrum b-lactamases or carbapenemases, frequently co-produced by such strains. Aztreonam-avibactam is being tested in phase 3 trials and is not currently considered in our guideline because it has not been FDA/EMA approved.
+Polymyxin.
+Comparative data on efficacy of polymyxins versus other antibiotics for the treatment of CRE are difficult to evaluate because of the lack of active comparators, concomitant use of other active agents and the frequently suboptimal dosing strategy adopted in the existing studies. Higher mortality among patients with CRE infections was observed with colisti compared with ceftazidime-avibactam in a small retrospective study using inverse probability of treatment weighting adjustment [96]. Conversely, lower 30-day mortality was shown in critically ill patients with KPC-producing
+K. pneumoniae
+infections and septic shock treated with a colisti-containing regimen, compared with colisti-free schemes (hazard ratio (0.21) 95% CI 0.05-0.72) [123]. However, colisti was administered as part of combination therapy regimens in both studies. Hence, there is no evidence on the comparative efficacy of colisti versus other antibiotics for CRE.
+Aminoglycosides.
+Two studies from the prospective CRaCKle cohort suggest better clinical outcomes with aminoglycoside-containing regimens compared with tigecycline-containing regimens [124,125]. Van Duin et al. analysed the results from 157 CR-
+K. pneumoniae
+infections with a urinary source (20% severe infections) and recorded better clinical cure when compared with tigecycline-based regimens (adjusted HR 5.19, 95% CI 2.03-14.13), whereas no benefit was observed when compared with colisitonating regimens (adjusted HR 1.92, 95% CI 0.63-5.76) [125]. Similarly, Messina et al. observed a higher rate of hospital readmission at 90 days in patients treated with tigecycline-based combinations when compared with aminoglycoside-containing combinations (adjusted HR 4.33, 95% CI 1.67-11.6), in a study where cUTI was the most common source (67% of patients) and 8% of patients were bacteraemic [124]. Microbiological cure was better with aminoglycosides compared with tigecyline for cUTI in the USA [126]. Another cohort from Spain describes 50 patients with sepsis due to carbapenem and colistin-resistant
+K. pneumoniae
+with a prevalent respiratory source where the use of gentamicin in fully susceptible isolates (MIC <=4 mg/L) alone or with tigecycline was associated with significantly higher survival at 30 days (adjusted HR 0.30, 95% CI 0.11-0.84) compared with non-aminoglycoside regimens [127]. Moreover, in a retrospective cohort of kidney transplant patients, amikican-containing schemes were associated with clinical success for treatment of mixed infections caused by carbapenem- and polymyxin-resistant Enterobacterales (adjusted OR 0.12, 95% CI 0.02-0.64) [128]. The certainty of the evidence for an advantage of aminoglycosides over tigecycline for cUTI was judged as moderate, with insufficient evidence for other comparisons and other sources of infection.
+Tigecyline. Three studies showed that tigecyline was inferior to aminoglycosides for cUTI caused by CRE (moderate certainty of the evidence) [124-126]. Two small studies at high risk of bias showed an advantage to polymyxin-based regimens compared with tigecyline-based regimens for CRE BSI [129,130]. Finally, out of three additional studies assessing tigecyline or eravacyline for CRE infections of any source [131-133], a single study showed survival advantage to tigecyline compared with colistin-based therapy for CRE and/or CRAB, explained by the higher severity of patients receiving colistin [132]. Among critically ill patients with MDR-GNB infections treated with different dosages of tigecyline, the only independent predictor of clinical cure was the use of high tigecyline dose in the subgroup of patients with VAP [134]. However, more than 80% of patients in this study received concomitant active antibiotics. A higher dosage of tigecyline (200 mg loading dose followed by 100 mg twice a day) in combination with other drugs was associated with non-significantly higher survival rates also in a cohort of 40 KPC-BSI compared with the standard dosage (100 mg loading dose following by 50 mg twice a day) [135]. Overall, there was low-certainty evidence for the inferiority of tigecyline compared with other antibiotics for cUTI and BSI caused by CRE. There are no studies comparing tigecyline with other antibiotics for HAP/VAP and IAI caused by CRE. If used, high-dosing regimens should be used for HAP/VAP.
+Fostomycin. Potential efficacy of intravenous fostomycin for CRE has been described in
+in vitro
+studies and small case series with variable clinical response [136-138]. In a study from China the use of fostomycin in combination with other antibiotics for treating CRE-BSI was associated with non-significantly higher survival compared with non-fostomycin-based schemes in an adjusted analysis [139]. There is no evidence for fostomycin monotherapy for CRE.
+Trimethoprim-sulfamethoxazole. Within the already mentioned CRACKle prospective cohort, a small subgroup of patients with trimethoprim-sulfamethoxazole-susceptible CRE infections received trimethoprim-sulfamethoxazole-based schemes with mortality rates comparable to other treatments. However, in three out of four available follow-up cultures, subsequent isolates were found to be resistant to trimethoprim-sulfamethoxazole [140] trimethoprim-sulfamethoxazole (no evidence for trimethoprim-sulfamethoxazole).
+Eravacyline. Eravacyline has an observed two-fold
+in vitro
+higher activity compared with tigecyline against Gram-negative bacteria; however no patients with CRE were included in the trials that brought to its approval [95,141] (no evidence for eravacyline).
+Plazomicin. Efficacy of plazomicin for the treatment of CRE infections was planned to be tested in the CARE-RCT in comparison with colistin (in combination with meropenem or tigecycline, NCT01970371). The sponsor decided to suspend the study after 2 years because of enrolment difficulties. Available results showed that all-cause mortality at 28 days was 8/20 with colisitin combination therapy (6/15 with BSI) versus 2/17 with plazomicin combination therapy (1/14 with BSI) [142]. Currently, there is insufficient evidence on plazomicin compared to colistin for CRE.
+Question 2.2: Should combination therapy be used for the treatment of CRE?
+Recommendations
+For patients with CRE infections susceptible to and treated with ceftazidime-aubactam, meropenem-vaborbactam or cefederocol, we do not recommend combination therapy (
+strong recommendation against use, low certainty of evidence
+)
+For patients with severe infections caused by CRE carrying MBL and/or resistant to new antibiotic monotherapies, we suggest aztream and ceftazidime-aubactam combination therapy (
+conditional recommendation for use, moderate certainty of evidence
+).
+For patients with severe infections caused by CRE susceptible
+in vitro
+only to polymyxin, aminoglycosides, tigecyline or fostomycin, or in the case of non-availability of new BLBLI, we suggest treatment with more than one drug active
+in vitro
+(
+conditional recommendation for use, moderate certainty of evidence
+). No recommendation for or against specific combinations can be provided.
+We suggest that clinicians avoid carbapenem-based combination therapy for CRE infections (
+conditional recommendation against use, low certainty of evidence
+), unless the meropenem MIC is <= 8 mg/L, where high-dose extended-infusion meropenem may be used as part of combination therapy if the new BLBLI are not used (
+conditional recommendation for use, low certainty of evidence
+).
+In patients with non-severe infections or among patients with low-risk infections, under the consideration of antibiotic stewardship, we consider the use of monotherapy chosen from among the
+in vitro
+active old drugs, on an individual basis and according to the source of infection as good clinical practice (
+good practice statement
+).
+Review of the evidence
+Thirty-five studies assessed mortality (all-cause at any time-point) in patients with CRE infections receiving antibiotic combination versus monotherapy and the results are conflicting [97,123,128,130,139,140,143-171]. Certainty of the evidence was very low because of the observational nature of most of the studies (34 out of 35 studies) and the considerable risk of bias (high in 12 studies; moderate in 14; and low in 9). Most importantly, the study definitions of 'combination therapy' were highly variable, including poorly specified treatment schemes, comprising from two up to five antibiotics with variable
+in vitro
+activity and different dosages and durations. Adjustment for relevant confounders was seldom available, mostly because of the very small sample sizes.
+
+
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (
+strong recommendation for use, moderate certainty of evidence
+).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (
+conditional recommendation for use, moderate certainty of evidence
+).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (
+conditional recommendation for use, moderate certainty of evidence
+/
+good practice statement
+). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (
+good practice statement
+).
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active
+in vitro
+, for short durations of therapy (
+conditional recommendation for use, moderate certainty of evidence
+), or intravenous foafymycin (
+strong recommendation for use, high certainty of evidence
+).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (
+good practice statement
+).
+We do not recommend tigecyline for infections caused by 3GCephRE (
+strong recommendation against use, very low certainty of evidence
+).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (
+good practice statement
+).
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (
+conditional recommendation against use, very low certainty of evidence
+).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. 
+
+
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use without additional prompt and context is :
+
+[INST] What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE? [/INST]
+
+* The answer obtained without additional prompt and context is :
+
+For patients with bacteremia (BSI, or bloodstream infection) and severe infection caused by extended-spectrum β-lactamases producing Klebsiella pneumoniae or other Enterobacterales (3GCephalosporin-resistant, 3GCephalosporin-resistant Enterobacterales, or 3GCephrE), the recommended targeted therapy depends on the susceptibility profile of the isolate and local guidelines.
+
+Here are some common options:
+
+1. Carbapenems: Carbapenems, such as meropenem, imipenem, or doripenem, are often used as first-line agents for treating infections caused by 3GCephrE due to their broad-spectrum activity against Gram-negative bacteria, including those producing extended-spectrum β-lactamases
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use with additional prompt but without context is :
+
+[INST] Imagine you are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+        You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+        Preferably give clear answers without too many details.
+
+        Please respond to the following question.
+         
+What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE? 
+[/INST]
+
+* The answer obtained with additional prompt but without context is :
+
+For patients with bloodstream infections (BSIs) and severe infections caused by extended-spectrum β-lactamase producing Klebsiella pneumoniae (3GCephrasporin-resistant, or 3GCephrE), the recommended targeted therapy is usually a carbapenem antibiotic. Examples include meropenem, imipenem, or doripenem. These antibiotics can effectively cover against 3GCephrE producing bacteria and have good penetration into the bacterial cell wall. However, it's essential to consider local resistance patterns and individual patient factors before making a definitive treatment decision. Always consult with an infectious disease specialist for the most accurate information.
+
+
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context but without additional prompt is :
+
+[INST]
+    Context:
+Many of them place a high value on antibiotic stewardship considerations and can be tailored locally.
+The current guidelines address antibiotic treatment targeted to specific pathogens. Empirically, before pathogen identification, these pathogens should be targeted among patients considered at high risk for CR-GNB infections. A difficult antibiotic stewardship balance exists between achieving appropriate empirical antibiotic therapy for patients with infections due to CR-GNB and the need to conserve last resort therapies for these bacteria. The empirical treatment phase is relevant to a much larger population than targeted treatment. Local guidelines, guided by the local epidemiology, should address the empirical treatment phase.
+The Infectious Diseases Society of America recently published guidance documents on the treatment of 3GcephRE, CRE, DTR
+P. aeruginosa
+and CRAB [252,253]. The guidance format, intended to address rapidly evolving topics, does not include a systematic review of the literature and does not use the formal GRADE process to appraise the evidence. Recommendations were developed by six infectious diseases specialists and were made also where evidence was lacking, thus addressing more specific scenarios. The paucity of the evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, as well as antibiotic stewardship considerations (including also settings in which the new BIBLI are not available) underly the main differences between our guidelines and the Infectious Diseases Society of America guidance. Our guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and hence the urgency of sepsis control: piperacillin-tazolbactam or amoxicillin-clavulanate are considered in the treatment of 3GcephRE in our guidelines; aminoglycosides are considered for cUTI; and the scenarios in which sparing of the new BIBLI is possible are presented. Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+
+
+Quinolones were examined individually [42,66,67] or as part of a general comparator group [45] in five retrospective cohort studies. In a single study reporting an adjusted analysis for mortality with targeted quinolone treatment (24 patients) compared with carbapenems, quinolone treatment was associated with lower mortality [67]. The quinolone group in all studies was very small (4-24 patients) and this analysis is a priori very difficult to analyse in an observational design, because quinolones, administered orally with good bioavailability, were given as stepdown therapy to stable patients. As a result, there is no direct evidence on targeted quinolone therapy for 3GcephRE BSI, but favourable effects were observed in studies assessing Gram-negative bacteriaemia in general, where a proportion of patients is expected to have had 3GcephRE BSI [68].
+Aminoglycosides were examined specifically in a single study [69] and as part of a general comparator group in two studies [42,70]. In the single study reporting an adjusted analysis (modernate risk of bias), aminoglycosides as targeted therapy for BSI of urinary tract source were not significantly different from carbapenems or piperacillin-tazobactam, but with large confidence intervals [69]. Given the paucity of data and observational design, there is very-low-certainty evidence for aminoglycoside treatment for bacteriaemic UTI.
+Complicated urinary tract infections with or without bacteriaemia.
+Intravenous fosfomycin was compared with piperacillin-tazo-lactam (ZEUS [71]) or meropenem (FOREST [72]) in two RCT. The ZEUS trial included patients with cUTI or acute pyelonephritis, including few patients with BSI, and the FOREST trial included patients with bacteraemia cUTI caused by
+E. coli
+. Both trials showed no significant differences in clinical or microbiological cure between intravenous fosfomycin and comparators in the subgroup of patients with cephalosporin-resistant or ESBL-producing Enterobacterales. In the FOREST trial, 6/70 (8.6%) patients in the intravenous fosfomycin arm developed heart failure (compared with 1/73 with meropenem). The trials were not powered to show non-inferiority in this subgroup, but together provide high-certainty evidence for treatment of cUTI with intravenous fosfomycin, in patients without septic shock, with or without bacteraemia. Safety should be considered among patients at risk for heart failure. Oral fosfomycin was compared with etrapenem for oral stepdown or outpatient therapy in an observational study in patients with mostly complicated non-bacteraemic UTI caused by ESBL-producing Enterobacterales [73]. The study was at high risk of bias due to the large baseline differences between groups and did not reveal a significant difference between 89 patients treated with fosfomycin and 89 treated with etrapenem (very low certainty of evidence).
+Plazomicin was not significantly different from meropenem in a subgroup analysis of an RCT including cUTI caused by 3GCephRE Enterobacterales and reporting on microbiological cure, but with broad confidence intervals (risk difference 7.4, 95% CI -9.6 to 23.1, low risk of bias) [74]. Together with the retrospective cohort study finding no significant advantage in mortality or relapse for carbapenem or piperacillin-tazobactam over aminoglycosides given as targeted treatment for bacteraemia UTI (moderate risk of bias) [69], there was moderate-certainty evidence for aminoglycoside treatment of cUTI. The risk for nephrotoxicity increases after 7 days of aminoglycoside therapy [75], so shorter durations are recommended.
+Other carbapenem-sparing treatments were evaluated in several studies. Carbapenems versus BLBLI were evaluated in one RCT [32] at high risk of bias due to small sample size and baseline differences between groups and several observational studies (moderate to high risk of bias) [28,33,35]. All studies evaluated the targeted treatment of pyelonephritis and assessed variable clinical and microbiological cure and mortality; one study assessed relapse and resistance selection [35]. None of the studies found statistically significant differences between BLBLI and carbapenems, supporting moderate-certainty evidence for BLBLI in the treatment of pyelonephritis caused by 3GCephRE.
+Cephamycins and cefepime were compared with carbapenems in several retrospective cohort studies [76, 77, 78, 79]. None found statistically significant differences between groups, in very small sample sizes (the cephalosporin group ranging from 10 to 23 patients). All studies were at high risk of bias, together providing low-certainty evidence for cepamymcins and cefepime for the treatment of pyelonephritis caused by 3GCephRE.
+Temocillin provided for more than 50% of the time of effective antibiotic therapy duration was compared with carbapenems in a matched case--control study (144 patients) [80]. The study showed no significant difference between treatment groups in clinical cure, relapse and mortality, but despite matching there were significant differences between groups that were not adjusted for, and the confidence intervals were large, providing very low-certainty evidence for temocillin in cUTI.
+Finally, two retrospective studies did not reveal significant differences in clinical cure and microbiological outcomes between carbapenems and any non-carbapenem antibiotic, with high risk of
+[MISSING_PAGE_FAIL:13]
+therapy occurred in up to 3.7%-8.1% of ceftazidime-avibactam-treated patients [101,108]. More recently in Greece, a novel plasmid-borne Vietnamese extended-spectrum b-lactamase (VEB)-25 has been described in ceftazidime-avibactam-resistant CR-
+K. pneumoniae
+strains, independent of ceftazidime-avibactam exposure [109]. VEB-25 seemed to decrease avibatarm's ability to reduce ceftazidime's MIC. In an outbreak including eight patients with ceftazidime-avibactam-resistant KPC-2-producing
+K. pneumoniae
+ST-147 in two Greek intensive care units (ICU), horizontal transmission was suspected [110].
+Given the observational study designs, the focus on
+K. pneumoniae
+and the combination treatments used, there is low-certainty evidence of an advantage of ceftazidime-avibactam over polymyxins for CRE susceptible to ceftazidime-avibactam.
+Meropenem-vaborbactam.
+Vaborbactam is a novel cyclic boronic acid inhibitor that restores meropenem activity against producers of numerous class A and C b-lactamases, but it is inactive against MBL and OXA-48 producers [111]. Clinical efficacy of meropenem-vaborbactam in patients with infections due to CRE was tested in an RCT (Tango-II) in comparison with best available treatment (BAT) monotherapy or combinations of polymyxins, carbapenems, aminoglycosides or tigecycline; or monotherapy with ceftazidime-avibactam. Forty-seven patients (randomized 2:1) were included in the final analysis and significantly improved cure rates at the end of treatment were found in the meropenem-vaborbactam group (65.6% versus 33.3%, p 0.03) with non-significantly lower 28-day mortality (15.6% (5/32) versus 33.3% (5/15), p 0.2) and lower rates of renal-related adverse events [112]. Based on this small study, there is moderate-certainty evidence for an advantage of meropenem-vaborbactam for susceptible CRE compared with the old antibiotics.
+Imipenem-relebactam.
+Relebactam produces a dose-dependent synergy with imipenem against CRE producing KPC or combining AmpC or EBL with reduced permeability, but it is poorly active against OXA-48 producers [113]. Efficacy and safety of imipenem-relebactam have been proven to be comparable to those of impenem or piperacillin-tazoobactam in RCT enrolling patients with cUTI, cIAI and HAP/VAP; few patients with CR-GNB infections were included in these studies but comparative clinical outcome data for CRE are not available and the numbers are too small for a meaningful analysis [114, 115, 116, 117]. A small RCT including 31 patients with CR-GNB infections (RESTORE-IMI 1) compared the efficacy of imipenemenem-relebactam with the combination of imipenem and colistijn; however, only seven patients with CRE infections were included [118]. Given the paucity of data available for imipenem-relebactam against CRE, we cannot make recommendations on imipenem-relebactam for CRE at this time.
+Cefderocol.
+Although non-inferior to carbapenems for UTI and HAP/VAP caused by carbapenem-susceptible GNB [119,120], conflicting results were observed in an open-label RCT designed to assess the efficacy of cefiderocol for CR-GNB (CREDIBLE-CR). A total of 150 patients with proven/suspected CR-GNB infections were randomized 2:1 to receive cefiderocol versus BAT (mostly polymyxin-based combination). The trial included mainly patients with HAP/VAP and BSI and was not powered to conduct specific hypothesis testing. Mortality was higher in the cefiderocol arm at 28 days (25/101, 24.8% with cefiderocol versus 9/49, 18.4% with BAT) and at end of follow up (34/101, 33.7% versus 9/49, 18.4%, respectively). Clinical and microbiological efficacies of cefiderocol versus BAT were similar. A subgroup analysis of patients with MBL-producing CR-GNB infections showed statistically non-significant higher cure and microbiological eradication rates for cefiderocol (16 patients) versus BAT (seven patients), but mortality was not shown, and the analysis did not separate CRE from other CR-GNB. A post-hoc analysis by baseline pathogen revealed that the mortality difference was observed among patients with CRAB infections, but among patients with CR-
+K. pneumoniae
+, mortality at end of follow up was 6/28 (21.4%) with ceidferocol versus 4/15 (26.7%) for BAT (and 1/6 versus 0/3 for CR-
+E. coli
+, respectively) [121]. Based on these small subgroup analyses, we conclude on low-certainty evidence for non-inferiority of ceidferocol compared with other antibiotics for MBL-producing CRE.
+Axtreonam.
+There is no clinical experience evaluating the use of aztreonam monotherapy in the treatment of CRE infections. Aztreonam is uniquely active against MBL-producing CRE [122], but as monotherapy it does not cover other broad-spectrum b-lactamases or carbapenemases, frequently co-produced by such strains. Aztreonam-avibactam is being tested in phase 3 trials and is not currently considered in our guideline because it has not been FDA/EMA approved.
+Polymyxin.
+Comparative data on efficacy of polymyxins versus other antibiotics for the treatment of CRE are difficult to evaluate because of the lack of active comparators, concomitant use of other active agents and the frequently suboptimal dosing strategy adopted in the existing studies. Higher mortality among patients with CRE infections was observed with colisti compared with ceftazidime-avibactam in a small retrospective study using inverse probability of treatment weighting adjustment [96]. Conversely, lower 30-day mortality was shown in critically ill patients with KPC-producing
+K. pneumoniae
+infections and septic shock treated with a colisti-containing regimen, compared with colisti-free schemes (hazard ratio (0.21) 95% CI 0.05-0.72) [123]. However, colisti was administered as part of combination therapy regimens in both studies. Hence, there is no evidence on the comparative efficacy of colisti versus other antibiotics for CRE.
+Aminoglycosides.
+Two studies from the prospective CRaCKle cohort suggest better clinical outcomes with aminoglycoside-containing regimens compared with tigecycline-containing regimens [124,125]. Van Duin et al. analysed the results from 157 CR-
+K. pneumoniae
+infections with a urinary source (20% severe infections) and recorded better clinical cure when compared with tigecycline-based regimens (adjusted HR 5.19, 95% CI 2.03-14.13), whereas no benefit was observed when compared with colisitonating regimens (adjusted HR 1.92, 95% CI 0.63-5.76) [125]. Similarly, Messina et al. observed a higher rate of hospital readmission at 90 days in patients treated with tigecycline-based combinations when compared with aminoglycoside-containing combinations (adjusted HR 4.33, 95% CI 1.67-11.6), in a study where cUTI was the most common source (67% of patients) and 8% of patients were bacteraemic [124]. Microbiological cure was better with aminoglycosides compared with tigecyline for cUTI in the USA [126]. Another cohort from Spain describes 50 patients with sepsis due to carbapenem and colistin-resistant
+K. pneumoniae
+with a prevalent respiratory source where the use of gentamicin in fully susceptible isolates (MIC <=4 mg/L) alone or with tigecycline was associated with significantly higher survival at 30 days (adjusted HR 0.30, 95% CI 0.11-0.84) compared with non-aminoglycoside regimens [127]. Moreover, in a retrospective cohort of kidney transplant patients, amikican-containing schemes were associated with clinical success for treatment of mixed infections caused by carbapenem- and polymyxin-resistant Enterobacterales (adjusted OR 0.12, 95% CI 0.02-0.64) [128]. The certainty of the evidence for an advantage of aminoglycosides over tigecycline for cUTI was judged as moderate, with insufficient evidence for other comparisons and other sources of infection.
+Tigecyline. Three studies showed that tigecyline was inferior to aminoglycosides for cUTI caused by CRE (moderate certainty of the evidence) [124-126]. Two small studies at high risk of bias showed an advantage to polymyxin-based regimens compared with tigecyline-based regimens for CRE BSI [129,130]. Finally, out of three additional studies assessing tigecyline or eravacyline for CRE infections of any source [131-133], a single study showed survival advantage to tigecyline compared with colistin-based therapy for CRE and/or CRAB, explained by the higher severity of patients receiving colistin [132]. Among critically ill patients with MDR-GNB infections treated with different dosages of tigecyline, the only independent predictor of clinical cure was the use of high tigecyline dose in the subgroup of patients with VAP [134]. However, more than 80% of patients in this study received concomitant active antibiotics. A higher dosage of tigecyline (200 mg loading dose followed by 100 mg twice a day) in combination with other drugs was associated with non-significantly higher survival rates also in a cohort of 40 KPC-BSI compared with the standard dosage (100 mg loading dose following by 50 mg twice a day) [135]. Overall, there was low-certainty evidence for the inferiority of tigecyline compared with other antibiotics for cUTI and BSI caused by CRE. There are no studies comparing tigecyline with other antibiotics for HAP/VAP and IAI caused by CRE. If used, high-dosing regimens should be used for HAP/VAP.
+Fostomycin. Potential efficacy of intravenous fostomycin for CRE has been described in
+in vitro
+studies and small case series with variable clinical response [136-138]. In a study from China the use of fostomycin in combination with other antibiotics for treating CRE-BSI was associated with non-significantly higher survival compared with non-fostomycin-based schemes in an adjusted analysis [139]. There is no evidence for fostomycin monotherapy for CRE.
+Trimethoprim-sulfamethoxazole. Within the already mentioned CRACKle prospective cohort, a small subgroup of patients with trimethoprim-sulfamethoxazole-susceptible CRE infections received trimethoprim-sulfamethoxazole-based schemes with mortality rates comparable to other treatments. However, in three out of four available follow-up cultures, subsequent isolates were found to be resistant to trimethoprim-sulfamethoxazole [140] trimethoprim-sulfamethoxazole (no evidence for trimethoprim-sulfamethoxazole).
+Eravacyline. Eravacyline has an observed two-fold
+in vitro
+higher activity compared with tigecyline against Gram-negative bacteria; however no patients with CRE were included in the trials that brought to its approval [95,141] (no evidence for eravacyline).
+Plazomicin. Efficacy of plazomicin for the treatment of CRE infections was planned to be tested in the CARE-RCT in comparison with colistin (in combination with meropenem or tigecycline, NCT01970371). The sponsor decided to suspend the study after 2 years because of enrolment difficulties. Available results showed that all-cause mortality at 28 days was 8/20 with colisitin combination therapy (6/15 with BSI) versus 2/17 with plazomicin combination therapy (1/14 with BSI) [142]. Currently, there is insufficient evidence on plazomicin compared to colistin for CRE.
+Question 2.2: Should combination therapy be used for the treatment of CRE?
+Recommendations
+For patients with CRE infections susceptible to and treated with ceftazidime-aubactam, meropenem-vaborbactam or cefederocol, we do not recommend combination therapy (
+strong recommendation against use, low certainty of evidence
+)
+For patients with severe infections caused by CRE carrying MBL and/or resistant to new antibiotic monotherapies, we suggest aztream and ceftazidime-aubactam combination therapy (
+conditional recommendation for use, moderate certainty of evidence
+).
+For patients with severe infections caused by CRE susceptible
+in vitro
+only to polymyxin, aminoglycosides, tigecyline or fostomycin, or in the case of non-availability of new BLBLI, we suggest treatment with more than one drug active
+in vitro
+(
+conditional recommendation for use, moderate certainty of evidence
+). No recommendation for or against specific combinations can be provided.
+We suggest that clinicians avoid carbapenem-based combination therapy for CRE infections (
+conditional recommendation against use, low certainty of evidence
+), unless the meropenem MIC is <= 8 mg/L, where high-dose extended-infusion meropenem may be used as part of combination therapy if the new BLBLI are not used (
+conditional recommendation for use, low certainty of evidence
+).
+In patients with non-severe infections or among patients with low-risk infections, under the consideration of antibiotic stewardship, we consider the use of monotherapy chosen from among the
+in vitro
+active old drugs, on an individual basis and according to the source of infection as good clinical practice (
+good practice statement
+).
+Review of the evidence
+Thirty-five studies assessed mortality (all-cause at any time-point) in patients with CRE infections receiving antibiotic combination versus monotherapy and the results are conflicting [97,123,128,130,139,140,143-171]. Certainty of the evidence was very low because of the observational nature of most of the studies (34 out of 35 studies) and the considerable risk of bias (high in 12 studies; moderate in 14; and low in 9). Most importantly, the study definitions of 'combination therapy' were highly variable, including poorly specified treatment schemes, comprising from two up to five antibiotics with variable
+in vitro
+activity and different dosages and durations. Adjustment for relevant confounders was seldom available, mostly because of the very small sample sizes.
+
+
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (
+strong recommendation for use, moderate certainty of evidence
+).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (
+conditional recommendation for use, moderate certainty of evidence
+).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (
+conditional recommendation for use, moderate certainty of evidence
+/
+good practice statement
+). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (
+good practice statement
+).
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active
+in vitro
+, for short durations of therapy (
+conditional recommendation for use, moderate certainty of evidence
+), or intravenous foafymycin (
+strong recommendation for use, high certainty of evidence
+).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (
+good practice statement
+).
+We do not recommend tigecyline for infections caused by 3GCephRE (
+strong recommendation against use, very low certainty of evidence
+).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (
+good practice statement
+).
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (
+conditional recommendation against use, very low certainty of evidence
+).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. 
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+    [/INST]
+    
+
+* The answer obtained with context but without additional prompt is :
+
+Based on the context provided, a carbapenem (imipenem or meropenem) is recommended as targeted therapy for patients with BSI and severe infection due to 3GCephRE (strong recommendation for use, moderate certainty of evidence).
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context and additional prompt is :
+
+[INST]Imagine you are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+    You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+    Preferably give clear answers without too many details.
+
+    Context:
+Many of them place a high value on antibiotic stewardship considerations and can be tailored locally.
+The current guidelines address antibiotic treatment targeted to specific pathogens. Empirically, before pathogen identification, these pathogens should be targeted among patients considered at high risk for CR-GNB infections. A difficult antibiotic stewardship balance exists between achieving appropriate empirical antibiotic therapy for patients with infections due to CR-GNB and the need to conserve last resort therapies for these bacteria. The empirical treatment phase is relevant to a much larger population than targeted treatment. Local guidelines, guided by the local epidemiology, should address the empirical treatment phase.
+The Infectious Diseases Society of America recently published guidance documents on the treatment of 3GcephRE, CRE, DTR
+P. aeruginosa
+and CRAB [252,253]. The guidance format, intended to address rapidly evolving topics, does not include a systematic review of the literature and does not use the formal GRADE process to appraise the evidence. Recommendations were developed by six infectious diseases specialists and were made also where evidence was lacking, thus addressing more specific scenarios. The paucity of the evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, as well as antibiotic stewardship considerations (including also settings in which the new BIBLI are not available) underly the main differences between our guidelines and the Infectious Diseases Society of America guidance. Our guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and hence the urgency of sepsis control: piperacillin-tazolbactam or amoxicillin-clavulanate are considered in the treatment of 3GcephRE in our guidelines; aminoglycosides are considered for cUTI; and the scenarios in which sparing of the new BIBLI is possible are presented. Combination therapies are less strongly recommended in our guidelines that address the certainty of the evidence with respect to clinical outcomes.
+
+
+Quinolones were examined individually [42,66,67] or as part of a general comparator group [45] in five retrospective cohort studies. In a single study reporting an adjusted analysis for mortality with targeted quinolone treatment (24 patients) compared with carbapenems, quinolone treatment was associated with lower mortality [67]. The quinolone group in all studies was very small (4-24 patients) and this analysis is a priori very difficult to analyse in an observational design, because quinolones, administered orally with good bioavailability, were given as stepdown therapy to stable patients. As a result, there is no direct evidence on targeted quinolone therapy for 3GcephRE BSI, but favourable effects were observed in studies assessing Gram-negative bacteriaemia in general, where a proportion of patients is expected to have had 3GcephRE BSI [68].
+Aminoglycosides were examined specifically in a single study [69] and as part of a general comparator group in two studies [42,70]. In the single study reporting an adjusted analysis (modernate risk of bias), aminoglycosides as targeted therapy for BSI of urinary tract source were not significantly different from carbapenems or piperacillin-tazobactam, but with large confidence intervals [69]. Given the paucity of data and observational design, there is very-low-certainty evidence for aminoglycoside treatment for bacteriaemic UTI.
+Complicated urinary tract infections with or without bacteriaemia.
+Intravenous fosfomycin was compared with piperacillin-tazo-lactam (ZEUS [71]) or meropenem (FOREST [72]) in two RCT. The ZEUS trial included patients with cUTI or acute pyelonephritis, including few patients with BSI, and the FOREST trial included patients with bacteraemia cUTI caused by
+E. coli
+. Both trials showed no significant differences in clinical or microbiological cure between intravenous fosfomycin and comparators in the subgroup of patients with cephalosporin-resistant or ESBL-producing Enterobacterales. In the FOREST trial, 6/70 (8.6%) patients in the intravenous fosfomycin arm developed heart failure (compared with 1/73 with meropenem). The trials were not powered to show non-inferiority in this subgroup, but together provide high-certainty evidence for treatment of cUTI with intravenous fosfomycin, in patients without septic shock, with or without bacteraemia. Safety should be considered among patients at risk for heart failure. Oral fosfomycin was compared with etrapenem for oral stepdown or outpatient therapy in an observational study in patients with mostly complicated non-bacteraemic UTI caused by ESBL-producing Enterobacterales [73]. The study was at high risk of bias due to the large baseline differences between groups and did not reveal a significant difference between 89 patients treated with fosfomycin and 89 treated with etrapenem (very low certainty of evidence).
+Plazomicin was not significantly different from meropenem in a subgroup analysis of an RCT including cUTI caused by 3GCephRE Enterobacterales and reporting on microbiological cure, but with broad confidence intervals (risk difference 7.4, 95% CI -9.6 to 23.1, low risk of bias) [74]. Together with the retrospective cohort study finding no significant advantage in mortality or relapse for carbapenem or piperacillin-tazobactam over aminoglycosides given as targeted treatment for bacteraemia UTI (moderate risk of bias) [69], there was moderate-certainty evidence for aminoglycoside treatment of cUTI. The risk for nephrotoxicity increases after 7 days of aminoglycoside therapy [75], so shorter durations are recommended.
+Other carbapenem-sparing treatments were evaluated in several studies. Carbapenems versus BLBLI were evaluated in one RCT [32] at high risk of bias due to small sample size and baseline differences between groups and several observational studies (moderate to high risk of bias) [28,33,35]. All studies evaluated the targeted treatment of pyelonephritis and assessed variable clinical and microbiological cure and mortality; one study assessed relapse and resistance selection [35]. None of the studies found statistically significant differences between BLBLI and carbapenems, supporting moderate-certainty evidence for BLBLI in the treatment of pyelonephritis caused by 3GCephRE.
+Cephamycins and cefepime were compared with carbapenems in several retrospective cohort studies [76, 77, 78, 79]. None found statistically significant differences between groups, in very small sample sizes (the cephalosporin group ranging from 10 to 23 patients). All studies were at high risk of bias, together providing low-certainty evidence for cepamymcins and cefepime for the treatment of pyelonephritis caused by 3GCephRE.
+Temocillin provided for more than 50% of the time of effective antibiotic therapy duration was compared with carbapenems in a matched case--control study (144 patients) [80]. The study showed no significant difference between treatment groups in clinical cure, relapse and mortality, but despite matching there were significant differences between groups that were not adjusted for, and the confidence intervals were large, providing very low-certainty evidence for temocillin in cUTI.
+Finally, two retrospective studies did not reveal significant differences in clinical cure and microbiological outcomes between carbapenems and any non-carbapenem antibiotic, with high risk of
+[MISSING_PAGE_FAIL:13]
+therapy occurred in up to 3.7%-8.1% of ceftazidime-avibactam-treated patients [101,108]. More recently in Greece, a novel plasmid-borne Vietnamese extended-spectrum b-lactamase (VEB)-25 has been described in ceftazidime-avibactam-resistant CR-
+K. pneumoniae
+strains, independent of ceftazidime-avibactam exposure [109]. VEB-25 seemed to decrease avibatarm's ability to reduce ceftazidime's MIC. In an outbreak including eight patients with ceftazidime-avibactam-resistant KPC-2-producing
+K. pneumoniae
+ST-147 in two Greek intensive care units (ICU), horizontal transmission was suspected [110].
+Given the observational study designs, the focus on
+K. pneumoniae
+and the combination treatments used, there is low-certainty evidence of an advantage of ceftazidime-avibactam over polymyxins for CRE susceptible to ceftazidime-avibactam.
+Meropenem-vaborbactam.
+Vaborbactam is a novel cyclic boronic acid inhibitor that restores meropenem activity against producers of numerous class A and C b-lactamases, but it is inactive against MBL and OXA-48 producers [111]. Clinical efficacy of meropenem-vaborbactam in patients with infections due to CRE was tested in an RCT (Tango-II) in comparison with best available treatment (BAT) monotherapy or combinations of polymyxins, carbapenems, aminoglycosides or tigecycline; or monotherapy with ceftazidime-avibactam. Forty-seven patients (randomized 2:1) were included in the final analysis and significantly improved cure rates at the end of treatment were found in the meropenem-vaborbactam group (65.6% versus 33.3%, p 0.03) with non-significantly lower 28-day mortality (15.6% (5/32) versus 33.3% (5/15), p 0.2) and lower rates of renal-related adverse events [112]. Based on this small study, there is moderate-certainty evidence for an advantage of meropenem-vaborbactam for susceptible CRE compared with the old antibiotics.
+Imipenem-relebactam.
+Relebactam produces a dose-dependent synergy with imipenem against CRE producing KPC or combining AmpC or EBL with reduced permeability, but it is poorly active against OXA-48 producers [113]. Efficacy and safety of imipenem-relebactam have been proven to be comparable to those of impenem or piperacillin-tazoobactam in RCT enrolling patients with cUTI, cIAI and HAP/VAP; few patients with CR-GNB infections were included in these studies but comparative clinical outcome data for CRE are not available and the numbers are too small for a meaningful analysis [114, 115, 116, 117]. A small RCT including 31 patients with CR-GNB infections (RESTORE-IMI 1) compared the efficacy of imipenemenem-relebactam with the combination of imipenem and colistijn; however, only seven patients with CRE infections were included [118]. Given the paucity of data available for imipenem-relebactam against CRE, we cannot make recommendations on imipenem-relebactam for CRE at this time.
+Cefderocol.
+Although non-inferior to carbapenems for UTI and HAP/VAP caused by carbapenem-susceptible GNB [119,120], conflicting results were observed in an open-label RCT designed to assess the efficacy of cefiderocol for CR-GNB (CREDIBLE-CR). A total of 150 patients with proven/suspected CR-GNB infections were randomized 2:1 to receive cefiderocol versus BAT (mostly polymyxin-based combination). The trial included mainly patients with HAP/VAP and BSI and was not powered to conduct specific hypothesis testing. Mortality was higher in the cefiderocol arm at 28 days (25/101, 24.8% with cefiderocol versus 9/49, 18.4% with BAT) and at end of follow up (34/101, 33.7% versus 9/49, 18.4%, respectively). Clinical and microbiological efficacies of cefiderocol versus BAT were similar. A subgroup analysis of patients with MBL-producing CR-GNB infections showed statistically non-significant higher cure and microbiological eradication rates for cefiderocol (16 patients) versus BAT (seven patients), but mortality was not shown, and the analysis did not separate CRE from other CR-GNB. A post-hoc analysis by baseline pathogen revealed that the mortality difference was observed among patients with CRAB infections, but among patients with CR-
+K. pneumoniae
+, mortality at end of follow up was 6/28 (21.4%) with ceidferocol versus 4/15 (26.7%) for BAT (and 1/6 versus 0/3 for CR-
+E. coli
+, respectively) [121]. Based on these small subgroup analyses, we conclude on low-certainty evidence for non-inferiority of ceidferocol compared with other antibiotics for MBL-producing CRE.
+Axtreonam.
+There is no clinical experience evaluating the use of aztreonam monotherapy in the treatment of CRE infections. Aztreonam is uniquely active against MBL-producing CRE [122], but as monotherapy it does not cover other broad-spectrum b-lactamases or carbapenemases, frequently co-produced by such strains. Aztreonam-avibactam is being tested in phase 3 trials and is not currently considered in our guideline because it has not been FDA/EMA approved.
+Polymyxin.
+Comparative data on efficacy of polymyxins versus other antibiotics for the treatment of CRE are difficult to evaluate because of the lack of active comparators, concomitant use of other active agents and the frequently suboptimal dosing strategy adopted in the existing studies. Higher mortality among patients with CRE infections was observed with colisti compared with ceftazidime-avibactam in a small retrospective study using inverse probability of treatment weighting adjustment [96]. Conversely, lower 30-day mortality was shown in critically ill patients with KPC-producing
+K. pneumoniae
+infections and septic shock treated with a colisti-containing regimen, compared with colisti-free schemes (hazard ratio (0.21) 95% CI 0.05-0.72) [123]. However, colisti was administered as part of combination therapy regimens in both studies. Hence, there is no evidence on the comparative efficacy of colisti versus other antibiotics for CRE.
+Aminoglycosides.
+Two studies from the prospective CRaCKle cohort suggest better clinical outcomes with aminoglycoside-containing regimens compared with tigecycline-containing regimens [124,125]. Van Duin et al. analysed the results from 157 CR-
+K. pneumoniae
+infections with a urinary source (20% severe infections) and recorded better clinical cure when compared with tigecycline-based regimens (adjusted HR 5.19, 95% CI 2.03-14.13), whereas no benefit was observed when compared with colisitonating regimens (adjusted HR 1.92, 95% CI 0.63-5.76) [125]. Similarly, Messina et al. observed a higher rate of hospital readmission at 90 days in patients treated with tigecycline-based combinations when compared with aminoglycoside-containing combinations (adjusted HR 4.33, 95% CI 1.67-11.6), in a study where cUTI was the most common source (67% of patients) and 8% of patients were bacteraemic [124]. Microbiological cure was better with aminoglycosides compared with tigecyline for cUTI in the USA [126]. Another cohort from Spain describes 50 patients with sepsis due to carbapenem and colistin-resistant
+K. pneumoniae
+with a prevalent respiratory source where the use of gentamicin in fully susceptible isolates (MIC <=4 mg/L) alone or with tigecycline was associated with significantly higher survival at 30 days (adjusted HR 0.30, 95% CI 0.11-0.84) compared with non-aminoglycoside regimens [127]. Moreover, in a retrospective cohort of kidney transplant patients, amikican-containing schemes were associated with clinical success for treatment of mixed infections caused by carbapenem- and polymyxin-resistant Enterobacterales (adjusted OR 0.12, 95% CI 0.02-0.64) [128]. The certainty of the evidence for an advantage of aminoglycosides over tigecycline for cUTI was judged as moderate, with insufficient evidence for other comparisons and other sources of infection.
+Tigecyline. Three studies showed that tigecyline was inferior to aminoglycosides for cUTI caused by CRE (moderate certainty of the evidence) [124-126]. Two small studies at high risk of bias showed an advantage to polymyxin-based regimens compared with tigecyline-based regimens for CRE BSI [129,130]. Finally, out of three additional studies assessing tigecyline or eravacyline for CRE infections of any source [131-133], a single study showed survival advantage to tigecyline compared with colistin-based therapy for CRE and/or CRAB, explained by the higher severity of patients receiving colistin [132]. Among critically ill patients with MDR-GNB infections treated with different dosages of tigecyline, the only independent predictor of clinical cure was the use of high tigecyline dose in the subgroup of patients with VAP [134]. However, more than 80% of patients in this study received concomitant active antibiotics. A higher dosage of tigecyline (200 mg loading dose followed by 100 mg twice a day) in combination with other drugs was associated with non-significantly higher survival rates also in a cohort of 40 KPC-BSI compared with the standard dosage (100 mg loading dose following by 50 mg twice a day) [135]. Overall, there was low-certainty evidence for the inferiority of tigecyline compared with other antibiotics for cUTI and BSI caused by CRE. There are no studies comparing tigecyline with other antibiotics for HAP/VAP and IAI caused by CRE. If used, high-dosing regimens should be used for HAP/VAP.
+Fostomycin. Potential efficacy of intravenous fostomycin for CRE has been described in
+in vitro
+studies and small case series with variable clinical response [136-138]. In a study from China the use of fostomycin in combination with other antibiotics for treating CRE-BSI was associated with non-significantly higher survival compared with non-fostomycin-based schemes in an adjusted analysis [139]. There is no evidence for fostomycin monotherapy for CRE.
+Trimethoprim-sulfamethoxazole. Within the already mentioned CRACKle prospective cohort, a small subgroup of patients with trimethoprim-sulfamethoxazole-susceptible CRE infections received trimethoprim-sulfamethoxazole-based schemes with mortality rates comparable to other treatments. However, in three out of four available follow-up cultures, subsequent isolates were found to be resistant to trimethoprim-sulfamethoxazole [140] trimethoprim-sulfamethoxazole (no evidence for trimethoprim-sulfamethoxazole).
+Eravacyline. Eravacyline has an observed two-fold
+in vitro
+higher activity compared with tigecyline against Gram-negative bacteria; however no patients with CRE were included in the trials that brought to its approval [95,141] (no evidence for eravacyline).
+Plazomicin. Efficacy of plazomicin for the treatment of CRE infections was planned to be tested in the CARE-RCT in comparison with colistin (in combination with meropenem or tigecycline, NCT01970371). The sponsor decided to suspend the study after 2 years because of enrolment difficulties. Available results showed that all-cause mortality at 28 days was 8/20 with colisitin combination therapy (6/15 with BSI) versus 2/17 with plazomicin combination therapy (1/14 with BSI) [142]. Currently, there is insufficient evidence on plazomicin compared to colistin for CRE.
+Question 2.2: Should combination therapy be used for the treatment of CRE?
+Recommendations
+For patients with CRE infections susceptible to and treated with ceftazidime-aubactam, meropenem-vaborbactam or cefederocol, we do not recommend combination therapy (
+strong recommendation against use, low certainty of evidence
+)
+For patients with severe infections caused by CRE carrying MBL and/or resistant to new antibiotic monotherapies, we suggest aztream and ceftazidime-aubactam combination therapy (
+conditional recommendation for use, moderate certainty of evidence
+).
+For patients with severe infections caused by CRE susceptible
+in vitro
+only to polymyxin, aminoglycosides, tigecyline or fostomycin, or in the case of non-availability of new BLBLI, we suggest treatment with more than one drug active
+in vitro
+(
+conditional recommendation for use, moderate certainty of evidence
+). No recommendation for or against specific combinations can be provided.
+We suggest that clinicians avoid carbapenem-based combination therapy for CRE infections (
+conditional recommendation against use, low certainty of evidence
+), unless the meropenem MIC is <= 8 mg/L, where high-dose extended-infusion meropenem may be used as part of combination therapy if the new BLBLI are not used (
+conditional recommendation for use, low certainty of evidence
+).
+In patients with non-severe infections or among patients with low-risk infections, under the consideration of antibiotic stewardship, we consider the use of monotherapy chosen from among the
+in vitro
+active old drugs, on an individual basis and according to the source of infection as good clinical practice (
+good practice statement
+).
+Review of the evidence
+Thirty-five studies assessed mortality (all-cause at any time-point) in patients with CRE infections receiving antibiotic combination versus monotherapy and the results are conflicting [97,123,128,130,139,140,143-171]. Certainty of the evidence was very low because of the observational nature of most of the studies (34 out of 35 studies) and the considerable risk of bias (high in 12 studies; moderate in 14; and low in 9). Most importantly, the study definitions of 'combination therapy' were highly variable, including poorly specified treatment schemes, comprising from two up to five antibiotics with variable
+in vitro
+activity and different dosages and durations. Adjustment for relevant confounders was seldom available, mostly because of the very small sample sizes.
+
+
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (
+strong recommendation for use, moderate certainty of evidence
+).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (
+conditional recommendation for use, moderate certainty of evidence
+).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (
+conditional recommendation for use, moderate certainty of evidence
+/
+good practice statement
+). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (
+good practice statement
+).
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active
+in vitro
+, for short durations of therapy (
+conditional recommendation for use, moderate certainty of evidence
+), or intravenous foafymycin (
+strong recommendation for use, high certainty of evidence
+).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (
+good practice statement
+).
+We do not recommend tigecyline for infections caused by 3GCephRE (
+strong recommendation against use, very low certainty of evidence
+).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (
+good practice statement
+).
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (
+conditional recommendation against use, very low certainty of evidence
+).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. 
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    What is the recommended targeted therapy for patients with BSI and severe infection due to 3GCephRE?
+    [/INST]
+    
+
+* The answer obtained with context and additional prompt is :
+
+Based on the context provided, a carbapenem (imipenem or meropenem) is recommended as targeted therapy for patients with BSI and severe infection due to 3GCephRE (strong recommendation for use, moderate certainty of evidence).
+
+
+
+*--------------------------------------------------*
+
+
+
+** RESULTS FOR EACH CASE WITH DIFFERENT METRICS **
+
+* NO ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.06002928257686677
+Individual 2-gram : 0.11583577712609967
+Individual 3-gram : 0.09838472834067548
+Individual 4-gram : 0.07058823529411766
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.2413793103448276, recall=0.75, fmeasure=0.3652173913043478)
+ROUGE_L : Score(precision=0.14942528735632185, recall=0.4642857142857143, fmeasure=0.22608695652173916)
+
+         - METEOR : 
+
+METEOR score : 0.4036262236445783
+
+         - BERTScore : 
+
+Precision : 0.808
+Recall : 0.884
+F1 : 0.844
+
+Precision : -0.141
+Recall : 0.310
+F1 : 0.076
+
+
+* ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.061840120663650085
+Individual 2-gram : 0.11480362537764349
+Individual 3-gram : 0.10892586989409984
+Individual 4-gram : 0.07727272727272728
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.2235294117647059, recall=0.6785714285714286, fmeasure=0.336283185840708)
+ROUGE_L : Score(precision=0.15294117647058825, recall=0.4642857142857143, fmeasure=0.23008849557522126)
+
+         - METEOR : 
+
+METEOR score : 0.3341317365269461
+
+         - BERTScore : 
+
+Precision : 0.832
+Recall : 0.891
+F1 : 0.861
+
+Precision : 0.003
+Recall : 0.354
+F1 : 0.174
+
+
+* NO ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.18141592920353983
+Individual 2-gram : 0.39111111111111113
+Individual 3-gram : 0.42410714285714285
+Individual 4-gram : 0.35874439461883406
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.8484848484848485, recall=1.0, fmeasure=0.9180327868852458)
+ROUGE_L : Score(precision=0.5454545454545454, recall=0.6428571428571429, fmeasure=0.5901639344262296)
+
+         - METEOR : 
+
+METEOR score : 0.9467186484730344
+
+         - BERTScore : 
+
+Precision : 0.960
+Recall : 0.978
+F1 : 0.969
+
+Precision : 0.765
+Recall : 0.869
+F1 : 0.817
+
+
+* ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.18141592920353983
+Individual 2-gram : 0.39111111111111113
+Individual 3-gram : 0.42410714285714285
+Individual 4-gram : 0.35874439461883406
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.8484848484848485, recall=1.0, fmeasure=0.9180327868852458)
+ROUGE_L : Score(precision=0.5454545454545454, recall=0.6428571428571429, fmeasure=0.5901639344262296)
+
+         - METEOR : 
+
+METEOR score : 0.9467186484730344
+
+         - BERTScore : 
+
+Precision : 0.960
+Recall : 0.978
+F1 : 0.969
+
+Precision : 0.765
+Recall : 0.869
+F1 : 0.817
+
+

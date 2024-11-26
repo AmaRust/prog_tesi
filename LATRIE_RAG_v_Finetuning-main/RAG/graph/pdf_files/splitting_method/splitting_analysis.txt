@@ -1,0 +1,2 @@
+The scores for all the metrics increase significantly when we switch from Settings to another segmentation technique.
+However, there is no major difference between syntactic and semantic segmentation, apart from the METEOR score, which increases significantly for semantic segmentation in the case of context and an additional prompt.

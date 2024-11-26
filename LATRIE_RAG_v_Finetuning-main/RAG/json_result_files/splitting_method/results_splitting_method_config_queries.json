@@ -1,0 +1,509 @@
+[
+    {
+        "parameters": {
+            "embedding model": "BAAI/bge-small-en-v1.5",
+            "llm": "TheBloke/Mistral-7B-Instruct-v0.2-GPTQ",
+            "splitting method": "Settings",
+            "chunk size": 256,
+            "overlap": 25,
+            "top_k": 5,
+            "max new tokens": 190,
+            "re-ranking": 0,
+            "top_n": 0
+        },
+        "queries": [
+            "What is the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015?",
+            "Is there sufficient evidence on plazomicin compared to colistin for the treatment of CRE infections?",
+            "What was the outcome of mortality in patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic?",
+            "What are the main differences between the current guidelines and the Infectious Diseases Society of America guidance on the treatment of MDR-GNB infections?",
+            "What is a suggested area of future research in the context of preoperative screening for MDR-GNB?",
+            "What is the recommended approach to implementing screening procedures for carbapenem-resistant Acinetobacter baumannii (CRAB) colonization and infection?"
+        ],
+        "reference answers": [
+            "600,000",
+            "No, there is insufficient evidence on plazomicin compared to colistin for the treatment of CRE infections, due to the suspension of the CARE-RCT study and limited available results.",
+            "Colistin given alone or with a non-active antibiotic was associated with higher mortality than colistin combined with another active antibiotic (adjusted OR 6.63, 95% CI 1.99-22.05).",
+            "The main differences are the emphasis on antibiotic stewardship considerations, the consideration of alternative antibiotics to carbapenems and new BLBLI, such as piperacillin-tazobactam, amoxicillin-clavulanate, and aminoglycosides, and the more cautious approach to combination therapies, with a focus on the certainty of evidence with respect to clinical outcomes.",
+            "Studies analyzing the optimal timing for preoperative screening and evaluating the benefits of additional screening before surgery in case of recent antibiotic treatment.",
+            "Any change in screening procedures should follow a careful assessment of local prevalence of CRAB colonization and infection, and a prevalence of >=10% may be considered a cut-off for implementation evaluation."
+        ],
+        "predicted answers": {
+            "no additional prompt / no context": [
+                "According to the European Centre for Disease Prevention and Control (ECDC), the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015 was approximately 25,000 for Salmonella, 12,000 for Campylobacter, 11,000 for Escherichia coli (ESC-R), 11,000 for Klebsiella pneumoniae (KPC-R), 10,000 for Pseudomonas aeruginosa (PA-R), and 3,000 for Acinetobacter baumannii (AB-R). These numbers are based on the European Antimicrobial Resistance Surveillance Network (EARS-Net) data.\n\nIt is important to note that these numbers are estimates",
+                "Plazomicin and colistin are both antibiotics used in the treatment of infections caused by Carbapenem-resistant Enterobacterales (CRE), but the evidence comparing the two drugs in terms of efficacy, safety, and optimal use is still evolving.\n\nPlazomicin is a new generation aminoglycoside with improved activity against CRE compared to older aminoglycosides. A phase 3 clinical trial, named FORTA (Forta-I and Forta-II), evaluated the efficacy and safety of plazomicin compared to meropenem or colistin in the treatment of complicated urinary tract infections (cUTI) and bloodstream infections (BSI) caused by CRE. The results of this trial showed that plazomicin was non-inferior to meropenem and colist",
+                "Several studies have reported on the outcome of XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic.\n\nA meta-analysis of 11 studies involving 1,123 patients with XDR-P. aeruginosa pneumonia found that the pooled mortality rate was 38.3% in the colistin monotherapy group and 28.1% in the colistin combination therapy group. The pooled odds ratio for mortality benefit with combination therapy was 0.62 (95% CI, 0.42-0.91). This suggests that the use of colistin in combination with another active antibiotic may be associated with a lower mortality rate compared to colistin monotherapy in",
+                "The Infectious Diseases Society of America (IDSA) and other professional organizations, such as the European Society of Clinical Microbiology and Infectious Diseases (ESCMID), have issued guidelines for the diagnosis and treatment of multidrug-resistant Gram-negative bacterial (MDR-GNB) infections. While there are some similarities between the current guidelines and IDSA guidelines, there are also some key differences. Here are some of the main differences:\n\n1. Definition of MDR-GNB: The current guidelines use a more comprehensive definition of MDR-GNB, which includes organisms that are resistant to at least one agent in three or more antimicrobial classes. IDSA guidelines define MDR-GNB as organisms that are resistant to at least one agent in two or more classes.\n2. Antimicrobial susceptibility testing:",
+                "Preoperative screening for multidrug-resistant Gram-negative bacteria (MDR-GNB) is an important area of research to reduce the risk of post-surgical infections and improve patient outcomes. Here are some suggested areas of future research in this context:\n\n1. Development of rapid and accurate diagnostic methods: Current methods for detecting MDR-GNB, such as culture-based methods and PCR, can take several hours to days for results. Rapid and accurate diagnostic methods, such as molecular methods and mass spectrometry, are needed to enable timely initiation of appropriate antibiotic therapy.\n2. Identification of novel biomarkers: Biomarkers that can predict the presence of MDR-GNB infections before surgery would be valuable for preoperative screening. Recent studies have identified potential biomarkers, such as microRNAs and metabol",
+                "The recommended approach to implementing screening procedures for carbapenem-resistant Acinetobacter baumannii (CRAB) colonization and infection involves the following steps:\n\n1. Assessment of the risk of CRAB colonization and infection: This involves identifying patient populations at high risk for CRAB colonization and infection, such as those in intensive care units, long-term care facilities, and patients with a history of previous CRAB infections or colonization.\n\n2. Selection of screening methods: There are several methods for CRAB screening, including culture-based methods and non-culture-based methods such as rectal swabs or nasal swabs using selective media or molecular methods. Culture-based methods are considered the gold standard but are time-consuming and resource-intensive. Non-culture-based methods are faster and more cost-effective but may have lower sensitivity and"
+            ],
+            "additional prompt / no context": [
+                "According to the European Centre for Disease Prevention and Control (ECDC), an estimated 25,000 deaths and 22,000-35,000 new cases of antimicrobial resistance-related infections occurred in Europe in 2015. However, the exact number of infections caused by antibiotic-resistant bacteria is not provided in their report.",
+                "Plazomicin is a new antibiotic that has shown promise in the treatment of infections caused by Carbapenem-resistant Enterobacterales (CRE), including those that are resistant to colistin. However, the evidence base for plazomicin compared to colistin is still limited to a few small studies and case series. More large-scale, randomized controlled trials are needed to definitively determine the superiority or equivalence of plazomicin versus colistin in the treatment of CRE infections. Therefore, while plazomicin may be considered as an alternative to colistin in certain clinical situations, the decision should be made on a case-by-case basis in consultation with an infectious disease specialist.",
+                "Several studies have reported on the outcome of XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic. The pooled analysis of these studies suggests that the mortality rate was significantly lower in patients who received colistin-based therapy compared to those who received no active antimicrobial treatment (32% vs. 50%). The addition of another active antibiotic to colistin did not significantly improve the mortality rate. However, it is important to note that the specific antibiotics used in combination with colistin varied between studies, and the effectiveness of each combination may depend on the specific resistance patterns of the isolates. Overall, colistin remains an effective treatment option for XDR-P. aeruginosa infections, particularly when used in combination",
+                "The main differences between current guidelines, such as those from the European Society of Clinical Microbiology and Infectious Diseases (ESCMID) and the Infectious Diseases Society of America (IDSA), and older IDSA guidelines on the treatment of multidrug-resistant Gram-negative bacterial (MDR-GNB) infections include:\n\n1. Antibictorresistance testing: Current guidelines recommend antibiotic susceptibility testing to guide empiric therapy and tailor treatment based on the specific bacterial resistance profile.\n2. Duration of therapy: Current guidelines suggest longer durations of therapy for certain infections, such as complicated intra-abdominal infections and bloodstream infections, to ensure adequate treatment and reduce the risk of treatment failure.\n3. Use of polymyxins: Current guidelines recommend the use of polymyxins, such",
+                "One suggested area of future research in the context of preoperative screening for Multi-Drug Resistant Gram-Negative Bacteria (MDR-GNB) is the development and validation of rapid, point-of-care diagnostic tests that can accurately identify MDR-GNB strains and their specific antibiotic resistance profiles. This would enable timely and effective targeted therapy and help reduce the spread of MDR-GNB in healthcare settings. Additionally, research into the use of microbiome analysis and metagenomics for early detection and prediction of MDR-GNB infections is also an emerging area of interest.",
+                "The recommended approach to implementing screening procedures for CRAB colonization and infection involves the following steps:\n\n1. Identification of high-risk patients: Screen patients in intensive care units, ventilated patients, and those with a history of previous CRAB infection or colonization.\n2. Collection of appropriate specimens: Obtain appropriate specimens, such as nasal or rectal swabs, for CRAB screening.\n3. Use of validated methods: Utilize validated methods for CRAB screening, such as culture-based or molecular methods.\n4. Frequency of screening: Perform screening at regular intervals, such as weekly or upon admission to high-risk units.\n5. Isolation and contact precautions: Implement isolation and contact precautions for colonized or infected patients to prevent spread.\n6. Antibiotic stewardship: Implement antibiotic"
+            ],
+            "no additional prompt / context": [
+                "According to the context provided, there is no specific information given about the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015. The context focuses on studies and guidelines related to infections caused by Extended-Spectrum Cephalosporin-Resistant Enterobacterales (ESCR-E) and Carbapenem-Resistant Enterobacterales (CRE), and the importance of implementing appropriate screening and antibiotic stewardship practices to reduce the spread of these bacteria and improve patient outcomes.",
+                "Based on the context provided, there is insufficient evidence on the comparative efficacy of plazomicin versus colistin for the treatment of CRE infections. The available data only shows that there were fewer cases of all-cause mortality at 28 days with plazomicin combination therapy (1/14 with BSI) compared to colistin combination therapy (6/15 with BSI) in a suspended study. However, it is important to note that there is currently no FDA/EMA approval for aztreonam-avibactam, which is being tested in phase 3 trials as a potential alternative to colistin. Therefore, more research is needed to establish the superiority or non-inferiority of plazomicin compared to colistin for the treatment of CRE infections.",
+                "In a retrospective study evaluating 114 patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, colistin given alone or with a non-active antibiotic was associated with higher mortality than colistin combined with another active antibiotic (adjusted OR 6.63, 95% CI 1.99-22.05) [197].\n\n         However, it is important to note that the results for the subgroup of patients with CRPA were non-adjusted in other observational studies. In a small subgroup of patients with XDR-P. aeruginosa, mortality was lower when combinations were used (14/15 dead with monotherapy versus 0/3 with combinations) [198].\n\n         Therefore,",
+                "1. The current guidelines do not include a systematic review of the literature and do not use the formal GRADE process to appraise the evidence. Recommendations were developed by infectious diseases specialists and address more specific scenarios.\n        2. The paucity of evidence on the effects of the new BIBLI against MDR-GNB, mainly CR-GNB, and antibiotic stewardship considerations underly the main differences between the current guidelines and the Infectious Diseases Society of America guidance.\n        3. The current guidelines stress the situations where alternatives to carbapenems and the new BIBLI are possible, stratifying patients by sepsis severity and urgency of sepsis control.\n        4. The current guidelines provide many good practice statements when no evidence is available and clinical practice mandates decision-making, placing a high value on antibiotic stewardship",
+                "One suggested area of future research in the context of preoperative screening for MDR-GNB is investigating the impact of MDR-GNB multisite screening versus rectal screening only on post-SOT infections according to the type of organ transplanted. This could help determine the most effective screening method for reducing the risk of post-SOT infections caused by MDR-GNB. Additionally, studies on the use of other antibiotic-based interventions, such as decolonization and selective decontamination, for reducing postsurgical infections and targeting MDR-GNB carriers before surgery are also recommended. Further research is also needed to explore the impact of carrier status for XDRPA and PDR-GNB on SSIs and the development of resistance to the antibiotics used for targeted regimens.",
+                "Based on the context provided, the recommended approach to implementing screening procedures for CRAB colonization and infection involves a careful assessment of the local prevalence of CRAB colonization and infection among patients admitted or transferred to the surgical wards. A prevalence of >=10% is suggested as a cut-off for implementation evaluation. Evidence-based screening protocols should be considered, including the screening of different body sites such as the rectum. The choice of targeted versus universal screening should be based on local work organization and integrated within antibiotic and diagnostic stewardship guidance. The knowledge of a patient's colonization status before surgery is essential for early implementation of infection control procedures.\n\nFor patients undergoing high-risk surgery, such as liver transplant, it is conditionally recommended to implement rectal screening to identify CRAB carriers. However, there is low certainty of evidence to support this recommendation. The"
+            ],
+            "additional prompt / context": [
+                "Based on the context provided, there is no specific information given about the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015. The text focuses on studies related to ESCR-E and CRE infections in various patient populations and the potential impact of screening and antibiotic stewardship on reducing these infections.",
+                "Based on the available evidence, there is insufficient evidence to make a definitive conclusion on the comparative efficacy of plazomicin versus colistin for the treatment of CRE infections. The study you mentioned only provides data on mortality at 28 days, and there is a lack of head-to-head trials directly comparing these two antibiotics. Therefore, it is essential to wait for more robust evidence before making any recommendations.",
+                "In a retrospective study evaluating 114 patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, colistin given alone was associated with higher mortality than colistin combined with another active antibiotic (adjusted OR 6.63, 95% CI 1.99-22.05) [197].\n\n        However, it is important to note that the evidence for the use of colistin in combination with another active antibiotic versus colistin monotherapy for XDR-P. aeruginosa infections is of low-certainty, and more research is needed to draw definitive conclusions.",
+                "1. The current guidelines focus on specific scenarios and alternatives to carbapenems and the new BIBLI for treating MDR-GNB infections, while the Infectious Diseases Society of America guidance provides more general recommendations.\n2. The current guidelines stress the importance of antibiotic stewardship considerations, including the use of colistin and the new BIBLI, and provide good practice statements when evidence is lacking.\n3. The current guidelines address both targeted and empirical antibiotic therapy, while the Infectious Diseases Society of America guidance primarily focuses on targeted therapy.\n4. The current guidelines provide recommendations for specific pathogens, while the Infectious Diseases Society of America guidance provides recommendations for a broader range of infections caused by MDR-GNB.\n5. The current guidelines suggest that targeted PAP for patients colonized with MDR-GNB before u",
+                "One suggested area of future research in the context of preoperative screening for MDR-GNB is investigating the impact of MDR-GNB multisite screening vs. rectal screening only on post-SOT infections according to the type of organ transplanted. This could help determine the most effective screening method for reducing the risk of post-SOT infections caused by MDR-GNB.",
+                "1. Assess local CRAB prevalence and implement rectal screening for CRAB before liver transplant surgery if the prevalence is >=10%.\n2. Consider rectal culture results for targeted PAP design and avoid using novel compounds for treatment of CRAB infections.\n3. Monitor resistance and investigate short- and long-term colonization after surgery.\n4. Perform MDR-GNB screening within 3 weeks prior to surgery, and consider testing against new BIBLI and polymyxins for CR-GNB that are resistant to all b-lactams.\n5. Adopt carbapenem-sparing therapy for non-severe infections and low-risk sources of infection, and address stepdown therapy based on sepsis severity and source of infection.\n\nThese recommendations are based on the context provided and the evidence reviewed in the document."
+            ]
+        },
+        "metrics": {
+            "no additional prompt / no context": {
+                "BLEU": {
+                    "1_gram": 0.04770851801018905,
+                    "2_gram": 0.07918780359597145,
+                    "3_gram": 0.060473649401160574,
+                    "4_gram": 0.04242522364111071
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.13184028424704217,
+                        "recall": 0.5714889376822451,
+                        "fmeasure": 0.2069895532731025
+                    },
+                    "rouge_L": {
+                        "precision": 0.08551161346839485,
+                        "recall": 0.39587031492482855,
+                        "fmeasure": 0.13458685215659813
+                    }
+                },
+                "METEOR": 0.22560862175269095,
+                "BERTScore": {
+                    "Precision": -0.155,
+                    "Recall": 0.181,
+                    "F1_measure": 0.007
+                }
+            },
+            "additional prompt / no context": {
+                "BLEU": {
+                    "1_gram": 0.047904521434831614,
+                    "2_gram": 0.07950842567830414,
+                    "3_gram": 0.06196276374704266,
+                    "4_gram": 0.042991415992286695
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.13135538682793313,
+                        "recall": 0.5260157939463448,
+                        "fmeasure": 0.2035048345828291
+                    },
+                    "rouge_L": {
+                        "precision": 0.09344648849175881,
+                        "recall": 0.39027157236885174,
+                        "fmeasure": 0.14455639940863083
+                    }
+                },
+                "METEOR": 0.20409180862327747,
+                "BERTScore": {
+                    "Precision": -0.066,
+                    "Recall": 0.168,
+                    "F1_measure": 0.049
+                }
+            },
+            "no additional prompt / context": {
+                "BLEU": {
+                    "1_gram": 0.04746806917841917,
+                    "2_gram": 0.08397908100413931,
+                    "3_gram": 0.07943294580314637,
+                    "4_gram": 0.06340898662620516
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.17091052386029496,
+                        "recall": 0.6376621956878704,
+                        "fmeasure": 0.267212890986934
+                    },
+                    "rouge_L": {
+                        "precision": 0.13796750725276813,
+                        "recall": 0.5144463801262634,
+                        "fmeasure": 0.21593253521695724
+                    }
+                },
+                "METEOR": 0.34406535460232096,
+                "BERTScore": {
+                    "Precision": -0.071,
+                    "Recall": 0.372,
+                    "F1_measure": 0.141
+                }
+            },
+            "additional prompt / context": {
+                "BLEU": {
+                    "1_gram": 0.06531103776356471,
+                    "2_gram": 0.10784697182182024,
+                    "3_gram": 0.0890155890389555,
+                    "4_gram": 0.06800748417091018
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.19334882349959093,
+                        "recall": 0.5297535255578267,
+                        "fmeasure": 0.28214166840972205
+                    },
+                    "rouge_L": {
+                        "precision": 0.14171239832527258,
+                        "recall": 0.3835923648610191,
+                        "fmeasure": 0.20627263789727304
+                    }
+                },
+                "METEOR": 0.2981233552583212,
+                "BERTScore": {
+                    "Precision": 0.04,
+                    "Recall": 0.321,
+                    "F1_measure": 0.176
+                }
+            }
+        }
+    },
+    {
+        "parameters": {
+            "embedding model": "BAAI/bge-small-en-v1.5",
+            "llm": "TheBloke/Mistral-7B-Instruct-v0.2-GPTQ",
+            "splitting method": "From scratch with Faiss vector store and SYNTACTIC splitter",
+            "chunk size": 256,
+            "overlap": 25,
+            "top_k": 5,
+            "max new tokens": 190,
+            "re-ranking": 0,
+            "top_n": 0
+        },
+        "queries": [
+            "What is the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015?",
+            "Is there sufficient evidence on plazomicin compared to colistin for the treatment of CRE infections?",
+            "What was the outcome of mortality in patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic?",
+            "What are the main differences between the current guidelines and the Infectious Diseases Society of America guidance on the treatment of MDR-GNB infections?",
+            "What is a suggested area of future research in the context of preoperative screening for MDR-GNB?",
+            "What is the recommended approach to implementing screening procedures for carbapenem-resistant Acinetobacter baumannii (CRAB) colonization and infection?"
+        ],
+        "reference answers": [
+            "600,000",
+            "No, there is insufficient evidence on plazomicin compared to colistin for the treatment of CRE infections, due to the suspension of the CARE-RCT study and limited available results.",
+            "Colistin given alone or with a non-active antibiotic was associated with higher mortality than colistin combined with another active antibiotic (adjusted OR 6.63, 95% CI 1.99-22.05).",
+            "The main differences are the emphasis on antibiotic stewardship considerations, the consideration of alternative antibiotics to carbapenems and new BLBLI, such as piperacillin-tazobactam, amoxicillin-clavulanate, and aminoglycosides, and the more cautious approach to combination therapies, with a focus on the certainty of evidence with respect to clinical outcomes.",
+            "Studies analyzing the optimal timing for preoperative screening and evaluating the benefits of additional screening before surgery in case of recent antibiotic treatment.",
+            "Any change in screening procedures should follow a careful assessment of local prevalence of CRAB colonization and infection, and a prevalence of >=10% may be considered a cut-off for implementation evaluation."
+        ],
+        "predicted answers": {
+            "no additional prompt / no context": [
+                "According to the European Centre for Disease Prevention and Control (ECDC), the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015 was approximately 25,000 for Salmonella, 12,000 for Campylobacter, 11,000 for Escherichia coli (ESC-R), 11,000 for Klebsiella pneumoniae (KPC-R), 10,000 for Pseudomonas aeruginosa (PA-R), and 3,000 for Acinetobacter baumannii (AB-R). These numbers are based on the European Antimicrobial Resistance Surveillance Network (EARS-Net) data.\n\nIt is important to note that these numbers are estimates",
+                "Plazomicin and colistin are both antibiotics used in the treatment of infections caused by Carbapenem-resistant Enterobacterales (CRE), but the evidence comparing the two drugs in terms of efficacy, safety, and optimal use is still evolving.\n\nPlazomicin is a new generation aminoglycoside with improved activity against CRE compared to older aminoglycosides. A phase 3 clinical trial, named FORTA (Forta-I and Forta-II), evaluated the efficacy and safety of plazomicin compared to meropenem or colistin in the treatment of complicated urinary tract infections (cUTI) and bloodstream infections (BSI) caused by CRE. The results of this trial showed that plazomicin was non-inferior to meropenem and colist",
+                "Several studies have reported on the outcome of XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic.\n\nA meta-analysis of 11 studies involving 1,123 patients with XDR-P. aeruginosa pneumonia found that the pooled mortality rate was 38.3% in the colistin monotherapy group and 28.1% in the colistin combination therapy group. The pooled odds ratio for mortality benefit with combination therapy was 0.62 (95% CI, 0.42-0.91). This suggests that the use of colistin in combination with another active antibiotic may be associated with a lower mortality rate compared to colistin monotherapy in",
+                "The Infectious Diseases Society of America (IDSA) and other professional organizations, such as the European Society of Clinical Microbiology and Infectious Diseases (ESCMID), have issued guidelines for the diagnosis and treatment of multidrug-resistant Gram-negative bacterial (MDR-GNB) infections. While there are some similarities between the current guidelines and IDSA guidelines, there are also some key differences. Here are some of the main differences:\n\n1. Definition of MDR-GNB: The current guidelines use a more comprehensive definition of MDR-GNB, which includes organisms that are resistant to at least one agent in three or more antimicrobial classes. IDSA guidelines define MDR-GNB as organisms that are resistant to at least one agent in two or more classes.\n2. Antimicrobial susceptibility testing:",
+                "Preoperative screening for multidrug-resistant Gram-negative bacteria (MDR-GNB) is an important area of research to reduce the risk of post-surgical infections and improve patient outcomes. Here are some suggested areas of future research in this context:\n\n1. Development of rapid and accurate diagnostic methods: Current methods for detecting MDR-GNB, such as culture-based methods and PCR, can take several hours to days for results. Rapid and accurate diagnostic methods, such as molecular methods and mass spectrometry, are needed to enable timely initiation of appropriate antibiotic therapy.\n2. Identification of novel biomarkers: Biomarkers that can predict the presence of MDR-GNB infections before surgery would be valuable for preoperative screening. Recent studies have identified potential biomarkers, such as microRNAs and metabol",
+                "The recommended approach to implementing screening procedures for carbapenem-resistant Acinetobacter baumannii (CRAB) colonization and infection involves the following steps:\n\n1. Assessment of the risk of CRAB colonization and infection: This involves identifying patient populations at high risk for CRAB colonization and infection, such as those in intensive care units, long-term care facilities, and patients with a history of previous CRAB infections or colonization.\n\n2. Selection of screening methods: There are several methods for CRAB screening, including culture-based methods and non-culture-based methods such as rectal swabs or nasal swabs using selective media or molecular methods. Culture-based methods are considered the gold standard but are time-consuming and resource-intensive. Non-culture-based methods are faster and more cost-effective but may have lower sensitivity and"
+            ],
+            "additional prompt / no context": [
+                "According to the European Centre for Disease Prevention and Control (ECDC), an estimated 25,000 deaths and 22,000-35,000 new cases of antimicrobial resistance-related infections occurred in Europe in 2015. However, the exact number of infections caused by antibiotic-resistant bacteria is not provided in their report.",
+                "Plazomicin is a new antibiotic that has shown promise in the treatment of infections caused by Carbapenem-resistant Enterobacterales (CRE), including those that are resistant to colistin. However, the evidence base for plazomicin compared to colistin is still limited to a few small studies and case series. More large-scale, randomized controlled trials are needed to definitively determine the superiority or equivalence of plazomicin versus colistin in the treatment of CRE infections. Therefore, while plazomicin may be considered as an alternative to colistin in certain clinical situations, the decision should be made on a case-by-case basis in consultation with an infectious disease specialist.",
+                "Several studies have reported on the outcome of XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic. The pooled analysis of these studies suggests that the mortality rate was significantly lower in patients who received colistin-based therapy compared to those who received no active antimicrobial treatment (32% vs. 50%). The addition of another active antibiotic to colistin did not significantly improve the mortality rate. However, it is important to note that the specific antibiotics used in combination with colistin varied between studies, and the effectiveness of each combination may depend on the specific resistance patterns of the isolates. Overall, colistin remains an effective treatment option for XDR-P. aeruginosa infections, particularly when used in combination",
+                "The main differences between current guidelines, such as those from the European Society of Clinical Microbiology and Infectious Diseases (ESCMID) and the Infectious Diseases Society of America (IDSA), and older IDSA guidelines on the treatment of multidrug-resistant Gram-negative bacterial (MDR-GNB) infections include:\n\n1. Antibictorresistance testing: Current guidelines recommend antibiotic susceptibility testing to guide empiric therapy and tailor treatment based on the specific bacterial resistance profile.\n2. Duration of therapy: Current guidelines suggest longer durations of therapy for certain infections, such as complicated intra-abdominal infections and bloodstream infections, to ensure adequate treatment and reduce the risk of treatment failure.\n3. Use of polymyxins: Current guidelines recommend the use of polymyxins, such",
+                "One suggested area of future research in the context of preoperative screening for Multi-Drug Resistant Gram-Negative Bacteria (MDR-GNB) is the development and validation of rapid, point-of-care diagnostic tests that can accurately identify MDR-GNB strains and their specific antibiotic resistance profiles. This would enable timely and effective targeted therapy and help reduce the spread of MDR-GNB in healthcare settings. Additionally, research into the use of microbiome analysis and metagenomics for early detection and prediction of MDR-GNB infections is also an emerging area of interest.",
+                "The recommended approach to implementing screening procedures for CRAB colonization and infection involves the following steps:\n\n1. Identification of high-risk patients: Screen patients in intensive care units, ventilated patients, and those with a history of previous CRAB infection or colonization.\n2. Collection of appropriate specimens: Obtain appropriate specimens, such as nasal or rectal swabs, for CRAB screening.\n3. Use of validated methods: Utilize validated methods for CRAB screening, such as culture-based or molecular methods.\n4. Frequency of screening: Perform screening at regular intervals, such as weekly or upon admission to high-risk units.\n5. Isolation and contact precautions: Implement isolation and contact precautions for colonized or infected patients to prevent spread.\n6. Antibiotic stewardship: Implement antibiotic"
+            ],
+            "no additional prompt / context": [
+                "According to the context provided, there is no specific information given about the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015. The context focuses on the use of aminoglycosides versus tigecycline for infections caused by carbapenem-resistant Klebsiella pneumoniae and the importance of screening for carbapenem-resistant Enterobacterales (CRE) in surgical wards. It also discusses the increased risk of postoperative infections in ESCR-E carriers compared with noncarriers and the importance of antibiotic stewardship in the use of carbapenems for infections caused by 3GcephRE. However, it does not provide any data on the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015",
+                "Based on the context provided, there is insufficient evidence on the comparative efficacy of plazomicin versus colistin for the treatment of CRE infections. The CRaCKle cohort study showed all-cause mortality at 28 days was lower with plazomicin combination therapy compared with colistin combination therapy, but the study was suspended after 2 years and there is currently insufficient evidence on plazomicin compared to colistin specifically for CRE.",
+                "Based on the context provided, there is a retrospective study that evaluated 114 patients with nosocomial pneumonia, including ventilator-associated pneumonia, with isolation of XDR-P. aeruginosa. The study found that colistin given alone or with a non-active antibiotic was associated with higher mortality than colistin combined with another active antibiotic (adjusted OR 6.63, 95% CI 1.99-22.05).\n\nTherefore, the outcome of mortality in patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic suggests that combination therapy may be associated with better outcomes. However, it is important to note that this is based",
+                "The main differences between the current guidelines and the Infectious Diseases Society of America (IDSA) guidance on the treatment of MDR-GNB infections include the following:\n\n1. Evidence base: The current guidelines are based on a systematic review of the literature and use the formal GRADE process to appraise the evidence, while the IDSA guidance documents do not include a systematic review of the literature and do not use the formal GRADE process.\n2. Antibiotic stewardship considerations: The current guidelines place a high value on antibiotic stewardship considerations and provide good practice statements when no evidence is available. The IDSA guidance also addresses antibiotic stewardship considerations but does not provide as much detail.\n3. Targeted treatment vs. empirical treatment: The current guidelines address both targeted treatment and empirical treatment phases, while the IDSA guidance primarily",
+                "further research is recommended to investigate the optimal timing for preoperative MDR-GNB screening and the benefits of additional screening in case of recent antibiotic treatment. Studies should also evaluate the impact of carrier status for MDR-GNB other than ESCR-E, CRE, and CRAB on SSIs and the development of resistance to the antibiotics used for targeted regimens. Additionally, the potential for resistance selection and side effects of PAP including antibiotic combinations should be analyzed.",
+                "1. Assess local prevalence of CRAB colonization and infection among patients admitted or transferred to the surgical wards. A prevalence of >=10% may be considered as a cut-off for implementation evaluation.\n2. Consider evidence-based screening protocols, including rectal screening, and the screening of different body sites (e.g. skin).\n3. Base the choice of targeted versus universal screening on local work organization and integrate it within antibiotic and diagnostic stewardship guidance.\n4. Consider the knowledge of the colonization status of the patient before surgery essential for early implementation of infection control procedures.\n5. For MDR-GNB screening, cultures performed within 3 weeks prior to surgery may be considered.\n6. Design clinical trials to evaluate the effectiveness, applicability, and safety of targeted PAP in CRE carriers undergoing SOT and other high-risk surg"
+            ],
+            "additional prompt / context": [
+                "Based on the context provided, there is no specific information given about the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015. The text focuses on the use of aminoglycosides versus tigecycline for infections caused by carbapenem-resistant Klebsiella pneumoniae and the importance of screening for carbapenem-resistant Enterobacterales (CRE) in surgical wards.",
+                "Based on the context provided, there is currently insufficient evidence on the comparative efficacy and safety of plazomicin versus colistin for the treatment of CRE infections. The CRaCKle cohort study showed all-cause mortality at 28 days was lower with plazomicin combination therapy compared with colistin combination therapy, but the study was suspended after 2 years due to enrolment difficulties and the evidence is not sufficient to make a definitive conclusion.",
+                "Based on the context provided, there is evidence from a retrospective study that colistin given alone or with a non-active antibiotic was associated with higher mortality than colistin combined with another active antibiotic in patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia (adjusted OR 6.63, 95% CI 1.99-22.05) [197].",
+                "1. The current guidelines focus on antibiotic stewardship considerations when using last-resort antibiotics like colistin and the new BIBLI for MDR-GNB infections. The Infectious Diseases Society of America guidance does not specifically mention antibiotic stewardship considerations.\n\n2. The current guidelines address the empirical treatment phase, which is relevant to a larger population than targeted treatment, while the Infectious Diseases Society of America guidance primarily focuses on specific pathogens and their targeted treatment.\n\n3. The current guidelines provide recommendations for alternatives to carbapenems and the new BIBLI, such as piperacillin-tazobactam or amoxicillin-clavulanate for 3GcephRE, aminoglycosides for cUTI, and scenarios where sparing of the new B",
+                "further research is recommended to investigate the optimal timing for preoperative MDR-GNB screening and the benefits of additional screening in case of recent antibiotic treatment. Studies should also evaluate the impact of carrier status for MDR-GNB other than ESCR-E, CRE, and CRAB on post-SOT infections and the development of resistance to the antibiotics used for targeted regimens. Additionally, the potential for resistance selection and side effects of PAP including antibiotic combinations should be analyzed.",
+                "1. Assess local prevalence of CRAB colonization and infection among patients admitted or transferred to the surgical wards. A prevalence >=10% may be considered as a cut-off for implementation evaluation.\n2. Consider evidence-based screening protocols, including rectal screening, and the screening of different body sites (e.g. skin).\n3. Choose targeted or universal screening based on local work organization and integrate it within antibiotic and diagnostic stewardship guidance.\n4. Implementing the colonization status of the patient before surgery is essential for early implementation of infection control procedures.\n5. Perform rectal screening for CRAB carriers before liver transplant surgery according to local epidemiology (conditionally recommended, low certainty of evidence).\n6. It might be a good practice to screen all SOT recipients for CRAB before surgery (ungraded good practice statement)."
+            ]
+        },
+        "metrics": {
+            "no additional prompt / no context": {
+                "BLEU": {
+                    "1_gram": 0.04770851801018905,
+                    "2_gram": 0.07918780359597145,
+                    "3_gram": 0.060473649401160574,
+                    "4_gram": 0.04242522364111071
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.13184028424704217,
+                        "recall": 0.5714889376822451,
+                        "fmeasure": 0.2069895532731025
+                    },
+                    "rouge_L": {
+                        "precision": 0.08551161346839485,
+                        "recall": 0.39587031492482855,
+                        "fmeasure": 0.13458685215659813
+                    }
+                },
+                "METEOR": 0.22560862175269095,
+                "BERTScore": {
+                    "Precision": -0.155,
+                    "Recall": 0.181,
+                    "F1_measure": 0.007
+                }
+            },
+            "additional prompt / no context": {
+                "BLEU": {
+                    "1_gram": 0.047904521434831614,
+                    "2_gram": 0.07950842567830414,
+                    "3_gram": 0.06196276374704266,
+                    "4_gram": 0.042991415992286695
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.13135538682793313,
+                        "recall": 0.5260157939463448,
+                        "fmeasure": 0.2035048345828291
+                    },
+                    "rouge_L": {
+                        "precision": 0.09344648849175881,
+                        "recall": 0.39027157236885174,
+                        "fmeasure": 0.14455639940863083
+                    }
+                },
+                "METEOR": 0.20409180862327747,
+                "BERTScore": {
+                    "Precision": -0.066,
+                    "Recall": 0.168,
+                    "F1_measure": 0.049
+                }
+            },
+            "no additional prompt / context": {
+                "BLEU": {
+                    "1_gram": 0.05601428245395996,
+                    "2_gram": 0.09890023745293819,
+                    "3_gram": 0.09342729436287217,
+                    "4_gram": 0.07525646222088828
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.2047415104170799,
+                        "recall": 0.6508324281736683,
+                        "fmeasure": 0.3091246633719021
+                    },
+                    "rouge_L": {
+                        "precision": 0.17213529199651223,
+                        "recall": 0.5517966463196973,
+                        "fmeasure": 0.2604508839326695
+                    }
+                },
+                "METEOR": 0.3759956339356443,
+                "BERTScore": {
+                    "Precision": 0.017,
+                    "Recall": 0.385,
+                    "F1_measure": 0.192
+                }
+            },
+            "additional prompt / context": {
+                "BLEU": {
+                    "1_gram": 0.06905595352131383,
+                    "2_gram": 0.12509894674203945,
+                    "3_gram": 0.12471419493144446,
+                    "4_gram": 0.1024709300671962
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.2683311017200318,
+                        "recall": 0.6861362048567553,
+                        "fmeasure": 0.3793798586039307
+                    },
+                    "rouge_L": {
+                        "precision": 0.22860255952670086,
+                        "recall": 0.5737991973401054,
+                        "fmeasure": 0.3213582425711314
+                    }
+                },
+                "METEOR": 0.38430322636659464,
+                "BERTScore": {
+                    "Precision": 0.063,
+                    "Recall": 0.489,
+                    "F1_measure": 0.268
+                }
+            }
+        }
+    },
+    {
+        "parameters": {
+            "embedding model": "BAAI/bge-small-en-v1.5",
+            "llm": "TheBloke/Mistral-7B-Instruct-v0.2-GPTQ",
+            "splitting method": "From scratch with Faiss vector store and SEMANTIC splitter",
+            "chunk size": 256,
+            "overlap": 25,
+            "top_k": 5,
+            "max new tokens": 190,
+            "re-ranking": 0,
+            "top_n": 0
+        },
+        "queries": [
+            "What is the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015?",
+            "Is there sufficient evidence on plazomicin compared to colistin for the treatment of CRE infections?",
+            "What was the outcome of mortality in patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic?",
+            "What are the main differences between the current guidelines and the Infectious Diseases Society of America guidance on the treatment of MDR-GNB infections?",
+            "What is a suggested area of future research in the context of preoperative screening for MDR-GNB?",
+            "What is the recommended approach to implementing screening procedures for carbapenem-resistant Acinetobacter baumannii (CRAB) colonization and infection?"
+        ],
+        "reference answers": [
+            "600,000",
+            "No, there is insufficient evidence on plazomicin compared to colistin for the treatment of CRE infections, due to the suspension of the CARE-RCT study and limited available results.",
+            "Colistin given alone or with a non-active antibiotic was associated with higher mortality than colistin combined with another active antibiotic (adjusted OR 6.63, 95% CI 1.99-22.05).",
+            "The main differences are the emphasis on antibiotic stewardship considerations, the consideration of alternative antibiotics to carbapenems and new BLBLI, such as piperacillin-tazobactam, amoxicillin-clavulanate, and aminoglycosides, and the more cautious approach to combination therapies, with a focus on the certainty of evidence with respect to clinical outcomes.",
+            "Studies analyzing the optimal timing for preoperative screening and evaluating the benefits of additional screening before surgery in case of recent antibiotic treatment.",
+            "Any change in screening procedures should follow a careful assessment of local prevalence of CRAB colonization and infection, and a prevalence of >=10% may be considered a cut-off for implementation evaluation."
+        ],
+        "predicted answers": {
+            "no additional prompt / no context": [
+                "According to the European Centre for Disease Prevention and Control (ECDC), the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015 was approximately 25,000 for Salmonella, 12,000 for Campylobacter, 11,000 for Escherichia coli (ESC-R), 11,000 for Klebsiella pneumoniae (KPC-R), 10,000 for Pseudomonas aeruginosa (PA-R), and 3,000 for Acinetobacter baumannii (AB-R). These numbers are based on the European Antimicrobial Resistance Surveillance Network (EARS-Net) data.\n\nIt is important to note that these numbers are estimates",
+                "Plazomicin and colistin are both antibiotics used in the treatment of infections caused by Carbapenem-resistant Enterobacterales (CRE), but the evidence comparing the two drugs in terms of efficacy, safety, and optimal use is still evolving.\n\nPlazomicin is a new generation aminoglycoside with improved activity against CRE compared to older aminoglycosides. A phase 3 clinical trial, named FORTA (Forta-I and Forta-II), evaluated the efficacy and safety of plazomicin compared to meropenem or colistin in the treatment of complicated urinary tract infections (cUTI) and bloodstream infections (BSI) caused by CRE. The results of this trial showed that plazomicin was non-inferior to meropenem and colist",
+                "Several studies have reported on the outcome of XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic.\n\nA meta-analysis of 11 studies involving 1,123 patients with XDR-P. aeruginosa pneumonia found that the pooled mortality rate was 38.3% in the colistin monotherapy group and 28.1% in the colistin combination therapy group. The pooled odds ratio for mortality benefit with combination therapy was 0.62 (95% CI, 0.42-0.91). This suggests that the use of colistin in combination with another active antibiotic may be associated with a lower mortality rate compared to colistin monotherapy in",
+                "The Infectious Diseases Society of America (IDSA) and other professional organizations, such as the European Society of Clinical Microbiology and Infectious Diseases (ESCMID), have issued guidelines for the diagnosis and treatment of multidrug-resistant Gram-negative bacterial (MDR-GNB) infections. While there are some similarities between the current guidelines and IDSA guidelines, there are also some key differences. Here are some of the main differences:\n\n1. Definition of MDR-GNB: The current guidelines use a more comprehensive definition of MDR-GNB, which includes organisms that are resistant to at least one agent in three or more antimicrobial classes. IDSA guidelines define MDR-GNB as organisms that are resistant to at least one agent in two or more classes.\n2. Antimicrobial susceptibility testing:",
+                "Preoperative screening for multidrug-resistant Gram-negative bacteria (MDR-GNB) is an important area of research to reduce the risk of post-surgical infections and improve patient outcomes. Here are some suggested areas of future research in this context:\n\n1. Development of rapid and accurate diagnostic methods: Current methods for detecting MDR-GNB, such as culture-based methods and PCR, can take several hours to days for results. Rapid and accurate diagnostic methods, such as molecular methods and mass spectrometry, are needed to enable timely initiation of appropriate antibiotic therapy.\n2. Identification of novel biomarkers: Biomarkers that can predict the presence of MDR-GNB infections before surgery would be valuable for preoperative screening. Recent studies have identified potential biomarkers, such as microRNAs and metabol",
+                "The recommended approach to implementing screening procedures for carbapenem-resistant Acinetobacter baumannii (CRAB) colonization and infection involves the following steps:\n\n1. Assessment of the risk of CRAB colonization and infection: This involves identifying patient populations at high risk for CRAB colonization and infection, such as those in intensive care units, long-term care facilities, and patients with a history of previous CRAB infections or colonization.\n\n2. Selection of screening methods: There are several methods for CRAB screening, including culture-based methods and non-culture-based methods such as rectal swabs or nasal swabs using selective media or molecular methods. Culture-based methods are considered the gold standard but are time-consuming and resource-intensive. Non-culture-based methods are faster and more cost-effective but may have lower sensitivity and"
+            ],
+            "additional prompt / no context": [
+                "According to the European Centre for Disease Prevention and Control (ECDC), an estimated 25,000 deaths and 22,000-35,000 new cases of antimicrobial resistance-related infections occurred in Europe in 2015. However, the exact number of infections caused by antibiotic-resistant bacteria is not provided in their report.",
+                "Plazomicin is a new antibiotic that has shown promise in the treatment of infections caused by Carbapenem-resistant Enterobacterales (CRE), including those that are resistant to colistin. However, the evidence base for plazomicin compared to colistin is still limited to a few small studies and case series. More large-scale, randomized controlled trials are needed to definitively determine the superiority or equivalence of plazomicin versus colistin in the treatment of CRE infections. Therefore, while plazomicin may be considered as an alternative to colistin in certain clinical situations, the decision should be made on a case-by-case basis in consultation with an infectious disease specialist.",
+                "Several studies have reported on the outcome of XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic. The pooled analysis of these studies suggests that the mortality rate was significantly lower in patients who received colistin-based therapy compared to those who received no active antimicrobial treatment (32% vs. 50%). The addition of another active antibiotic to colistin did not significantly improve the mortality rate. However, it is important to note that the specific antibiotics used in combination with colistin varied between studies, and the effectiveness of each combination may depend on the specific resistance patterns of the isolates. Overall, colistin remains an effective treatment option for XDR-P. aeruginosa infections, particularly when used in combination",
+                "The main differences between current guidelines, such as those from the European Society of Clinical Microbiology and Infectious Diseases (ESCMID) and the Infectious Diseases Society of America (IDSA), and older IDSA guidelines on the treatment of multidrug-resistant Gram-negative bacterial (MDR-GNB) infections include:\n\n1. Antibictorresistance testing: Current guidelines recommend antibiotic susceptibility testing to guide empiric therapy and tailor treatment based on the specific bacterial resistance profile.\n2. Duration of therapy: Current guidelines suggest longer durations of therapy for certain infections, such as complicated intra-abdominal infections and bloodstream infections, to ensure adequate treatment and reduce the risk of treatment failure.\n3. Use of polymyxins: Current guidelines recommend the use of polymyxins, such",
+                "One suggested area of future research in the context of preoperative screening for Multi-Drug Resistant Gram-Negative Bacteria (MDR-GNB) is the development and validation of rapid, point-of-care diagnostic tests that can accurately identify MDR-GNB strains and their specific antibiotic resistance profiles. This would enable timely and effective targeted therapy and help reduce the spread of MDR-GNB in healthcare settings. Additionally, research into the use of microbiome analysis and metagenomics for early detection and prediction of MDR-GNB infections is also an emerging area of interest.",
+                "The recommended approach to implementing screening procedures for CRAB colonization and infection involves the following steps:\n\n1. Identification of high-risk patients: Screen patients in intensive care units, ventilated patients, and those with a history of previous CRAB infection or colonization.\n2. Collection of appropriate specimens: Obtain appropriate specimens, such as nasal or rectal swabs, for CRAB screening.\n3. Use of validated methods: Utilize validated methods for CRAB screening, such as culture-based or molecular methods.\n4. Frequency of screening: Perform screening at regular intervals, such as weekly or upon admission to high-risk units.\n5. Isolation and contact precautions: Implement isolation and contact precautions for colonized or infected patients to prevent spread.\n6. Antibiotic stewardship: Implement antibiotic"
+            ],
+            "no additional prompt / context": [
+                "According to the context provided, there is no specific information given about the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015. The text focuses on the comparison of different antibiotics for the treatment of infections caused by CRAB (Carbapenem-resistant Acinetobacter baumannii) and the implementation of PAP (Preoperative Antibiotic Prophylaxis) policies.",
+                "Based on the context provided, there is currently insufficient evidence on the comparative efficacy of plazomicin versus colistin for the treatment of CRE infections. The CARE-RCT study, which was designed to compare the two, was suspended after 2 years due to enrolment difficulties, and no definitive results have been published. Therefore, it is not possible to make a definitive recommendation for or against the use of plazomicin compared to colistin for CRE infections based on the available evidence.",
+                "In a retrospective study evaluating 114 patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, colistin given alone or with a non-active antibiotic was associated with higher mortality than colistin combined with another active antibiotic (adjusted OR 6.63, 95% CI 1.99-22.05).\n\n         Therefore, the outcome of mortality in patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone or in combination with another active antibiotic suggests that using combinations may be beneficial in this specific patient population. However, it is important to note that this is based on a single retrospective study and further research is needed to",
+                "The main differences between the current guidelines and the Infectious Diseases Society of America (IDSA) guidance on the treatment of MDR-GNB infections include the following:\n\n        1. Systematic review of literature and formal GRADE process: The IDSA guidance documents do not include a systematic review of the literature and do not use the formal GRADE process to appraise the evidence. In contrast, the current guidelines are based on a comprehensive review of the literature and use a rigorous methodology to evaluate the evidence.\n        2. Focus on empirical treatment phase: The current guidelines address both the empirical treatment phase and the targeted treatment phase, while the IDSA guidance primarily focuses on targeted treatment. The empirical treatment phase is relevant to a much larger population than targeted treatment, and local guidelines should address this phase based on the local epidemiology.\n        3. Antibiotic steward",
+                "One suggested area of future research in the context of preoperative screening for MDR-GNB is evaluating the benefits of additional screening before surgery in case of recent antibiotic treatment. The optimal timing for preoperative screening and the impact of recent antibiotic use on MDR-GNB colonization rates also require further investigation. Additionally, MDR-GNB multisite screening vs. rectal screening only should be considered in SOT recipients before surgery to evaluate the impact on post-SOT infections according to the type of organ transplanted. Postoperative colonization and its association with infections also warrant further investigation.",
+                "1. Assess local prevalence of CRAB colonization and infection among patients admitted or transferred to the surgical wards. A prevalence >=10% is a reasonable cut-off for implementation evaluation, according to previous recommendations.\n2. Consider targeted or universal screening based on local work organization and integrated within antibiotic and diagnostic stewardship guidance.\n3. Knowledge of the colonization status before surgery is essential for the early implementation of infection control procedures.\n4. Local guidelines should address the empirical treatment phase, considering alternatives to carbapenems and the new BIBLI, and addressing antibiotic stewardship considerations when using last-resort antibiotics like colistin and the new BIBLI.\n5. The evidence on the effects of new BIBLI against MDR-GNB, mainly CR-GNB, is paucity, and the guidelines stress situations"
+            ],
+            "additional prompt / context": [
+                "Based on the context provided, there is no specific information given about the estimated number of infections caused by antibiotic-resistant bacteria in Europe in 2015. The text focuses on the comparison of different antibiotics for the treatment of infections caused by CRAB (Carbapenem-resistant Acinetobacter baumannii) and the discussion of the effectiveness of PAP (Preoperative Antibiotic Prophylaxis) in reducing the incidence of these infections.",
+                "Based on the available evidence, there is currently insufficient data to make a definitive conclusion on the comparative efficacy of plazomicin versus colistin for the treatment of CRE infections. The CARE-RCT study, which was designed to compare the two, was suspended after 2 years due to enrolment difficulties, leaving limited data on their relative efficacy.",
+                "In a retrospective study evaluating 114 patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, colistin given alone or with a non-active antibiotic was associated with higher mortality than colistin combined with another active antibiotic (adjusted OR 6.63, 95% CI 1.99-22.05).\n\n        Therefore, the outcome of mortality in patients with XDR-P. aeruginosa nosocomial pneumonia, including ventilator-associated pneumonia, treated with colistin alone was higher compared to those treated with colistin in combination with another active antibiotic.",
+                "1. The current guidelines focus on targeted antibiotic treatment for specific pathogens based on pathogen identification, while the Infectious Diseases Society of America guidance addresses the empirical treatment phase for patients at high risk for MDR-GNB infections.\n\n2. The Infectious Diseases Society of America guidance does not include a systematic review of the literature or the formal GRADE process to appraise the evidence, while the current guidelines are based on a thorough literature review and evidence-based recommendations.\n\n3. The current guidelines stress the situations where alternatives to carbapenems and new BIBLI are possible, stratifying patients by sepsis severity and urgency of sepsis control. In contrast, the Infectious Diseases Society of America guidance may recommend the use of new BIBLI and carbapenems, even where alternatives are available.\n\n4. The current",
+                "further research is recommended to evaluate the benefits of additional screening before surgery in case of recent antibiotic treatment and to investigate the optimal timing for preoperative screening for MDR-GNB. Specifically, studies analyzing the impact of screening timing on clinical outcomes, such as SSIs and resistance development, are warranted. Additionally, the cost-effectiveness of different screening strategies should be considered.",
+                "1. Assess local prevalence of CRAB colonization and infection among patients admitted or transferred to the surgical wards.\n2. Consider a prevalence >=10% as a cut-off for implementation evaluation.\n3. Choose targeted or universal screening based on local work organization and integrated within antibiotic and diagnostic stewardship guidance.\n4. Knowledge of colonization status before SOT essential for early implementation of infection control procedures.\n5. Follow local guidelines addressing empirical treatment phase and antibiotic stewardship considerations.\n6. Consider alternatives to carbapenems and new BIBLI, stratifying patients by sepsis severity and source of infection.\n7. Use colistin and new BIBLI with caution due to potential risks and limited evidence.\n8. Conditionally recommend against cefiderocol for CRAB infections.\n9. Implement change in screening"
+            ]
+        },
+        "metrics": {
+            "no additional prompt / no context": {
+                "BLEU": {
+                    "1_gram": 0.04770851801018905,
+                    "2_gram": 0.07918780359597145,
+                    "3_gram": 0.060473649401160574,
+                    "4_gram": 0.04242522364111071
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.13184028424704217,
+                        "recall": 0.5714889376822451,
+                        "fmeasure": 0.2069895532731025
+                    },
+                    "rouge_L": {
+                        "precision": 0.08551161346839485,
+                        "recall": 0.39587031492482855,
+                        "fmeasure": 0.13458685215659813
+                    }
+                },
+                "METEOR": 0.22560862175269095,
+                "BERTScore": {
+                    "Precision": -0.155,
+                    "Recall": 0.181,
+                    "F1_measure": 0.007
+                }
+            },
+            "additional prompt / no context": {
+                "BLEU": {
+                    "1_gram": 0.047904521434831614,
+                    "2_gram": 0.07950842567830414,
+                    "3_gram": 0.06196276374704266,
+                    "4_gram": 0.042991415992286695
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.13135538682793313,
+                        "recall": 0.5260157939463448,
+                        "fmeasure": 0.2035048345828291
+                    },
+                    "rouge_L": {
+                        "precision": 0.09344648849175881,
+                        "recall": 0.39027157236885174,
+                        "fmeasure": 0.14455639940863083
+                    }
+                },
+                "METEOR": 0.20409180862327747,
+                "BERTScore": {
+                    "Precision": -0.066,
+                    "Recall": 0.168,
+                    "F1_measure": 0.049
+                }
+            },
+            "no additional prompt / context": {
+                "BLEU": {
+                    "1_gram": 0.05194899928781104,
+                    "2_gram": 0.09660701265433273,
+                    "3_gram": 0.09020580808251884,
+                    "4_gram": 0.072171874017867
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.19920947033279637,
+                        "recall": 0.6738429254760375,
+                        "fmeasure": 0.30601679628197126
+                    },
+                    "rouge_L": {
+                        "precision": 0.15888875742745198,
+                        "recall": 0.5420139101367684,
+                        "fmeasure": 0.24463769168584212
+                    }
+                },
+                "METEOR": 0.36962883202807045,
+                "BERTScore": {
+                    "Precision": 0.002,
+                    "Recall": 0.422,
+                    "F1_measure": 0.203
+                }
+            },
+            "additional prompt / context": {
+                "BLEU": {
+                    "1_gram": 0.06577856235698737,
+                    "2_gram": 0.12274980910525501,
+                    "3_gram": 0.12063108391929482,
+                    "4_gram": 0.0971545534642675
+                },
+                "ROUGE": {
+                    "rouge_1": {
+                        "precision": 0.2632977820026026,
+                        "recall": 0.6872580928923293,
+                        "fmeasure": 0.37733795272494963
+                    },
+                    "rouge_L": {
+                        "precision": 0.19232328299543053,
+                        "recall": 0.5019778057399872,
+                        "fmeasure": 0.2758284600389864
+                    }
+                },
+                "METEOR": 0.4339256737277318,
+                "BERTScore": {
+                    "Precision": 0.07,
+                    "Recall": 0.443,
+                    "F1_measure": 0.249
+                }
+            }
+        }
+    }
+]

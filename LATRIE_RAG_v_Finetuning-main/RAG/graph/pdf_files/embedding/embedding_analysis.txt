@@ -1,0 +1,9 @@
+Comparison of two embedding models:
+- BAAI/bge-small-en-v1.5
+- NeuML/pubmedbert-base-embeddings
+
+BAAI/bge-small-en-v1.5 : general embedding model
+
+NeuML/pubmedbert-base-embeddings : PubMedBERT Embeddings produces higher quality embeddings than generalized models for medical literature. 
+
+We observed similar results with the two models, and sometimes worse results for the METEOR score for the second model, which is surprising (see paper).

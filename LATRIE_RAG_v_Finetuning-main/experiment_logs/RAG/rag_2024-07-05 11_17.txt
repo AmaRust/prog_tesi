@@ -1,0 +1,376 @@
+
+* Parameters for this experiment (5/7/2024):
+
+         - documents reader : HTML
+
+         - embedding model : NeuML/pubmedbert-base-embeddings
+
+         - LLM model : TheBloke/Mistral-7B-Instruct-v0.2-GPTQ
+
+         - splitting method : From scratch with Faiss vector store and SYNTACTIC splitter
+
+         - chunk size : 256
+
+         - chunk overlap : 25
+
+         - top_k value : 4
+
+         - assessment method : Only one Q/A task
+
+         - query : How is the evidence on treatment of infections caused by 3GCephRE organized?
+
+         - reference response : The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+         - reranking : No
+
+         - max new tokens : 190
+
+
+
+*--------------------------------------------------*
+
+
+
+* 4 chunks retrieved for the query : "How is the evidence on treatment of infections caused by 3GCephRE organized?"
+
+- CHUNK 1 (similarity : 0.8904626965522766):
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+- CHUNK 2 (similarity : 0.8484184145927429):
+Although we intended by protocol to obtain data by source of infection, this was possible only for 3GCephRE and as a result infection source-specific guidance is mostly lacking. Investigator-initiated RCT are needed addressing these gaps. Concomitantly, observational studies can include a broader and larger patient population and with improved methods to reduce bias can portray the real life and support decision-making. Antibiotic treatments addressed as the exposures in existing studies were frequently combined with other antibiotics, switched and crossed; study designs allowing a cleaner assessment of individual antibiotics or specific combinations are needed. Studies addressing targeted treatment should address the empirical antibiotic treatment and report the phenotypic and genetic characterization of the isolated bacteria to direct more individualized treatment. The ecological impact of different treatment strategies should be evaluated.
+Evidence is lacking on the efficacy and safety of oral antibiotics (e.g. pivmecilliam, fosfomycin, amoxicillin/clavulanic acid), for initial treatment of clinically stable patients with UTI or as oral follow up, compared with continued definitive intravenous therapy.
+
+- CHUNK 3 (similarity : 0.7945983409881592):
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+- CHUNK 4 (similarity : 0.7733344435691833):
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. In many studies there was a lack of information on the bacterial species and mechanisms of resistance. Extended-spectrum b-lactamase (ESBL) production was the most commonly reported resistance mechanism, mostly without specifying the type of b-lactamases conferring the ESBL phenotype.
+
+* GLOBAL CONTEXT:
+
+Context:
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+Although we intended by protocol to obtain data by source of infection, this was possible only for 3GCephRE and as a result infection source-specific guidance is mostly lacking. Investigator-initiated RCT are needed addressing these gaps. Concomitantly, observational studies can include a broader and larger patient population and with improved methods to reduce bias can portray the real life and support decision-making. Antibiotic treatments addressed as the exposures in existing studies were frequently combined with other antibiotics, switched and crossed; study designs allowing a cleaner assessment of individual antibiotics or specific combinations are needed. Studies addressing targeted treatment should address the empirical antibiotic treatment and report the phenotypic and genetic characterization of the isolated bacteria to direct more individualized treatment. The ecological impact of different treatment strategies should be evaluated.
+Evidence is lacking on the efficacy and safety of oral antibiotics (e.g. pivmecilliam, fosfomycin, amoxicillin/clavulanic acid), for initial treatment of clinically stable patients with UTI or as oral follow up, compared with continued definitive intravenous therapy.
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. In many studies there was a lack of information on the bacterial species and mechanisms of resistance. Extended-spectrum b-lactamase (ESBL) production was the most commonly reported resistance mechanism, mostly without specifying the type of b-lactamases conferring the ESBL phenotype.
+
+
+
+* REFERENCE CONTEXT:
+
+The evidence on treatment of infections caused by 3GCephRE is provided by clinical syndrome: BSI, UTI, pneumonia and intraabdominal infection (IAI). All studies referred to in the text are described in Table 3.
+
+* SIMILARITY:
+
+----> The predicted context doesn't contain the reference context.
+
+METEOR score : 0.1236749116607774
+
+BERTScore:
+Precision : -0.383
+Recall : 0.072
+F1 : -0.164
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use without additional prompt and context is :
+
+[INST] How is the evidence on treatment of infections caused by 3GCephRE organized? [/INST]
+
+* The answer obtained without additional prompt and context is :
+
+The evidence on the treatment of infections caused by third-generation cephalosporins (3GCs) is organized through various sources, including peer-reviewed scientific journals, clinical guidelines, and meta-analyses. Here are some ways the evidence is typically organized:
+
+1. Peer-reviewed scientific journals: Research studies on the treatment of infections caused by 3GCs are published in scientific journals. These studies can be categorized based on their study design, such as randomized controlled trials (RCTs), observational studies, or systematic reviews. RCTs are considered the gold standard for evaluating the efficacy and safety of new treatments, while observational studies can provide valuable real-world data on how a treatment is used in clinical practice.
+2. Clinical guidelines: Clinical guidelines provide evidence-based recommendations for the diagnosis, prevention, and treatment
+
+* REFERENCE ANSWER :
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / NO CONTEXT **
+* The prompt we are going to use with additional prompt but without context is :
+
+[INST] You are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+        You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+        Preferably give clear answers without too many details.
+
+        Please respond to the following question.
+         
+How is the evidence on treatment of infections caused by 3GCephRE organized? 
+[/INST]
+
+* The answer obtained with additional prompt but without context is :
+
+The evidence on the treatment of infections caused by third-generation cephalosporin-resistant bacteria (3GCRE) is organized through numerous studies, meta-analyses, and guidelines. These sources provide evidence on the effectiveness and safety of various antibiotics, including carbapenems, monobactams, polymyxins, and aminoglycosides, for treating 3GCRE infections. The Infectious Diseases Society of America (IDSA) and European Society of Clinical Microbiology and Infectious Diseases (ESCMID) publish guidelines on the diagnosis and treatment of infections caused by specific 3GCRE bacteria, such as Extended-Spectrum Beta-Lactamase (ESBL)-producing Enterobacterales and Carbapenem-resistant Enterobacterales (CRE). These guidelines are updated
+
+* REFERENCE ANSWER :
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+
+
+*--------------------------------------------------*
+
+
+
+** NO ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context but without additional prompt is :
+
+[INST]
+    Context:
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+Although we intended by protocol to obtain data by source of infection, this was possible only for 3GCephRE and as a result infection source-specific guidance is mostly lacking. Investigator-initiated RCT are needed addressing these gaps. Concomitantly, observational studies can include a broader and larger patient population and with improved methods to reduce bias can portray the real life and support decision-making. Antibiotic treatments addressed as the exposures in existing studies were frequently combined with other antibiotics, switched and crossed; study designs allowing a cleaner assessment of individual antibiotics or specific combinations are needed. Studies addressing targeted treatment should address the empirical antibiotic treatment and report the phenotypic and genetic characterization of the isolated bacteria to direct more individualized treatment. The ecological impact of different treatment strategies should be evaluated.
+Evidence is lacking on the efficacy and safety of oral antibiotics (e.g. pivmecilliam, fosfomycin, amoxicillin/clavulanic acid), for initial treatment of clinically stable patients with UTI or as oral follow up, compared with continued definitive intravenous therapy.
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. In many studies there was a lack of information on the bacterial species and mechanisms of resistance. Extended-spectrum b-lactamase (ESBL) production was the most commonly reported resistance mechanism, mostly without specifying the type of b-lactamases conferring the ESBL phenotype.
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    How is the evidence on treatment of infections caused by 3GCephRE organized?
+    [/INST]
+    
+
+* The answer obtained with context but without additional prompt is :
+
+The evidence on the treatment of infections caused by 3GCephRE (third-generation cephalosporin-resistant Enterobacteriaceae) is organized based on the severity and source of the infection.
+
+For severe infections such as bloodstream infections (BSI) and septic shock, the recommended antibiotic of choice is a carbapenem (imipenem or meropenem) due to its broad-spectrum activity against 3GCephRE (strong recommendation for use, moderate certainty of evidence). For less severe infections without septic shock, etapenem may be considered as an alternative to impienem or meropenem (conditional recommendation for use, moderate certainty of evidence).
+
+For non-severe infections, under the consideration of antibiotic stewardship, piperacillin-tazobact
+
+* REFERENCE ANSWER :
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+
+
+*--------------------------------------------------*
+
+
+
+** ADDITIONAL PROMPT / CONTEXT **
+* The prompt we are going to use with context and additional prompt is :
+
+[INST]You are an expert medical professional with extensive knowledge in various fields of medicine, 
+
+    You are here to provide accurate, evidence-based information and guidance on a wide range of medical topics. 
+
+    Preferably give clear answers without too many details.
+
+    Context:
+Third-generation cephalosporin-resistant Enterobacteriaceae
+Question 1.1: What is the antibiotic of choice for 3GCephRE
+Recommendations
+
+For patients with BSI and severe infection due to 3GCephRE, we recommend a carbapenem (imipenem or meropenem) as targeted therapy (strong recommendation for use, moderate certainty of evidence).
+For patients with BSI due to 3GCephRE without septic shock, etapenem instead of impienem or meropenem may be used (conditional recommendation for use, moderate certainty of evidence).
+For patients with low-risk, non-severe infections due to 3GCephRE, under the consideration of antibiotic stewardship, we suggest piperacillin-tazobactam, amoxicillin/clavulanic acid or quinolones (conditional recommendation for use, moderate certainty of evidence/good practice statement). It may be good practice to consider cotrimoxazole for non-severe complicated UTI (cUTI) (good practice statement).
+
+Although we intended by protocol to obtain data by source of infection, this was possible only for 3GCephRE and as a result infection source-specific guidance is mostly lacking. Investigator-initiated RCT are needed addressing these gaps. Concomitantly, observational studies can include a broader and larger patient population and with improved methods to reduce bias can portray the real life and support decision-making. Antibiotic treatments addressed as the exposures in existing studies were frequently combined with other antibiotics, switched and crossed; study designs allowing a cleaner assessment of individual antibiotics or specific combinations are needed. Studies addressing targeted treatment should address the empirical antibiotic treatment and report the phenotypic and genetic characterization of the isolated bacteria to direct more individualized treatment. The ecological impact of different treatment strategies should be evaluated.
+Evidence is lacking on the efficacy and safety of oral antibiotics (e.g. pivmecilliam, fosfomycin, amoxicillin/clavulanic acid), for initial treatment of clinically stable patients with UTI or as oral follow up, compared with continued definitive intravenous therapy.
+
+For cUTI in patients without septic shock, we conditionally recommend aminoglycosides when active in vitro, for short durations of therapy (conditional recommendation for use, moderate certainty of evidence), or intravenous foafymycin (strong recommendation for use, high certainty of evidence).
+Among all patients with 3GCephRE infections, stepdown targeted therapy following carbapenems once patients are stabilized, using old b-lactam/b-lactamase inhibitors (BBLII), quinolones, cotrimoxazole or other antibiotics based on the susceptibility pattern of the isolate, is good clinical practice (good practice statement).
+We do not recommend tigecyline for infections caused by 3GCephRE (strong recommendation against use, very low certainty of evidence).
+Among all patients with 3GCephRE infections, the new BLBII are reserve antibiotics for extensively resistant bacteria and therefore, we consider it good clinical practice to avoid their use for infections caused by 3GCephRE, due to antibiotic stewardship considerations (good practice statement).
+We suggest that cephamycins (e.g.
+
+We suggest that cephamycins (e.g. cefoxitin, cefmetazole, flomoxef) and cefepime not be used for 3GCephRE infections (conditional recommendation against use, very low certainty of evidence).
+For cefoperazone-sulbactam, ampicillin-sulbactam, ticarcillin- clavulanic acid, temocillin and mecillinam there is insufficient evidence for the management of patients with 3GCephRE infections at the time of writing and therefore no recommendation can be issued.
+
+Review of the evidence
+The data available on 3GCephRE are derived mainly from observational studies in the hospital setting including patients with BSI and urinary source of infection. In many studies there was a lack of information on the bacterial species and mechanisms of resistance. Extended-spectrum b-lactamase (ESBL) production was the most commonly reported resistance mechanism, mostly without specifying the type of b-lactamases conferring the ESBL phenotype.
+
+
+    Please respond to the following question. Use the context above if it is helpful.
+
+    How is the evidence on treatment of infections caused by 3GCephRE organized?
+    [/INST]
+    
+
+* The answer obtained with context and additional prompt is :
+
+The evidence on the treatment of infections caused by 3GCephRE is organized based on the severity and source of the infection. For severe infections such as bloodstream infections (BSI) and septic shock, carbapenems are recommended as the antibiotics of choice. For less severe infections, such as non-severe cUTI, piperacillin-tazobactam, amoxicillin/clavulanic acid, quinolones, or cotrimoxazole may be considered. However, more studies are needed to provide clearer guidance based on the specific infection source and susceptibility patterns of the isolates. Additionally, there is a lack of evidence on the use of oral antibiotics for initial treatment or follow-up in clinically stable patients with UTI. The use of new BLBII, cephamycins, and
+
+* REFERENCE ANSWER :
+The evidence on treatment of infections caused by 3GCephRE is organized by clinical syndrome, including bloodstream infections (BSI), urinary tract infections (UTI), pneumonia, and intra-abdominal infection (IAI).
+
+
+
+*--------------------------------------------------*
+
+
+
+** RESULTS FOR EACH CASE WITH DIFFERENT METRICS **
+
+* NO ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.04767184035476719
+Individual 2-gram : 0.0821309655937847
+Individual 3-gram : 0.06444444444444444
+Individual 4-gram : 0.04449388209121247
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.11904761904761904, recall=0.5357142857142857, fmeasure=0.19480519480519481)
+ROUGE_L : Score(precision=0.10317460317460317, recall=0.4642857142857143, fmeasure=0.16883116883116883)
+
+         - METEOR : 
+
+METEOR score : 0.20661157024793392
+
+         - BERTScore : 
+
+Precision : 0.825
+Recall : 0.857
+F1 : 0.841
+
+Precision : -0.041
+Recall : 0.152
+F1 : 0.055
+
+
+* ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.06542056074766356
+Individual 2-gram : 0.10294117647058823
+Individual 3-gram : 0.07362784471218208
+Individual 4-gram : 0.04959785522788203
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.16842105263157894, recall=0.5714285714285714, fmeasure=0.2601626016260163)
+ROUGE_L : Score(precision=0.14736842105263157, recall=0.5, fmeasure=0.2276422764227642)
+
+         - METEOR : 
+
+METEOR score : 0.3056730446458543
+
+         - BERTScore : 
+
+Precision : 0.801
+Recall : 0.862
+F1 : 0.831
+
+Precision : -0.178
+Recall : 0.180
+F1 : -0.004
+
+
+* NO ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.06266666666666666
+Individual 2-gram : 0.10680907877169557
+Individual 3-gram : 0.07486631016042782
+Individual 4-gram : 0.05488621151271754
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.16666666666666666, recall=0.6071428571428571, fmeasure=0.26153846153846155)
+ROUGE_L : Score(precision=0.1568627450980392, recall=0.5714285714285714, fmeasure=0.24615384615384614)
+
+         - METEOR : 
+
+METEOR score : 0.2767118566176471
+
+         - BERTScore : 
+
+Precision : 0.805
+Recall : 0.888
+F1 : 0.844
+
+Precision : -0.159
+Recall : 0.334
+F1 : 0.077
+
+
+* ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.06684491978609626
+Individual 2-gram : 0.107095046854083
+Individual 3-gram : 0.08176943699731905
+Individual 4-gram : 0.06174496644295301
+
+         - ROUGE : 
+
+ROUGE_1 : Score(precision=0.168141592920354, recall=0.6785714285714286, fmeasure=0.2695035460992908)
+ROUGE_L : Score(precision=0.1504424778761062, recall=0.6071428571428571, fmeasure=0.24113475177304966)
+
+         - METEOR : 
+
+METEOR score : 0.31707101289713746
+
+         - BERTScore : 
+
+Precision : 0.812
+Recall : 0.899
+F1 : 0.853
+
+Precision : -0.116
+Recall : 0.403
+F1 : 0.132
+
+

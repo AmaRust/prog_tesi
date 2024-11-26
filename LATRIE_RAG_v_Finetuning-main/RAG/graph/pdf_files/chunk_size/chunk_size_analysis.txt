@@ -1,0 +1,3 @@
+As you might expect, a chunk size that is too small does not produce very effective results. 
+METEOR and BERTScore show a nice increase by going from 128 to 256.
+Increasing the chunk size is not necessarily more effective (stagnation or even a slight drop in some cases, going from 256 to 512).

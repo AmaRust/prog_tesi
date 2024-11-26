@@ -1,0 +1,135 @@
+
+* Parameters for this experiment (26/6/2024):
+
+         - embedding model : BAAI/bge-small-en-v1.5
+
+         - LLM model : TheBloke/Mistral-7B-Instruct-v0.2-GPTQ
+
+         - splitting method : From scratch with Faiss vector store and SYNTAXIC splitter
+
+         - chunk size : 256
+
+         - chunk overlap : 25
+
+         - top_k value : 2
+
+         - assessment method : Assessment of all the Q/A dataset
+
+         - max new tokens : 190
+
+
+
+*--------------------------------------------------*
+
+
+
+** RESULTS FOR EACH CASE WITH DIFFERENT METRICS **
+
+* NO ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.07234125648164476
+Individual 2-gram : 0.13118149878712257
+Individual 3-gram : 0.12260955493057679
+Individual 4-gram : 0.09804818773801206
+
+         - ROUGE : 
+
+ROUGE_1 : precision=0.23755893263460845, recall=0.7167832167832167, fmeasure=0.3489163704042982
+ROUGE_L : precision=0.13967300057518664, recall=0.42074592074592077, fmeasure=0.20461078758533446
+
+         - METEOR : 
+
+METEOR score : 0.30102300655185266
+
+         - BERTScore : 
+
+Precision : 0.854
+Recall : 0.907
+F1 : 0.880
+
+Precision : 0.133
+Recall : 0.449
+F1 : 0.287
+
+* ADDITIONAL PROMPT / NO CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.09044138713905693
+Individual 2-gram : 0.17665848773905193
+Individual 3-gram : 0.16644769677560065
+Individual 4-gram : 0.1340002469502586
+
+         - ROUGE : 
+
+ROUGE_1 : precision=0.32295398397093317, recall=0.7296037296037298, fmeasure=0.44757250935525933
+ROUGE_L : precision=0.2375044536061485, recall=0.5367132867132867, fmeasure=0.32917052743830083
+
+         - METEOR : 
+
+METEOR score : 0.38961466375535175
+
+         - BERTScore : 
+
+Precision : 0.866
+Recall : 0.927
+F1 : 0.895
+
+Precision : 0.207
+Recall : 0.567
+F1 : 0.380
+
+* NO ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.19736402081130056
+Individual 2-gram : 0.3566791857575838
+Individual 3-gram : 0.36023604963985073
+Individual 4-gram : 0.31217516062216233
+
+         - ROUGE : 
+
+ROUGE_1 : precision=0.6978835978835979, recall=0.8205128205128206, fmeasure=0.7225940938042849
+ROUGE_L : precision=0.5645502645502646, recall=0.6987179487179488, fmeasure=0.601961011387763
+
+         - METEOR : 
+
+METEOR score : 0.7188313569616596
+
+         - BERTScore : 
+
+Precision : 0.933
+Recall : 0.937
+F1 : 0.934
+
+Precision : 0.600
+Recall : 0.625
+F1 : 0.610
+
+* ADDITIONAL PROMPT / CONTEXT
+         - BLEU : 
+
+Individual 1-gram : 0.2216802702762588
+Individual 2-gram : 0.407088122605364
+Individual 3-gram : 0.4115735855315334
+Individual 4-gram : 0.3540562658157694
+
+         - ROUGE : 
+
+ROUGE_1 : precision=0.8243114909781576, recall=0.7902097902097903, fmeasure=0.7969315799504478
+ROUGE_L : precision=0.694681861348528, recall=0.6940559440559441, fmeasure=0.6871545645130551
+
+         - METEOR : 
+
+METEOR score : 0.7257354847665347
+
+         - BERTScore : 
+
+Precision : 0.950
+Recall : 0.942
+F1 : 0.946
+
+Precision : 0.702
+Recall : 0.657
+F1 : 0.677
+
